@@ -1,4 +1,4 @@
-title = "12 Kontextfreie Grammatiken"   # the file name of the output pdf
-description = "Kontextfreie Grammatiken" # 
-content = ["grammatiken"]
-xkcd = 1090
+title = "12 Algorithmen, Automaten"       # the file name of the output pdf
+description = "Algorithmen und Automaten" # 
+content = ["algorithms, automaten"]
+xkcd = 2407
