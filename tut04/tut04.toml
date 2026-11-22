@@ -1,6 +1,9 @@
 title = "04 Kodierungen" # the file name of the output pdf
-description = "04 Kodierungen" # 
+description = "Kodierungen" # 
 content = [
     "kodierungen",
+    "homomorphismen",
+    "huffman",
+    "paritätscodes"
 ]
 xkcd = 2954

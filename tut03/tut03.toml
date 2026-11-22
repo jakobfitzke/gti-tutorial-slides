@@ -1,5 +1,5 @@
 title = "03 Induktion und Zahlendarstellung" # the file name of the output pdf
-description = "03 Induktion und Zahlendarstellung" # 
+description = "Induktion und Zahlendarstellung" # 
 content = [
     "induktion",
     "kodierungen"
