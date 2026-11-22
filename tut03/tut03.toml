@@ -2,6 +2,6 @@ title = "03 Induktion und Zahlendarstellung" # the file name of the output pdf
 description = "03 Induktion und Zahlendarstellung" # 
 content = [
     "induktion",
-    "codierungen"
+    "kodierungen"
 ]
 xkcd = 953
