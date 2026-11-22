@@ -4,7 +4,7 @@
    
    - Linux: ln -s:
      
-     - ln -s {pfad zum repo} /opt/gti-slides
+     - sudo ln -s {pfad zum repo} /opt/gti-slides
    
    - Windows: 
      
