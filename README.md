@@ -18,9 +18,7 @@
 
 4. Kopiere die ipelets in den ipelets folder deiner IPE installation
 
-5. Kopiere template/qr_less_pre.ipe und nenne es in pre.ipe um
-
-6. `python ./make.py --all` sollte jetzt ohne Fehler laufen und in jedem tutXX Verzeichnis eine PDF-Datei generieren.
+5. `python ./make.py --all` sollte jetzt ohne Fehler laufen und in jedem tutXX Verzeichnis eine PDF-Datei generieren.
 
 ## Beispiel Installlation unter Windows
 - Installiere IPE und [MikTeX](https://miktex.org/) unter Windows
