@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250106190047" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20260209171155" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <bitmap id="1" width="926" height="126" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6035" encoding="base64">
 eNrt3U9oXEeewHHd+tAHoUOzh8YYYYJZjDCLdRAKJlgEL4NBxDBECCT2IGyUwYZxs8mAWaQx
 jMj2sBjWkYjZMNKAdxlka1mxlrOJicDBWFniWIywQV6TxMgyi9ChWYY+9E37/v+tqvdfarW+
@@ -10241,16 +10241,6 @@ h
 <view layers="alpha" active="alpha"/>
 <text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="28.0119" depth="17.577" valign="top" size="Huge" style="center">\bfseries Prädikatenlogik</text>
 </page>
-<page title="Motivation">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<text layer="alpha" matrix="1 0 0 1 0 -88" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Quantifizierte Aussagen wie: \enquote{Für alle x gilt} oder \enquote{Es existiert ein y, sodass} \\ lassen sich in der Aussagenlogik nicht darstellen</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">Aussagenlogik kann nur mit Aussagen umgehen</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top" style="item">Aussagen über arbiträre Elemente, die bestimmte Eigenschaften haben, oder nicht haben, \\ lassen sich nur schlecht in der Aussagenlogik darstellen</text>
-<text layer="beta" matrix="1 0 0 1 176 -64" transformations="translations" pos="0 224" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top">\impl \emph{Prädikatenlogik} löst diese Probleme mit Quantoren</text>
-</page>
 <page title="Prädikatenlogik Syntax">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
@@ -10365,7 +10355,7 @@ h
 </group>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top">Zusammengesetzt aus:</text>
 <text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="12.9115" depth="1.8204" valign="top" style="item">Atomaren Formeln</text>
-<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen Konnektiven ($\neg, \vee, \wedge, \rightarrow$ (,plus Klammern))</text>
+<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Aussagenlogischen Konnektiven ($\neg, \vee, \wedge, \Rightarrow$ (,plus Klammern))</text>
 <text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="688" height="15.358" depth="4.2846" valign="top" style="item">Quantoren ($\forall \quad \exists$)</text>
 <text layer="epsilon" transformations="translations" pos="0 240" stroke="black" type="minipage" width="704" height="15.469" depth="4.4178" valign="top">Verwendung: ($\forall x_i \dots \text{Formel} \dots$)</text>
 <text layer="eta" matrix="1 0 0 1 400 -32" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung:</text>
@@ -10381,33 +10371,6 @@ $</text>
 {\color{blue} Relationen}\\
 {\color{orange}AL. Konnektive}\\
 {\color{purple}Funktionen}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Findet jeweils den syntaktischen Fehler in den folgenden prädikatenlogischen Formeln:</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
-<text layer="alpha" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 96" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$\forall f ~ S(f) \wedge  \forall x  ~g(R(x))$</text>
-<text layer="zeta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
-<text layer="alpha" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 160" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x (S(x) \wedge T(x))  \rightarrow  \exists R( \forall x R(x,x))$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -35.9439" transformations="translations" pos="0 128" stroke="black" type="minipage" width="448" height="15.1648" depth="4.0848" valign="top">Relationen können nicht quantifiziert werden</text>
-<text layer="alpha" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$\forall x \forall y R(f(x,f(y)))$</text>
-<text layer="delta" matrix="1 0 0 1 0 -23.8879" transformations="translations" pos="0 192" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top">Entweder gilt: ar(f) = 1 oder ar(f) = 2, aber nicht beides in einer Formel</text>
-<text layer="alpha" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$S(c) \wedge T(d) \rightarrow S(R(c,d))$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -12.0561" transformations="translations" pos="0 256" stroke="black" type="minipage" width="688" height="15.0516" depth="3.9738" valign="top">Nur Terme als Argumente, keine Relationen</text>
-<text layer="alpha" transformations="translations" pos="0 352" stroke="black" type="minipage" width="432" height="16.5901" depth="5.5278" valign="top" style="item">$\exists z ~f(z)$</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Funktionen (f) sind keine Relationen</text>
 </page>
 <page title="Semantik">
 <layer name="alpha"/>
@@ -10443,6 +10406,7 @@ Elemente aus D auf \\ ein Element aus  D abbildet</text>
 <text layer="zeta" transformations="translations" pos="0 96" stroke="black" type="minipage" width="624" height="15.469" depth="4.4178" valign="top">Eine \emph{Variablenbelegung} $\beta$ ordnet jeder Variable einen Wert aus D zu</text>
 <text transformations="translations" pos="0 64" stroke="black" type="minipage" width="672" height="15.3757" depth="4.2846" valign="top" style="item">Also $\beta : Var_{PL}  \rightarrow D$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+<text layer="zeta" matrix="1 0 0 1 -16 -304" transformations="translations" pos="16 336" stroke="black" type="minipage" width="848" height="16.3814" depth="5.3058" valign="top" style="item">Die Auswertungsfunktion $val_{D,I,\beta}: For_S \rightarrow \mathbb B$ gibt uns dann die Lösung</text>
 </page>
 <page title="Semantik">
 <layer name="alpha"/>
@@ -10455,57 +10419,6 @@ $c_i$ :$\{()\} \rightarrow D$ \\
 $\Rightarrow$ $c_i$ ist also eine \emph {konstante} Funktion\\
 $\Rightarrow$ jedem Konstantensymbol wird ein fester Wert aus D zugeordnet</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
-</page>
-<page title="Formeln aufstellen">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
-<group layer="eta" matrix="1 0 0 1 0 16">
-<path stroke="black" fill="KITred15">
-8 104 m
-768 104 l
-8 0 0 -8 768 96 776 96 a
-776 42.2303 l
-16 42.2303 l
-8 0 0 -8 16 50.2303 8 50.2303 a
-h
-</path>
-</group>
-<group layer="zeta">
-<path stroke="black" fill="KITblue15">
-8 376 m
-416 376 l
-8 0 0 -8 416 368 424 368 a
-424 148.4 l
-16 148.4 l
-8 0 0 -8 16 156.4 8 156.4 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="384" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top">Alle Menschen lieben Weihnachten.</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="400" height="13.1357" depth="2.0646" valign="top">Was brauchen wir?</text>
-<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Menschen</text>
-<text layer="gamma" transformations="translations" pos="16 240" stroke="black" type="minipage" width="400" height="15.0516" depth="3.9738" valign="top" style="item">&apos;&apos;lieben&apos;&apos; als Beziehung zwischen Dingen</text>
-<text layer="delta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Weihnachten</text>
-<text layer="zeta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">$\forall x (Mensch(x) \rightarrow Liebt(x, Weihnachten))$</text>
-<text layer="eta" matrix="1 0 0 1 0 16" transformations="translations" pos="16 96" stroke="black" type="minipage" width="752" height="28.2939" depth="17.2716" valign="top">Das ist, wie in der Aussagenlogik erstmal nur ein Wort über einem Alphabet. \\ Die Bedeutung kommt dann erst wieder durch Interpretationen</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -48" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Weihnachten\}, \\Rel_{PL} = \{Mensch, Liebt\}$</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="448 304" stroke="black" type="minipage" width="320" height="29.8546" depth="18.8034" valign="top">$ar(Mensch) = 1, ar(Liebt) = 2,\\ ar(Weihnachten) = 0$</text>
-<text transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen und Feiertage</text>
 </page>
 <page title="Aufgabe">
 <layer name="alpha"/>
@@ -10533,160 +10446,12 @@ h
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="608" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es irgendjemand kann, dann kann es Donald Ervin Knuth.</text>
 <text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="608" height="14.9184" depth="3.8628" valign="top" style="item">John liebt jeden, der sich nicht selbst liebt.</text>
 <text layer="beta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\exists x (Vogel(x) \wedge  \neg Flugf\ddot{a} hig(x)) $</text>
-<text layer="gamma" transformations="translations" pos="0 176" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$\exists x (Kann\_ es(x)) \rightarrow Kann\_ es (Knuth)$</text>
-<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg Liebt(x,x) \rightarrow Liebt(John,x))$</text>
+<text layer="gamma" transformations="translations" pos="0 176" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top">$\exists x (Kann\_ es(x)) \Rightarrow Kann\_ es (Knuth)$</text>
+<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$\forall x (\neg Liebt(x,x) \Rightarrow Liebt(John,x))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
 <text layer="alpha" matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$Var_{PL} = \{x\}, Fun_{PL} = \{Knuth, John\}, \\Rel_{PL} = \{Flugf\ddot{a} hig, Kann\_es, Vogel, Liebt\}$</text>
 <text matrix="1 0 0 1 -64 -176" transformations="translations" pos="448 304" stroke="black" type="minipage" width="464" height="43.0969" depth="32.1012" valign="top">$ar(Vogel) = ar(Kann_es) = ar(Flugf\ddot{a} hig) = 1,\\ ar(Liebt) = 2,\\ ar(Knuth) = ar(John) = 0$</text>
 <text matrix="1 0 0 1 -64 -128" transformations="translations" pos="448 352" stroke="black" type="minipage" width="464" height="15.0516" depth="3.9738" valign="top">D = Die Menge aller Lebewesen</text>
-</page>
-<page title="Auswertungsfunktion">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top">Auch hier können wir wieder eine Auswertungsfunktion bauen, die einer prädikatenlogischen Formel, abhängig von einer Interpretation und einer Variablenbelegung einen Wahrheitswert zuordnet</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="912" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben jetzt nicht nur Wahrheitswerte, sondern auch beliebige Elemente aus D</text>
-<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Diese sind aber auf Terme begrenzt</text>
-<text layer="beta" matrix="1 0 0 1 16 32" transformations="translations" pos="0 224" stroke="black" type="minipage" width="688" height="43.9915" depth="32.9892" valign="top">$
-tval_{D,I,\beta}: Ter_S \rightarrow D,
-\\
-tval_{D,I,\beta} (t) = \left\{ \begin{array}{ll}
-\beta (x) &amp;\vert t= x \in Var_{PL}\\
-I(f)(tval_{D,I,\beta}(t_1) , \dots , tval_{D,I,\beta}(t_k)) &amp;\vert t = f(t_1,\dots,t_k), ar(f) = k\\
-\end{array}\right.$</text>
-<text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="832" height="15.1648" depth="4.0848" valign="top">$\Rightarrow$ tval wertet jeden Term (also Variablen und Funktionen) zu \emph {einem} Wert aus D aus</text>
-<text layer="delta" matrix="1 0 0 1 0 -27" transformations="translations" pos="16 144" stroke="black" type="minipage" width="768" height="43.9915" depth="32.9892" valign="top">$
-val_{D,I,\beta}: For_S \rightarrow \mathbb B,
-\\
-val_{D,I,\beta}(R(t_1, \dots , t_k)) =  \left\{ \begin{array}{ll}
-w &amp;\vert (tval_{D,I,\beta}(t_1),\dots , tval_{D,I,\beta}(t_k) )\in I(R)\\
-f &amp;\vert (tval_{D,I,\beta}(t_1),\dots , tval_{D,I,\beta}(t_k) )\notin I(R)\\
-\end{array}\right.$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 64" stroke="black" type="minipage" width="736" height="15.0516" depth="3.9738" valign="top">$\Rightarrow $ Jede Relation mit Argumenten wird zu einem Wahrheitswert ausgewertet</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
-</page>
-<page title="Semantik - Quantoren ">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<text layer="beta" matrix="1 0 0 1 0 112" transformations="translations" pos="16 144" stroke="black" type="minipage" width="768" height="32.1456" depth="21.1344" valign="top">$val_{D,I,\beta}(\forall x F) =  \left\{ \begin{array}{ll}
-\textbf{w} &amp;\vert \text{falls für jedes } d \in D  \text{ und } \beta&apos; = \beta_x^d \text{ gilt: } val_{D,I,\beta&apos;}(F) = \textbf{w}\\
-\textbf{f} &amp;\vert \text{sonst}\\
-\end{array}\right.$</text>
-<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="32.059" depth="21.0234" valign="top">$\beta_x^d: Var_{PL} \rightarrow D : v \mapsto  \left\{ \begin{array}{ll}
-\beta(v) &amp;\vert v\neq x\\
-d &amp;\vert v = x
-\end{array}\right.$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 144" stroke="black" type="minipage" width="832" height="32.1456" depth="21.1344" valign="top">$val_{D,I,\beta}(\exists x F) =  \left\{ \begin{array}{ll}
-\textbf{w} &amp;\vert \text{falls für  mindestens ein } d \in D  \text{ und } \beta&apos; = \beta_x^d \text{ gilt: } val_{D,I,\beta&apos;}(F) = \textbf{w}\\
-\textbf{f} &amp;\vert \text{sonst}\\
-\end{array}\right.$</text>
-<text layer="alpha" transformations="translations" pos="16 304" stroke="black" type="minipage" width="800" height="15.3757" depth="4.2846" valign="top">$\beta $ wird also an der Stelle $x$ mit $d \in D$ überschrieben</text>
-<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="864" height="15.469" depth="4.4178" valign="top">$ \Rightarrow F$ muss für \emph{jede} Belegung von x wahr sein</text>
-<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="832" height="15.469" depth="4.4178" valign="top">$ \Rightarrow F$ muss für \emph{eine} Belegung von x wahr sein</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-</page>
-<page title="Anmerkungen zu Quantoren">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item"> Quantoren &apos;&apos;überschreiben&apos;&apos; Variablen in ihrem Wirkungsbereich</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="subitem">Bei $\forall x (R(x,y))$ ist egal, was $\beta (x)$ ist. Es gelte ja für alle x in D</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Quantoren beziehen sich immer auf D. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="subitem">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">muss durch Relationen eine Einschränkung simuliert werden</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ R ist hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$D = N_0,  I(c) = 0,  I(f) = $Addition,  $I(R) =$ $\leq$</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">$\beta (x) = 3$ und $\beta(y) = 42$</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 304" stroke="black" type="minipage" width="720" height="107.108" depth="96.2814" valign="top">\begin{align*}
-val_{D,I,\beta} (\forall x R(c,x)) &amp;\Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } val_{D,I,\beta&apos;}(R(c,x))\\
-&amp;\Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (tval_{D,I,\beta&apos;}(c), tval_{D,I,\beta&apos;}(x)) \in R\\
-&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (I(c), \beta&apos;(x)) \in R\\
-&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (0, d) \in R\\
-&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } 0 \leq d
-\end{align*}</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 144" stroke="black" type="minipage" width="352" height="16.9874" depth="5.9274" valign="top">$\Rightarrow$ also ist $val_{D,I,\beta} (\forall x R(c,x)) = w$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="alpha" matrix="1 0 0 1 0 -48">
-<path stroke="gray1" fill="gray3">
-872 336 m
-8 0 0 8 864 336 864 344 a
-8 344 l
-8 282.462 l
-8 0 0 8 16 282.462 16 274.462 a
-872 274.462 l
-h
-</path>
-</group>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.6189" depth="5.5722" valign="top">Seien $Var_{PL} = \{x,y,z\}, Fun_{PL} = \{f\}$ mit $ar(f) = 2$ und $Rel_{PL} = \{\doteq\}$</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 336" stroke="black" type="minipage" width="848" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = w gilt.</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = f gilt.</text>
-<text layer="beta" matrix="1 0 0 1 -16 -48" transformations="translations" pos="16 256" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top">Mögliche Lösungen sind Bspw:</text>
-<text matrix="1 0 0 1 -16 -48" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">$D = \mathbb N_0, I(f) \text{ Addition}, \beta(x) = 3\text{ und }\beta(y) = 2$</text>
-<text layer="gamma" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$D = \{a, b\}^*, I(f) \text{ Konkatenation}, \beta(x) = a \text{ und } \beta(y) = ab$</text>
-<text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="384" height="16.6189" depth="5.5722" valign="top">$F = \forall x(f(x,y) \doteq f(y,x))$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="592" height="16.6189" depth="5.5722" valign="top">$F = \neg \exists x(E(x,y) \vee \neg \forall z\forall x \forall y(E(x,y) \wedge E(y,z) \rightarrow x \doteq y))$</text>
-<group matrix="1 0 0 1 0 -16">
-<path stroke="gray1" fill="gray3">
-872 336 m
-8 0 0 8 864 336 864 344 a
-8 344 l
-8 282.462 l
-8 0 0 8 16 282.462 16 274.462 a
-872 274.462 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="848" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = w gilt.</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="848" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = f gilt.</text>
-<text layer="beta" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top">Mögliche Lösungen sind:</text>
-<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">$D = \mathbb \{0,1\}, I(E) = &lt;, \beta : Var_{PL} \rightarrow D, v \mapsto 0$</text>
-<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 176" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">$D = \mathbb \{0,1\}, I(E) = &lt;, \beta : Var_{PL} \rightarrow D, v \mapsto 1$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 <page title="Modelle">
 <layer name="alpha"/>
@@ -10740,9 +10505,7 @@ h
 <page title="Allgemeingültige Formeln">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
 <group layer="alpha" matrix="1 0 0 1 0 16">
 <path stroke="black" fill="KITgreen15">
 8 296 m
@@ -10758,79 +10521,7 @@ h
 Formeln \emph{allgemeingültig} sein (Tautologien)</text>
 <text matrix="1 0 0 1 0 32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="15.2203" depth="4.1514" valign="top">\bfseries Allgemeingültigkeit</text>
 <text matrix="1 0 0 1 0 48" transformations="translations" pos="16 224" stroke="black" type="minipage" width="608" height="42.695" depth="31.6794" valign="top">Eine prädikatenlogische Formel F heißt \emph{allgemeingültig}, falls für jede Interpretation (D,I) und jede Variablenbelegung $\beta$ gilt: $val_{D,I,\beta}(F) = w$</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="656" height="28.2939" depth="17.2716" valign="top" style="item">Beweisbar wie in der Aussagenlogik \\
-(rekursiv mit val und Fallunterscheidungen)</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="delta"/>
-<view layers="alpha pagenumbers_page beta delta epsilon zeta" active="gamma"/>
-<view layers="alpha pagenumbers_page beta epsilon zeta" active="delta"/>
-<view layers="alpha pagenumbers_page beta zeta" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta" active="zeta"/>
-<view layers="alpha pagenumbers_page beta eta" active="eta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITblue15">
-8 376 m
-224 376 l
-8 0 0 -8 224 368 232 368 a
-232 340.02 l
-16 340.02 l
-8 0 0 -8 16 348.02 8 348.02 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="208" height="15.5178" depth="4.4622" valign="top">$F = t_1 \doteq t_2 \rightarrow t_2 \doteq t_1$</text>
-<text transformations="translations" pos="16 320" stroke="black" type="minipage" width="480" height="15.0516" depth="3.9738" valign="top">Behauptung: F ist allgemeingültig</text>
-<text transformations="translations" pos="16 288" stroke="black" type="minipage" width="544" height="12.9115" depth="1.8204" valign="top">Beweis: </text>
-<text layer="beta" matrix="1 0 0 1 16 32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="704" height="149.788" depth="139.061" valign="top">\begin{align*}
-val_{D,I,\beta} (t_1 \doteq t_2 \rightarrow t_2 \doteq t_1) &amp;\Leftrightarrow  val_{D,I,\beta} (t_1 \doteq t_2) \rightarrow val_{D,I,\beta}(t_2 \doteq t_1 )\\
-\text{Fall 1: } tval_{D,I,\beta}(t_1) = tval_{D,I,\beta}(t_2)\\
-&amp;\Rightarrow val_{D,I,\beta}(t_1\doteq t_2) = val_{D,I,\beta}(t_2 \doteq t_1) = \textbf{w}\\
-&amp;\Rightarrow val_{D,I,\beta} (t_1 \doteq t_2 \rightarrow t_2 \doteq t_1) = \textbf{w}\rightarrow \textbf{w} = \textbf{w}\\
-\text{Fall 2: } tval_{D,I,\beta}(t_1) \neq tval_{D,I,\beta}(t_2)\\
-&amp;\Rightarrow val_{D,I,\beta}(t_1\doteq t_2) = val_{D,I,\beta}(t_2 \doteq t_1) = \textbf{f}\\
-&amp;\Rightarrow val_{D,I,\beta} (t_1 \doteq t_2 \rightarrow t_2 \doteq t_1) = \textbf{f} \rightarrow \textbf{f} = \textbf{w}\\
-\end{align*}</text>
-<text layer="eta" transformations="translations" pos="16 16" stroke="black" type="minipage" width="592" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ Also ist F allgemeingültig</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
-<path layer="gamma" fill="white">
-32 224 m
-32 192 l
-368 192 l
-368 224 l
-h
-</path>
-<path layer="delta" fill="white">
-352 192 m
-352 128 l
-800 128 l
-800 192 l
-h
-</path>
-<path layer="epsilon" fill="white">
-32 128 m
-32 96 l
-368 96 l
-368 128 l
-h
-</path>
-<path layer="zeta" fill="white">
-352 96 m
-352 16 l
-768 16 l
-768 96 l
-h
-</path>
 </page>
 <page title="Äquivalenz">
 <layer name="alpha"/>

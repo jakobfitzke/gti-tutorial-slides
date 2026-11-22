@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250210160158" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251118111324" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -3731,114 +3731,59 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Induktion auf Graphen">
+<page title="Beweise">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top">Wieso geht Vorwärstinduktion schief?</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="832" height="16.5901" depth="5.5278" valign="top" style="item">Wir wollen eine Aussage für \textbf{alle} Graphen der größe $n =  \vert V\vert$ zeigen</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="16.6056" depth="5.55" valign="top" style="item">Wir dürfen benutzen das die Aussage bereits für \textbf{alle} Graphen mit $\vert V&apos;\vert &lt; n$ gezeigt wurde</text>
-<text transformations="translations" pos="0 272" stroke="black" type="minipage" width="896" height="27.2949" depth="16.2504" valign="top">Beispiel: Sei $G = (V,E)$ ein Baum (Kreisfrei + Zusammenhängend) mit $n = \vert V \vert$ Knoten \\ \impl G hat n-1 Kanten</text>
-</page>
-<page title="Induktion auf Graphen">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma iota" active="iota"/>
-<view layers="alpha beta gamma delta iota" active="delta"/>
-<view layers="alpha beta gamma delta epsilon iota" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta iota" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta iota" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="theta"/>
-<path layer="gamma" matrix="1 0 0 1 0 112" stroke="black" pen="1">
-624 192 m
-576 192
-560 160 c
-</path>
-<group>
-<path stroke="black" fill="KITblue15">
--8 280 m
-560 280 l
-8 0 0 -8 560 272 568 272 a
-568 215.342 l
-0 215.342 l
-8 0 0 -8 0 223.342 -8 223.342 a
-h
-</path>
-</group>
-<group layer="theta">
-<path stroke="gray1" fill="gray3">
-920 48 m
-8 0 0 8 912 48 912 56 a
-440 56 l
-440 10.854 l
-8 0 0 8 448 10.854 448 2.854 a
-920 2.854 l
-h
-</path>
-</group>
-<path layer="eta" stroke="black" pen="1">
-576 128 m
-544 160
-544 192 c
-</path>
-<group matrix="1 0 0 1 16 0">
-<path stroke="gray1" fill="gray3">
-904 128 m
-8 0 0 8 896 128 896 136 a
-536 136 l
-536 90.278 l
-8 0 0 8 544 90.278 544 82.278 a
-904 82.278 l
-h
-</path>
-</group>
-<group matrix="1 0 0 1 0 -16">
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
 <path stroke="black" fill="KITred15">
--8 216 m
-832 216 l
-8 0 0 -8 832 208 840 208 a
-840 177.844 l
-0 177.844 l
-8 0 0 -8 0 185.844 -8 185.844 a
+24 296 m
+400 296 l
+8 0 0 -8 400 288 408 288 a
+408 234.434 l
+32 234.434 l
+8 0 0 -8 32 242.434 24 242.434 a
 h
 </path>
 </group>
-<group layer="gamma" matrix="1 0 0 1 32 128">
-<path stroke="gray1" fill="gray3">
-872 208 m
-8 0 0 8 864 208 864 216 a
-584 216 l
-584 169.464 l
-8 0 0 8 592 169.464 592 161.464 a
-872 161.464 l
-h
-</path>
-</group>
-<text layer="alpha" matrix="1 0 0 1 0 112" transformations="translations" pos="0 272" stroke="black" type="minipage" width="896" height="27.2949" depth="16.2504" valign="top">Beispiel: Sei $G = (V,E)$ ein Baum (Kreisfrei + Zusammenhängend) mit $n = \vert V \vert$ Knoten \\ \impl G hat n-1 Kanten</text>
-<text layer="beta" matrix="1 0 0 1 0 112" transformations="translations" pos="0 192" stroke="black" type="minipage" width="416" height="12.9093" depth="1.8426" valign="top">\textbf{Falscher } Induktionsschritt:</text>
-<text matrix="1 0 0 1 0 112" transformations="translations" pos="0 160" stroke="black" type="minipage" width="560" height="29.8546" depth="18.8034" valign="top">Wir nehmen uns einen Baum $G = (V,E)$ mit $\vert V \vert = n-1$. \\
-Für diesen gilt bereits das  er $(n-1) - 1 = n-2$ Kanten hat</text>
-<text layer="gamma" matrix="1 0 0 1 0 128" transformations="translations" pos="624 208" stroke="black" type="minipage" width="272" height="24.236" depth="14.3" valign="top" size="small">Dürfen wir weil die Aussage ja schon für alle Graphen mit $\vert V \vert &lt; n$ gilt</text>
-<text layer="iota" matrix="1 0 0 1 0 96" transformations="translations" pos="0 96" stroke="black" type="minipage" width="832" height="16.6056" depth="5.55" valign="top">Jetzt Fügen wir einen Knoten und eine Kante ein und erhalten einen Graphen $G&apos; = (V&apos;,E&apos;)$</text>
-<text layer="delta" matrix="1 0 0 1 0 80" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="23.842" depth="13.88" valign="top" size="small">Wir müssen noch beweisen das der Graph immernoch kreisfrei und zusammenhängend ist aber das ist für das Beispiel nicht wichtig</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 112" stroke="black" type="minipage" width="528" height="16.6056" depth="5.55" valign="top">Es gilt $\vert V&apos; \vert = n -1 +1 = n$ und $\vert E&apos; \vert = n-2 + 1 = n-1$</text>
-<text layer="zeta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 96" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">(Trivial, die haben wir ja eben eingefügt)</text>
-<text layer="eta" matrix="1 0 0 1 -32 -16" transformations="translations" pos="592 144" stroke="black" type="minipage" width="352" height="23.842" depth="13.88" valign="top" size="small">Hier haben wir nur gezeigt das die Aussage für \textbf{diesen einen} Graphen gilt und nicht für \textbf{alle}</text>
-<text layer="theta" transformations="translations" pos="448 48" stroke="black" type="minipage" width="464" height="23.546" depth="13.6" valign="top" size="small">Was wir jetzt noch machen müssen ist zu zeigen das sich \textbf{alle} Bäume mit $n$ Knoten so konstruieren lassen (das ist schwer)</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="688" height="16.7521" depth="5.7054" valign="top" style="item">Man kann in der Mathematik relativ viel behaupten\textsuperscript{[citation needed]}</text>
+<text transformations="translations" pos="32 336" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top">$\Rightarrow$ Es wäre aber gut zu wissen, ob diese Behauptungen stimmen</text>
+<text layer="beta" transformations="translations" pos="32 288" stroke="black" type="minipage" width="368" height="28.2939" depth="17.2716" valign="top">Beweise belegen den Wahrheitsgehalt von Aussagen</text>
 </page>
-<page title="Induktion auf Graphen
-">
+<page title="Objekt - Annahme - Behauptung">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="eta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha eta" active="eta"/>
+<view layers="alpha beta eta" active="beta"/>
+<view layers="alpha beta gamma eta" active="gamma"/>
+<view layers="alpha beta gamma delta eta" active="delta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+416 376 l
+8 0 0 -8 416 368 424 368 a
+424 287.426 l
+16 287.426 l
+8 0 0 -8 16 295.426 8 295.426 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="41.7271" depth="30.7248" valign="top">\textbf{Implikationsbeweise}: \\
+Gegeben ein Objekt $O$ mit Eigenschaft $A$. \\
+Zeigen Sie, dass $O$ die Eigenschaft $B$ hat.</text>
+<text layer="eta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="41.5584" depth="30.5472" valign="top">z.B. &apos;&apos;Wir haben eine ganze Zahl $z$. Wenn wir annehmen, dass $z$ gerade ist, muss auch $z^2$ gerade.&apos;&apos;</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="15.358" depth="4.2846" valign="top" style="item">Objekt $O: z\in \mathbb Z$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="15.469" depth="4.4178" valign="top" style="item">Annahme $A: z$ gerade</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="16.8964" depth="5.8164" valign="top" style="item">Behauptung $B: z^2$ gerade</text>
+</page>
+<page title="Quantifizierte Aussagen">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
@@ -3846,203 +3791,260 @@ Für diesen gilt bereits das  er $(n-1) - 1 = n-2$ Kanten hat</text>
 <layer name="epsilon"/>
 <layer name="zeta"/>
 <layer name="eta"/>
-<layer name="theta"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
 <view layers="alpha beta gamma delta" active="delta"/>
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<path layer="theta" stroke="black" pen="1">
-528 32 m
-560 64
-528 96 c
-</path>
-<group matrix="1 0 0 1 16 0">
+<view layers="alpha beta gamma delta epsilon eta" active="eta"/>
+<group layer="zeta">
 <path stroke="gray1" fill="gray3">
-824 48 m
-8 0 0 8 816 48 816 56 a
-24 56 l
-24 10.278 l
-8 0 0 8 32 10.278 32 2.278 a
-824 2.278 l
+856 48 m
+8 0 0 8 848 48 848 56 a
+344 56 l
+344 0.964859 l
+8 0 0 8 352 0.964859 352 -7.03514 a
+856 -7.03514 l
 h
 </path>
 </group>
-<group matrix="1 0 0 1 16 0">
-<path stroke="black" fill="KITblue15">
--8 120 m
-848 120 l
-8 0 0 -8 848 112 856 112 a
-856 81.8444 l
-0 81.8444 l
-8 0 0 -8 0 89.8444 -8 89.8444 a
+<group layer="epsilon">
+<path stroke="black" fill="KITred15">
+24 56 m
+288 56 l
+8 0 0 -8 288 48 296 48 a
+296 -5.5655 l
+32 -5.5655 l
+8 0 0 -8 32 2.4345 24 2.4345 a
 h
 </path>
 </group>
-<path layer="epsilon" matrix="1 0 0 1 0 16" stroke="black" pen="1">
-512 208 m
-480 224
-448 208 c
-</path>
-<group matrix="1 0 0 1 16 16">
-<path stroke="gray1" fill="gray3">
-904 224 m
-8 0 0 8 896 224 896 232 a
-488 232 l
-488 189.758 l
-8 0 0 8 496 189.758 496 181.758 a
-904 181.758 l
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+432 376 l
+8 0 0 -8 432 368 440 368 a
+440 261.008 l
+16 261.008 l
+8 0 0 -8 16 269.008 8 269.008 a
 h
 </path>
 </group>
-<group matrix="1 0 0 1 0 16">
-<path stroke="black" fill="KITblue15">
--8 232 m
-448 232 l
-8 0 0 -8 448 224 456 224 a
-456 167.342 l
-0 167.342 l
-8 0 0 -8 0 175.342 -8 175.342 a
+<text matrix="1 0 0 1 -432 0" transformations="translations" pos="448 368" stroke="black" type="minipage" width="416" height="54.9916" depth="44.0004" valign="top">\textbf{Universell Quantifizierende Aussagen}: \\
+Für alle Objekte $O$ gilt: \\
+&apos;&apos;$O$ hat $A$&apos;&apos; $\Rightarrow$ &apos;&apos;$O$ hat $B$&apos;&apos; \\
+oder $\forall O\in\text{Menge}: A\Rightarrow B$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="41.9402" depth="30.9246" valign="top">z.B. &quot;Für jedes $z\in \mathbb Z$ gilt: Wenn $z$ gerade ist, ist auch $z^2$ gerade&quot; \\
+$\forall z\in \mathbb Z: z\text{ gerade }\Rightarrow z^2\text{ gerade}$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="15.358" depth="4.2846" valign="top" style="item">Objekt $O: z\in \mathbb Z$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="15.469" depth="4.4178" valign="top" style="item">Eigenschaft $A: z$ gerade</text>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="16.8964" depth="5.8164" valign="top" style="item">Eigenschaft $B: z^2$ gerade</text>
+<group layer="gamma" matrix="1 0 0 1 448 0">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+432 376 l
+8 0 0 -8 432 368 440 368 a
+440 261.008 l
+16 261.008 l
+8 0 0 -8 16 269.008 8 269.008 a
 h
 </path>
 </group>
-<path layer="gamma" stroke="black" pen="1">
-592 288 m
-544 288
-528 304 c
-</path>
-<group matrix="1 0 0 1 32 -16">
-<path stroke="gray1" fill="gray3">
-888 320 m
-8 0 0 8 880 320 880 328 a
-536 328 l
-536 308.056 l
-8 0 0 8 544 308.056 544 300.056 a
-888 300.056 l
-h
-</path>
-</group>
-<group>
-<path stroke="black" fill="KITblue15">
--8 328 m
-528 328 l
-8 0 0 -8 528 320 536 320 a
-536 289.882 l
-0 289.882 l
-8 0 0 -8 0 297.882 -8 297.882 a
-h
-</path>
-</group>
-<text layer="alpha" matrix="1 0 0 1 0 112" transformations="translations" pos="0 272" stroke="black" type="minipage" width="896" height="27.2949" depth="16.2504" valign="top">Beispiel: Sei $G = (V,E)$ ein Baum (Kreisfrei + Zusammenhängend) mit $n = \vert V \vert$ Knoten \\ \impl G hat n-1 Kanten</text>
-<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">Wir machen Induktion über die Anzahl der Knoten $n = \vert V \vert$</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="576 320" stroke="black" type="minipage" width="336" height="10.964" depth="0.98" valign="top" size="small">Immer dazu schreiben über was ihr induziert</text>
-<text layer="delta" matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="576" height="15.1648" depth="4.0848" valign="top">I.A. ($n = 1$)</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="29.8546" depth="18.8034" valign="top">Der einzige Graph $G = (V,E)$ mit einem Knoten hat genau 0 Kanten \impl $\vert E \vert = 0 = 1 -1 = n -1$ \cm</text>
-<text layer="epsilon" matrix="1 0 0 1 -16 48" transformations="translations" pos="528 192" stroke="black" type="minipage" width="400" height="22.102" depth="12.14" valign="top" size="small">Begründet wie ihr auf euren Induktionsanfang kommt, einfach nur $w = \epsilon$ hinschreiben reicht da nicht</text>
-<text layer="zeta" matrix="1 0 0 1 0 48" transformations="translations" pos="0 128" stroke="black" type="minipage" width="544" height="15.1648" depth="4.0848" valign="top">I.S. ($n \geq 2$)</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 144" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top">Wir zeigen das für einen Beliebigen Baum $G =(V,E)$ mit $n$ Knoten $\vert E \vert = \vert V \vert -1$ gilt.</text>
-<text layer="eta" matrix="1 0 0 1 16 48" transformations="translations" pos="0 64" stroke="black" type="minipage" width="848" height="16.6056" depth="5.55" valign="top">Dabei benutzen wir, dass $\vert E&apos; \vert = \vert V&apos; \vert -1$ bereits für alle Bäume $G&apos; = (V&apos;,E&apos;)$ mit $\vert V&apos; \vert &lt; n$ gilt</text>
-<text layer="theta" matrix="1 0 0 1 48 -16" transformations="translations" pos="0 64" stroke="black" type="minipage" width="784" height="23.842" depth="13.88" valign="top" size="small">Hier ist wichtig das die I.V. wirklichn nur für kleinere Bäume gilt und nicht \enquote{Für alle Bäume gilt bereits \dots}. Das es für alle Bäume gilt zeigen wir mit der Induktion erst</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="448 368" stroke="black" type="minipage" width="416" height="54.9916" depth="44.0004" valign="top">\textbf{Existenziell Quantifizierende Aussagen}: \\
+Für mindestens ein Objekt $O$ gilt: \\
+&apos;&apos;$O$ hat $A$&apos;&apos;&apos; \\
+oder $\exists O\in\text{Menge}: A$</text>
+<text layer="delta" matrix="1 0 0 1 448 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="400" height="28.4005" depth="17.3826" valign="top">z.B. &quot;Für ein $z\in \mathbb Z$ gilt: $z^2=z$&quot; \\
+$\exists z\in \mathbb Z:z^2=z$</text>
+<text matrix="1 0 0 1 448 -32" transformations="translations" pos="16 208" stroke="black" type="minipage" width="400" height="15.358" depth="4.2846" valign="top" style="item">Objekt $O: z\in \mathbb Z$</text>
+<text matrix="1 0 0 1 448 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="16.8964" depth="5.8164" valign="top" style="item">Eigenschaft $z^2=z$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="464 128" stroke="black" type="minipage" width="352" height="26.1538" depth="15.1182" valign="top">Hier ist ein Beispiel schon ein Beweis: \\
+z.B. $z=0$ oder $z=1$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 0" transformations="translations" pos="16 48" stroke="black" type="minipage" width="256" height="28.2939" depth="17.2716" valign="top">Wie man das hier beweist, besprechen wir gleich</text>
+<text layer="zeta" matrix="1 0 0 1 32 0" transformations="translations" pos="320 48" stroke="black" type="minipage" width="496" height="29.0309" depth="18.0042" valign="top">Oft mit Quantoren schwer zu lesen. Was bedeutet das? \\
+$\forall n_0\in \mathbb N\text{ }\exists n\in \mathbb N: n&gt;n_0, \neg \exists m\in [n-1] \setminus \{1\}: m|n$</text>
+<text layer="eta" transformations="translations" pos="352 48" stroke="black" type="minipage" width="496" height="29.3395" depth="18.315" valign="top">$\forall n_0\in \mathbb N\text{ }\exists n\in \mathbb N: n&gt;n_0, \neg \exists m\in [n-1] \setminus \{1\}: m|n$ \\
+Es gibt unendlich viele Primzahlen</text>
 </page>
-<page title="Induktion auf Graphen">
+<page title="Direkter Beweis">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+512 376 l
+8 0 0 -8 512 368 520 368 a
+520 234.346 l
+16 234.346 l
+8 0 0 -8 16 242.346 8 242.346 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="68.2894" depth="57.3648" valign="top">Ein direkter Beweis ist eine Kette aus Folgepfeilen: \\
+$A$ gilt für $O$\\$\Rightarrow A_2$ gilt für $O$\\$\Rightarrow ...$\\$ \Rightarrow B$ gilt für $O$</text>
+<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="496" height="68.447" depth="57.498" valign="top">Sei $z\in \mathbb Z$ beliebig, aber fest \\
+$z$ ist gerade \\
+$\Rightarrow z = 2\cdot k$ für ein $k\in \mathbb Z$ \\
+$\Rightarrow z^2=(2k)^2=2\cdot (2k^2)$ für ein $k\in \mathbb Z$ \\
+$\Rightarrow z^2$ ist gerade</text>
+</page>
+<page title="Kontraposition">
 <layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<layer name="eta"/>
-<layer name="theta"/>
-<layer name="iota"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta" active="theta"/>
-<view layers="alpha beta gamma delta epsilon zeta eta theta iota" active="iota"/>
-<path layer="epsilon" stroke="black" pen="1">
-352 176 m
-320 192
-288 176 c
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+384 376 l
+8 0 0 -8 384 368 392 368 a
+392 313.573 l
+16 313.573 l
+8 0 0 -8 16 321.573 8 321.573 a
+h
 </path>
-<group>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="368" height="28.7335" depth="17.6934" valign="top">Beweise $\neg B \Rightarrow \neg A$ statt $A \Rightarrow B$ \\
+$\neg B \Rightarrow \neg A\equiv A \Rightarrow B$ (s. Aussagenlogik)</text>
+<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="368" height="95.0648" depth="84.2046" valign="top">Beispiel von vorhin: \\
+Sei $z\in \mathbb Z$ beliebig, aber fest \\
+$\neg (z^2\text{ ist gerade})$ \\
+$\Rightarrow z^2$ ist ungerade \\
+$\Rightarrow z^2$ ist nicht durch $4$ teilbar \\
+$\Rightarrow z = \pm \sqrt {z^2}$ enthält keinen Faktor 2 \\
+$\Rightarrow \neg(z\text{ ist gerade})$
+</text>
+<text layer="gamma" transformations="translations" pos="16 112" stroke="black" type="minipage" width="368" height="28.2939" depth="17.2716" valign="top">Durch Kontraposition stimmt also auch die ursprüngliche Aussage</text>
+</page>
+<page title="Widerspruchsbeweis">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+416 376 l
+8 0 0 -8 416 368 424 368 a
+424 287.548 l
+16 287.548 l
+8 0 0 -8 16 295.548 8 295.548 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="41.7271" depth="30.7248" valign="top">\textbf{Widerspruchsbeweis}: \\
+Gegenteil von der Aussage $\Rightarrow$ Widerspruch \\
+Also muss Aussage gelten</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="528" height="94.7984" depth="83.9382" valign="top">z.B. Es gibt keine größte rationale Zahl. \\
+Angenommen: $z\in \mathbb{R}$ ist die größte rationale Zahl. \\
+Da $z\in \mathbb{R}$ ist auch $z+1\in \mathbb R$ \\
+$\Rightarrow z$ ist nicht die höchste rationale Zahl, da $z+1&gt;z$ \\
+$\Rightarrow$ Widerspruch! \\
+Also kann unsere Annahme nicht gestimmt haben. \\
+Es gibt also keine größte rationale Zahl. </text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="alpha">
 <path stroke="gray1" fill="gray3">
-840 192 m
-8 0 0 8 832 192 832 200 a
-344 200 l
-344 154.278 l
-8 0 0 8 352 154.278 352 146.278 a
-840 146.278 l
+456 368 m
+8 0 0 8 448 368 448 376 a
+8 376 l
+8 196.17 l
+8 0 0 8 16 196.17 16 188.17 a
+456 188.17 l
 h
 </path>
 </group>
-<group>
-<path stroke="black" fill="KITblue15">
-8 200 m
-288 200 l
-8 0 0 -8 288 192 296 192 a
-296 161.882 l
-16 161.882 l
-8 0 0 -8 16 169.882 8 169.882 a
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="432" height="91.3552" depth="80.475" valign="top">Beweise diese Aussage drei Mal: \\
+&apos;&apos;Wenn $n\in \mathbb Z$ gerade ist, ist auch $n+2$ gerade.&apos;&apos; \\
+Nutze dabei je einmal:
+\begin{itemize}
+\item Direkter Beweis
+\item Kontraposition
+\item Widerspruchsbeweis
+\end{itemize}</text>
+<text layer="beta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="432" height="94.7429" depth="83.8716" valign="top">\textbf{Direkt}: \\
+$n$ ist gerade \\
+$\Rightarrow n$ lässt sich als $2k$ für ein $k\in \mathbb Z$ schreiben \\
+$\Rightarrow 2(k+1) = n+2$ \\
+$\Rightarrow n+2$ lässt sich als $2l$ für ein $l=k+1\in \mathbb Z$ schreiben \\
+$\Rightarrow n+2$ ist gerade</text>
+<text layer="gamma" matrix="1 0 0 1 448 192" transformations="translations" pos="16 176" stroke="black" type="minipage" width="416" height="134.514" depth="123.721" valign="top">\textbf{Kontraposition}: \\
+$\neg$($n+2$ ist gerade) \\
+$\Rightarrow n+2$ ist ungerade und lässt sich als $2k + 1$ für ein $k\in \mathbb Z$ schreiben \\
+$\Rightarrow n+2-2=2(k-1) + 1 = n$ \\
+$\Rightarrow n$ lässt sich als $2l+1$ für ein $l=k-1\in \mathbb Z$ schreiben \\
+$\Rightarrow n$ ist ungerade \\
+Per Kontraposition gilt also die zu zeigende Aussage</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="gamma" matrix="1 0 0 1 0 -16">
+<path stroke="black" fill="KITred15">
+8 184 m
+416 184 l
+8 0 0 -8 416 176 424 176 a
+424 126.362 l
+16 126.362 l
+8 0 0 -8 16 134.362 8 134.362 a
 h
 </path>
 </group>
-<path layer="eta" matrix="1 0 0 1 0 -16" stroke="black" pen="1">
-608 128 m
-672 128
-688 96 c
-</path>
-<group matrix="1 0 0 1 16 -16">
-<path stroke="black" fill="KITblue15">
--8 152 m
-608 152 l
-8 0 0 -8 608 144 616 144 a
-616 113.882 l
-0 113.882 l
-8 0 0 -8 0 121.882 -8 121.882 a
+<group layer="beta">
+<path stroke="black" fill="KITred15">
+456 104 m
+896 104 l
+8 0 0 -8 896 96 904 96 a
+904 42.4345 l
+464 42.4345 l
+8 0 0 -8 464 50.4345 456 50.4345 a
 h
 </path>
 </group>
-<group matrix="1 0 0 1 80 -16">
+<group layer="alpha">
 <path stroke="gray1" fill="gray3">
-824 96 m
-8 0 0 8 816 96 816 104 a
-456 104 l
-456 83.528 l
-8 0 0 8 464 83.528 464 75.528 a
-824 75.528 l
+456 368 m
+8 0 0 8 448 368 448 376 a
+8 376 l
+8 196.17 l
+8 0 0 8 16 196.17 16 188.17 a
+456 188.17 l
 h
 </path>
 </group>
-<group layer="alpha" matrix="1 0 0 1 16 32">
-<path stroke="gray1" fill="gray3">
-904 352 m
-8 0 0 8 896 352 896 360 a
-392 360 l
-392 329.844 l
-8 0 0 8 400 329.844 400 321.844 a
-904 321.844 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 0 256" transformations="translations" pos="0 128" stroke="black" type="minipage" width="544" height="13.229" depth="2.1534" valign="top">I.S. continued</text>
-<text matrix="1 0 0 1 -48 48" transformations="translations" pos="464 336" stroke="black" type="minipage" width="496" height="16.6056" depth="5.55" valign="top">$\forall G = (V&apos;,E&apos;) (\vert V&apos; \vert &lt; n): $ G ist Baum \impl $\vert E&apos; \vert = \vert V&apos; \vert -1$ </text>
-<text layer="beta" matrix="1 0 0 1 16 16" transformations="translations" pos="0 336" stroke="black" type="minipage" width="480" height="13.4221" depth="2.3532" valign="top">Sei $e=uv$ eine Kante in $G$</text>
-<text matrix="1 0 0 1 16 16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="640" height="14.763" depth="3.7074" valign="top">Sei $G&apos; = G-e$</text>
-<text layer="gamma" matrix="1 0 0 1 16 16" transformations="translations" pos="0 272" stroke="black" type="minipage" width="736" height="16.115" depth="5.0394" valign="top">$G&apos;$ ist nicht mehr zusammenhängend</text>
-<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 208" stroke="black" type="minipage" width="896" height="13.95" depth="3.98" valign="top" size="small">(Wenn $G&apos;$ zusammenhängend gäbe es einen Pfad von $u$ nach $v$ in $G&apos;$, dieser wäre mit $e$ ein Kreis in $G$, $G$ ist aber Kreisfrei)</text>
-<text layer="delta" matrix="1 0 0 1 16 16" transformations="translations" pos="0 208" stroke="black" type="minipage" width="848" height="15.469" depth="4.4178" valign="top">\impl In $G$ gibt es min. 2 Zusammhangskomponenten $G_1$ und $G_2$. Eine Enthält $v$ und die andere $u$.</text>
-<text layer="zeta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="608" height="16.5901" depth="5.5278" valign="top">Also gilt nach IV: $\vert E(G_1) = \vert V(G_1)\vert -1 $ und $\vert E(G_2) = \vert V(G_2)\vert -1 $</text>
-<text layer="eta" matrix="1 0 0 1 80 -16" transformations="translations" pos="464 96" stroke="black" type="minipage" width="352" height="11.232" depth="1.24" valign="top" size="small">Schreibt immer dazu wenn ihr die IV verwendet</text>
-<text layer="theta" matrix="1 0 0 1 16 -48" transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">\impl $\vert E \vert = \vert E(G_1) + \vert E(G_2) \vert + \vert \set{e}\vert = \vert V(G_1) -1\vert  + \vert V(G_2)-1 \vert +1$</text>
-<text layer="iota" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 32" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top">Und da aus G keine Knoten gelöscht wurden $\vert E\vert = n-2 +1 = n-1 $ \cm</text>
-<text layer="delta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top">\impl $V(G_1) &lt; n$ und $V(G_2) &lt; n$</text>
-<text layer="epsilon" transformations="translations" pos="352 192" stroke="black" type="minipage" width="480" height="23.842" depth="13.88" valign="top" size="small">Wir versuchen also immer unser \enquote{großes} Problem in kleinere Probleme zu zerlegen, für die wir die Lösung schon kennen</text>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="432" height="91.3552" depth="80.475" valign="top">Beweise diese Aussage drei Mal: \\
+&apos;&apos;Wenn $n\in \mathbb Z$ gerade ist, ist auch $n+2$ gerade.&apos;&apos; \\
+Nutze dabei je einmal:
+\begin{itemize}
+\item Direkter Beweis
+\item Kontraposition
+\item Widerspruchsbeweis
+\end{itemize}</text>
+<text matrix="1 0 0 1 448 192" transformations="translations" pos="16 176" stroke="black" type="minipage" width="432" height="134.514" depth="123.721" valign="top">\textbf{Widerspruchsbeweis}: \\
+Angenommen, die Aussage sei falsch. Dann existiert eine gerade Zahl $n\in \mathbb Z$, sodass $n+2$ ungerade ist. \\
+$\Rightarrow \exists k \in \mathbb{Z}$ mit $n = 2k$ \\
+$\Rightarrow n+2 = 2k + 2 = 2(k+1)$ ist auch gerade. \\
+$\Rightarrow$ Widerspruch! \\
+Also gibt es keine gerade Zahl, bei der $n+2$ ungerade ist. \\
+$\Rightarrow$ Die ursprüngliche Aussage ist wahr</text>
+<text layer="beta" transformations="translations" pos="464 96" stroke="black" type="minipage" width="432" height="28.2939" depth="17.2716" valign="top">Hässlich und unnötig kompliziert \\
+Überlegt euch, welche Beweisform ihr benutzt</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="26.3425" depth="15.2958" valign="top">$\mathbf{\Rightarrow}$ \textbf{Gute Kommunikation ist der wichtigste Teil an einem Beweis!}</text>
 </page>
 </ipe>

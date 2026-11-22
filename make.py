@@ -33,6 +33,9 @@ def createTut(tut: str, noclicks: bool = False) -> None:
 
     includedFiles = [f"content/{chapter}.ipe" for chapter in config["content"]]
 
+    if "todo.ipe" in os.listdir(tut):
+        includedFiles = [f"{tut}/todo.ipe"] + includedFiles
+
     # find pre and post files
     if "pre.ipe" in os.listdir(tut):
         includedFiles = [f"{tut}/pre.ipe"] + includedFiles
@@ -56,6 +59,8 @@ def createTut(tut: str, noclicks: bool = False) -> None:
     )
     special_char_map = {ord('ä'):'ae', ord('ü'):'ue', ord('ö'):'oe', ord('ß'):'ss',ord('Ä'):'Ae', ord('Ü'):'ue', ord('Ö'):'Oe'}
     basename = config["title"].translate(special_char_map)
+    print('\n--------------------\n', intermediate)
+    print(config["title"].translate(special_char_map))
 
     # edit preamble
     subtitle = config["description"].translate(special_char_map)
@@ -91,17 +96,37 @@ def createTut(tut: str, noclicks: bool = False) -> None:
             ],
             check=True,
         )
-    else:
         subprocess.run(
             [
-                "ipetoipe",
-                "-pdf",
-                "-export",
-                intermediate + ".ipe",
-                f"{tut}/{basename}.pdf",
+                "rm",
+                intermediate + "-print.ipe",
             ],
             check=True,
         )
+    subprocess.run(
+        [
+            "ipetoipe",
+            "-pdf",
+            "-export",
+            intermediate + ".ipe",
+            f"{tut}/{basename}.pdf",
+        ],
+        check=True,
+    )
+    subprocess.run(
+        [
+            "rm",
+            intermediate + ".ipe",
+        ],
+        check=True,
+    )
+    subprocess.run(
+        [
+            "rm",
+            f"{tut}/xkcd.png",
+        ],
+        check=True,
+    )
 
 
 parser = argparse.ArgumentParser()

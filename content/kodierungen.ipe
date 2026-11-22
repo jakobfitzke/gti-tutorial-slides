@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20240919195433" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.3.1">
+<info created="D:20220409132243" modified="D:20261122152441" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -3731,12 +3731,629 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Thema">
+<page title="Zahlensysteme">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 368" stroke="black" type="minipage" width="259.651" height="12.9115" depth="1.8204" valign="baseline" style="item">Text 1</text>
-<text matrix="1.38776 0 0 1 0 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="276.509" height="12.9115" depth="1.8204" valign="baseline" style="item">Text 2</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
+<text layer="alpha" transformations="translations" pos="64 320" stroke="black" type="minipage" width="448" height="14.6653" depth="3.5742" valign="top" size="large">Was ist das für eine Zahl:</text>
+<text transformations="translations" pos="64 272" stroke="black" type="minipage" width="112" height="22.2768" depth="11.844" valign="top" size="Huge">1111</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 3}</text>
+</page>
+<page title="Zahlensysteme">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="eta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta" active="theta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta theta iota" active="iota"/>
+<group layer="iota">
+<path stroke="black" fill="KITred15">
+8 104 m
+688 104 l
+8 0 0 -8 688 96 696 96 a
+696 4.6083 l
+16 4.6083 l
+8 0 0 -8 16 12.6083 8 12.6083 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="240" height="12.9115" depth="1.8204" valign="top">Korrekte Anworten wären:</text>
+<text layer="beta" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Eintausend-Einhundert-Elf oder $1111_{10}$ (Dezimal)</text>
+<text layer="gamma" transformations="translations" pos="0 320" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Fünfzehn oder $15_{10}$ oder $1111_2$ (Binär/Dual)
+</text>
+<text layer="delta" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Vierzig oder $40_{10}$ oder $1111_3$ (Ternär)
+</text>
+<text layer="epsilon" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Viertausend-dreihundert-Neunundsechzig oder $4.369_{10}$ oder $1111_{16}$ (Hexadezimal)
+</text>
+<text layer="zeta" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Minus Eins oder $-1_{10}$ oder $1111_2$ (Dual im Zweierkomplement)
+</text>
+<text layer="eta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Minus Sieben oder $-7_{10}$ oder $1111_2$ (Dual in Betragsdarstellung)
+</text>
+<text layer="theta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="896" height="15.1648" depth="4.0848" valign="top" style="item">Null, ja 0, aber das kommt dann (deutlich) später</text>
+<text layer="iota" transformations="translations" pos="0 128" stroke="black" type="minipage" width="896" height="11.7616" depth="0.6882" valign="top" style="item">…</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="256" height="13.078" depth="2.0202" valign="top">\bfseries Wir merken</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="640" height="15.0516" depth="3.9738" valign="top" style="item">Eine Zahl als Zeichenkette hat mehrere mögliche Interpretationen</text>
+<text transformations="translations" pos="16 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Eine Zahl als mathematischer Begriff hat mehrere Darstellungsformen</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 4}</text>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 232 m
+640 232 l
+8 0 0 -8 640 224 648 224 a
+648 193.882 l
+16 193.882 l
+8 0 0 -8 16 201.882 8 201.882 a
+h
+</path>
+</group>
+<group layer="alpha" matrix="1 0 0 1 0 160">
+<path stroke="black" fill="KITgreen15">
+8 216 m
+496 216 l
+8 0 0 -8 496 208 504 208 a
+504 84.5062 l
+16 84.5062 l
+8 0 0 -8 16 92.5062 8 92.5062 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="14.8807" depth="3.7962" valign="top">{$Z_n$}</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="432" height="15.3313" depth="4.2402" valign="top">Das \textbf{Alphabet} $Z_n$ enthält die \textbf{Zeichen} \z{0} bis \z{n-1}</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">$Z_n \neq \mathbb [n]$: das eine sind Zeichen, das andere Zahlen</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="624" height="16.5901" depth="5.5278" valign="top">$Z_{16} = \{\z{0}, \z{1}, \z{2}, \z{3}, \z{4}, \z{5}, \z{6}, \z{7}, \z{8}, \z{9}, \z{A}, \z{B}, \z{C}, \z{D}, \z{E}, \z{F}\}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
+<text layer="alpha" matrix="1 0 0 1 0 160" transformations="translations" pos="16 112" stroke="black" type="minipage" width="480" height="16.5901" depth="5.5278" valign="top">(und $[n]$ fängt bei $1$ an)</text>
+</page>
+<page title="Von Wörtern zu Zahlen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="beta">
+<path stroke="black" fill="KITgreen15">
+8 312 m
+608 312 l
+8 0 0 -8 608 304 616 304 a
+616 161.15 l
+16 161.15 l
+8 0 0 -8 16 169.15 8 169.15 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="12.9115" depth="1.8204" valign="top" style="item">Wir haben: Ein Wort</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="12.9115" depth="1.8204" valign="top" style="item">Wir wollen: Das Wort in eine Zahl umwandeln</text>
+<text layer="beta" transformations="translations" pos="16 304" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top">\bfseries $Num_k(w&apos;)$ zur Basis $k$</text>
+<text matrix="1 0 0 1 0 128" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.3392" depth="5.2836" valign="top">$Num_k: Z_k^* \rightarrow \mathbb N_0$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 6}</text>
+<text layer="beta" matrix="1 0 0 1 16 80" transformations="translations" pos="16 144" stroke="black" type="minipage" width="352" height="16.5901" depth="5.5278" valign="top">$Num_k(\epsilon) = 0$</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="16 192" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top">$Num_k(wx) = k\cdot Num_k(w) + Num_k(x)$</text>
+<text matrix="1 0 0 1 -32 0" transformations="translations" pos="464 192" stroke="black" type="minipage" width="176" height="18.1529" depth="7.104" valign="top">$(w \in Z_k^+, x \in Z_k)$</text>
+<text layer="gamma" matrix="1 0 0 1 0 6" transformations="translations" pos="16 144" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top">Da ein Alphabet endlich ist, können wir $Num_k(x)$ für $x\in Z_k$ z.B. als Tabelle angeben</text>
+<text transformations="translations" pos="16 120" stroke="black" type="minipage" width="72" height="15.938" depth="5.98" valign="top" size="small">\strut{}$x\in Z_{10}$</text>
+<text matrix="1 0 0 1 80 0" transformations="translations" pos="16 120" stroke="black" type="minipage" width="80" height="15.938" depth="5.98" valign="top" size="small">\strut{}$Num_{10}(x)$</text>
+<text matrix="1 0 0 1 0 -20.8" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 0</text>
+<text matrix="1 0 0 1 0 -41.6" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 1</text>
+<text matrix="1 0 0 1 0 -62.4" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 2</text>
+<text matrix="1 0 0 1 0 -83.2" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 3</text>
+<text matrix="1 0 0 1 0 -104" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 4</text>
+<text matrix="1 0 0 1 80 -20.8" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}0</text>
+<text matrix="1 0 0 1 80 -41.6" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}1</text>
+<text matrix="1 0 0 1 80 -62.4" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}2</text>
+<text matrix="1 0 0 1 80 -83.2" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}3</text>
+<text matrix="1 0 0 1 80 -104" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}4</text>
+<text matrix="1 0 0 1 192 0" transformations="translations" pos="16 120" stroke="black" type="minipage" width="72" height="15.938" depth="5.98" valign="top" size="small">\strut{}$x\in Z_{10}$</text>
+<text matrix="1 0 0 1 272 0" transformations="translations" pos="16 120" stroke="black" type="minipage" width="80" height="15.938" depth="5.98" valign="top" size="small">\strut{}$Num_{10}(x)$</text>
+<text matrix="1 0 0 1 192 -20.8" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 5</text>
+<text matrix="1 0 0 1 192 -41.6" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 6</text>
+<text matrix="1 0 0 1 192 -62.4" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 7</text>
+<text matrix="1 0 0 1 192 -83.2" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 8</text>
+<text matrix="1 0 0 1 192 -104" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}\z 9</text>
+<text matrix="1 0 0 1 272 -20.8" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}5</text>
+<text matrix="1 0 0 1 272 -41.6" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}6</text>
+<text matrix="1 0 0 1 272 -62.4" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}7</text>
+<text matrix="1 0 0 1 272 -83.2" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}8</text>
+<text matrix="1 0 0 1 272 -104" transformations="translations" pos="16 120" stroke="black" type="minipage" width="56" height="15.938" depth="5.98" valign="top" size="small">\strut{}9</text>
+<path stroke="black">
+192 112 m
+192 0 l
+</path>
+</page>
+<page title="Von Wörtern zu Zahlen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page gamma epsilon" active="epsilon"/>
+<group layer="alpha" matrix="1 0 0 1 64 16">
+<path stroke="black" fill="KITgreen15">
+440 376 m
+832 376 l
+8 0 0 -8 832 368 840 368 a
+840 190.743 l
+448 190.743 l
+8 0 0 -8 448 198.743 440 198.743 a
+h
+</path>
+</group>
+<group>
+<path stroke="black" fill="KITblue15">
+8 376 m
+368 376 l
+8 0 0 -8 368 368 376 368 a
+376 237.03 l
+16 237.03 l
+8 0 0 -8 16 245.03 8 245.03 a
+h
+</path>
+</group>
+<group layer="delta">
+<path stroke="gray1" fill="gray3">
+216 64 m
+8 0 0 8 208 64 208 72 a
+8 72 l
+8 41.8821 l
+8 0 0 8 16 41.8821 16 33.8821 a
+216 33.8821 l
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+216 208 m
+8 0 0 8 208 208 208 216 a
+8 216 l
+8 188.895 l
+8 0 0 8 16 188.895 16 180.895 a
+216 180.895 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="352" height="66.9596" depth="56.0106" valign="top">\begin{align*}
+Num_2(\z{11}) &amp;= 2 \cdot  Num_2(\z{1}) + Num_2(\z{1})\\
+&amp;= 2\cdot 1 +1\\
+&amp;= 3
+\end{align*}</text>
+<text layer="beta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_4(321)$?</text>
+<text layer="gamma" matrix="1 0 0 1 0 80" transformations="translations" pos="16 176" stroke="black" type="minipage" width="528" height="84.9905" depth="74.0814" valign="top">\begin{align*}
+Num_4(\z{321}) &amp;= 4 \cdot Num_4(\z{32}) + Num_4(\z 1)\\
+&amp;= 4 \cdot  ( 4 \cdot (Num_4(\z 3) + Num_4(\z 2)) + Num_4(\z 1)\\
+&amp;= 4^2 \cdot Num_4(\z 3) + 4\cdot Num_4(\z 2) + Num_4(\z 1)\\
+&amp;= 57
+\end{align*}
+</text>
+<text layer="delta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_{16}(\z{B2})$?</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -64" transformations="translations" pos="16 176" stroke="black" type="minipage" width="400" height="66.9596" depth="56.0106" valign="top">\begin{align*}
+Num_{16}(\z{B2}) &amp;= 16 \cdot  Num_{16} (\z B) + Num_{16}(\z 2)\\
+&amp;= 16 \cdot 11 +2\\
+&amp;= 178
+\end{align*}
+</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
+<text layer="alpha" matrix="1 0 0 1 496 80" transformations="translations" pos="16 304" stroke="black" type="minipage" width="384" height="16.6056" depth="5.55" valign="top">\bfseries $Num_k(w&apos;)$ zur Basis $k$</text>
+<text matrix="1 0 0 1 496 208" transformations="translations" pos="16 128" stroke="black" type="minipage" width="384" height="16.3392" depth="5.2836" valign="top">$Num_k: Z_k^* \rightarrow \mathbb N_0$</text>
+<text matrix="1 0 0 1 512 160" transformations="translations" pos="16 144" stroke="black" type="minipage" width="352" height="16.5901" depth="5.5278" valign="top">$Num_k(\epsilon) = 0$</text>
+<text matrix="1 0 0 1 512 80" transformations="translations" pos="16 192" stroke="black" type="minipage" width="368" height="16.5901" depth="5.5278" valign="top">$Num_k(wx) = k\cdot Num_k(w) + Num_k(x)$</text>
+<text matrix="1 0 0 1 64 48" transformations="translations" pos="464 192" stroke="black" type="minipage" width="176" height="18.1529" depth="7.104" valign="top">$(w \in Z_k^+, x \in Z_k)$</text>
+</page>
+<page title="Von Zahlen zu Wörtern">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 344 m
+512 344 l
+8 0 0 -8 512 336 520 336 a
+520 193.208 l
+16 193.208 l
+8 0 0 -8 16 201.208 8 201.208 a
+h
+</path>
+</group>
+<group layer="delta" matrix="1 0 0 1 0 -16">
+<path stroke="gray1" fill="gray3">
+696 112 m
+8 0 0 8 688 112 688 120 a
+504 120 l
+504 92.7504 l
+8 0 0 8 512 92.7504 512 84.7504 a
+696 84.7504 l
+h
+</path>
+</group>
+<group matrix="1 0 0 1 0 -64">
+<path stroke="black" fill="KITred15">
+8 168 m
+480 168 l
+8 0 0 -8 480 160 488 160 a
+488 129.882 l
+16 129.882 l
+8 0 0 -8 16 137.882 8 137.882 a
+h
+</path>
+</group>
+<group layer="gamma" matrix="1 0 0 1 0 -16">
+<path stroke="black" fill="KITred15">
+248 344 m
+464 344 l
+8 0 0 -8 464 336 472 336 a
+472 313.554 l
+256 313.554 l
+8 0 0 -8 256 321.554 248 321.554 a
+h
+</path>
+</group>
+<path stroke="black" fill="KITred15">
+80 288 m
+80 272 l
+112 272 l
+112 288 l
+h
+</path>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="14.8807" depth="3.7962" valign="top" style="item">$Num_k$ hat eine Umkehrfunktion</text>
+<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="496" height="72.8537" depth="61.938" valign="top">$Repr_k: \mathbb N_0 \rightarrow Z_k^*\\
+\\
+n \mapsto \left\{ \begin{array}{ll}
+\texttt{\color{blue}n} &amp; \vert  n &lt; k\\
+Repr_k(n \text{ div } k) \cdot Repr_k(n \text{ mod } k) &amp; \vert  n\geq k
+\end{array}\right.\\
+\\
+Repr_{10}(x) = \text{Die Darstellung von x im Dezimalsystem}
+$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 208" stroke="black" type="minipage" width="560" height="15.0516" depth="3.9738" valign="top" style="item">$x$ div $y$ ist die ganzzahlige Division von $x$ durch $y$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 176" stroke="black" type="minipage" width="464" height="15.1582" depth="4.107" valign="top" style="item">$x$ mod $y$ liefert den Rest dieser Division</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+<path layer="gamma" stroke="black" pen="0.8" arrow="normal/normal">
+248 311.078 m
+192 280
+128 280
+112 280 c
+</path>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="256 336" stroke="black" type="minipage" width="208" height="12.206" depth="2.24" valign="top" size="small">Das ist das \textbf{Zeichen} $\texttt{\color{blue}n} \in Z_k$</text>
+<text layer="delta" matrix="1 0 0 1 -16 -32" transformations="translations" pos="32 128" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top">Achtung: $Repr_k(Num_k(w))$ ist manchmal $\neq w$</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="512 112" stroke="black" type="minipage" width="192" height="15.1648" depth="4.0848" valign="top">Wann passiert das?</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="512 64" stroke="black" type="minipage" width="272" height="13.1357" depth="2.0646" valign="top">Wenn $w$ führende Nullen hat</text>
+</page>
+<page>
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+8 376 m
+576 376 l
+8 0 0 -8 576 368 584 368 a
+584 71.1514 l
+16 71.1514 l
+8 0 0 -8 16 79.1514 8 79.1514 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="336" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="149.788" depth="139.061" valign="top">\begin{align*}
+Repr_2(55) &amp;= Repr_2(55 \text{ div } 2) \cdot Repr_2(55 \text{ mod } 2)\\
+&amp;= Repr_2(27 \text{ div } 2) \cdot Repr_2(27 \text{ mod } 2) \cdot \z 1 \\
+&amp;= Repr_2(13 \text{ div } 2) \cdot Repr_2 (13 \text{ mod } 2) \cdot \z 1 \cdot \z 1\\
+&amp;= Repr_2(6 \text{ div } 2) \cdot Repr_2 (6 \text{ mod } 2) \cdot \z 1 \cdot \z 1\cdot \z 1\\
+&amp;= Repr_2(3 \text{ div } 2) \cdot Repr_2(3 \text{ mod } 2) \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
+&amp;= Repr_2(1 \text{ div } 2) \cdot Repr_2(1 \text{ mod } 2) \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1 \\
+&amp;= Repr_2(0) \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1\\
+&amp;= \z 0 \cdot \z 1 \cdot \z 1 \cdot \z 0 \cdot \z 1 \cdot \z 1\cdot \z 1
+\end{align*}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="alpha_hide0"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha alpha_hide0 pagenumbers_page" active="alpha_hide0"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<view layers="pagenumbers_page beta gamma" active="beta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+232 320 m
+8 0 0 8 224 320 224 328 a
+8 328 l
+8 297.882 l
+8 0 0 8 16 297.882 16 289.882 a
+232 289.882 l
+h
+</path>
+</group>
+<group layer="alpha_hide0">
+<path stroke="gray1" fill="gray3">
+232 368 m
+8 0 0 8 224 368 224 376 a
+8 376 l
+8 345.882 l
+8 0 0 8 16 345.882 16 337.882 a
+232 337.882 l
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_2(75)$?</text>
+<text layer="alpha" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="208" height="16.5901" depth="5.5278" valign="top">Was ist $Repr_{16}(111)$?</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(75) = \z{1001011}$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 352" stroke="black" type="minipage" width="464" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_{16}(111) = \z{6F}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
+</page>
+<page title="Übersetzungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+592 376 l
+8 0 0 -8 592 368 600 368 a
+600 244.34 l
+16 244.34 l
+8 0 0 -8 16 252.34 8 252.34 a
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="black" fill="KITgreen15">
+8 232 m
+544 232 l
+8 0 0 -8 544 224 552 224 a
+552 51.8868 l
+16 51.8868 l
+8 0 0 -8 16 59.8868 8 59.8868 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="128" height="15.0605" depth="3.996" valign="top">\bfseries Komposition</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="29.0309" depth="18.0042" valign="top">Wenn wir zwei Funktionen nacheinander auf eine Eingabe anwenden wollen schreiben wir $f(g(x))$ oder auch $(f \circ g )(x)$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="528" height="15.3757" depth="4.2846" valign="top">Dabei ist $f \circ g$ wieder eine Funktion (Komposition)</text>
+<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="17.2094" depth="6.1494" valign="top">\bfseries Übersetzung</text>
+<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="528" height="52.6606" depth="41.6916" valign="top">Um von einer Zahlendarstellung in eine andere zu kommen finden wir erst mit $Num$ den Wert der Zahl heraus und können dann mit Repr die Zahl in einem beliebigen System darstellen</text>
+<text transformations="translations" pos="16 80" stroke="black" type="minipage" width="496" height="15.8863" depth="4.8174" valign="top">Also z.B. $Trans_{16,2} = Repr_{2} \circ Num_{16}$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="alpha"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+344 368 m
+8 0 0 8 336 368 336 376 a
+8 376 l
+8 321.695 l
+8 0 0 8 16 321.695 16 313.695 a
+344 313.695 l
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="320" height="29.2241" depth="18.204" valign="top">Gebt ein Wort $w \in  Z_2^*$ an, sodass $Num_2(w) = Num_{16}(\z{B3C8})$ gilt</text>
+<text layer="beta" matrix="1 0 0 1 0 -80" transformations="translations" pos="0 384" stroke="black" type="minipage" width="416" height="16.5901" depth="5.5278" valign="top" style="item">$Num_{16}(\z{B3C8}) = {46024}$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -80" transformations="translations" pos="0 352" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top" style="item">$Repr_2(46024) = \z{1011001111001000} = w$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
+</page>
+<page title="Kodierungen">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="gamma_hide0"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma gamma_hide0" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<group layer="zeta">
+<path stroke="black" fill="KITgreen15">
+328 184 m
+576 184 l
+8 0 0 -8 576 176 584 176 a
+584 91.8962 l
+336 91.8962 l
+8 0 0 -8 336 99.8962 328 99.8962 a
+h
+</path>
+</group>
+<use layer="gamma" matrix="1 0 0 1 208 5.33333" name="mark/fdisk(sfx)" pos="592 192" size="normal" stroke="black" fill="white"/>
+<path layer="delta" stroke="black" pen="heavier" arrow="pointed/small">
+672 112 m
+800 197.333 l
+</path>
+<group layer="gamma">
+<path stroke="gray1" fill="gray3">
+200 192 m
+8 0 0 8 192 192 192 200 a
+24 200 l
+24 146.679 l
+8 0 0 8 32 146.679 32 138.679 a
+200 138.679 l
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+512 376 l
+8 0 0 -8 512 368 520 368 a
+520 287.548 l
+16 287.548 l
+8 0 0 -8 16 295.548 8 295.548 a
+h
+</path>
+</group>
+<path layer="gamma" matrix="1 0 0 1 80 -16" stroke="black">
+566 112 m
+-10 0 0 -10 576 112 576 102 a
+608 102 l
+-10 0 0 -10 608 112 618 112 a
+618 272 l
+-10 0 0 -10 608 272 608 282 a
+576 282 l
+-10 0 0 -10 576 272 566 272 a
+h
+</path>
+<use matrix="1 0 0 1 208 16" name="mark/fdisk(sfx)" pos="592 224" size="normal" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 208 -48" name="mark/fdisk(sfx)" pos="592 160" size="normal" stroke="black" fill="white"/>
+<path matrix="1 0 0 1 208 -16" stroke="black">
+566 112 m
+-10 0 0 -10 576 112 576 102 a
+608 102 l
+-10 0 0 -10 608 112 618 112 a
+618 272 l
+-10 0 0 -10 608 272 608 282 a
+576 282 l
+-10 0 0 -10 576 272 566 272 a
+h
+</path>
+<text matrix="1 0 0 1 96 16" transformations="translations" pos="640 304" stroke="black" type="minipage" width="208" height="15.469" depth="4.4178" halign="center" valign="top">Abbildung $f: L_1\rightarrow L_2$</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="672 256" stroke="black" type="label" width="22.5397" height="15.3691" depth="3.3078" halign="center" valign="baseline" style="math">L_1</text>
+<text matrix="1 0 0 1 128 16" transformations="translations" pos="672 256" stroke="black" type="label" width="22.5397" height="15.3691" depth="3.3078" halign="center" valign="baseline" style="math">L_2</text>
+<use matrix="1 0 0 1 208 -37.3333" name="mark/fdisk(sfx)" pos="592 192" size="normal" stroke="black" fill="white"/>
+<path stroke="black" pen="heavier" arrow="pointed/small">
+672 240 m
+800 154.667 l
+</path>
+<path stroke="black" pen="heavier" arrow="pointed/small">
+672 176 m
+800 240 l
+</path>
+<path layer="gamma_hide0" stroke="black" pen="heavier" arrow="pointed/small">
+672 112 m
+800 154.667 l
+</path>
+<use layer="gamma" matrix="1 0 0 1 80 16" name="mark/fdisk(sfx)" pos="592 224" size="normal" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 80 -16" name="mark/fdisk(sfx)" pos="592 192" size="normal" stroke="black" fill="white"/>
+<use matrix="1 0 0 1 80 -48" name="mark/fdisk(sfx)" pos="592 160" size="normal" stroke="black" fill="white"/>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="41.7271" depth="30.7248" valign="top">\textbf{Injektivität}: \\
+Eine Funktion ist \textbf{injektiv}, wenn keine zwei verschiedenen Werte auf den gleichen Wert abgebildet werden</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">$\forall w_1, w_2\in L_1, w_1\neq w_2: f(w_1)\neq f(w_2)$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">$\forall w_1, w_2\in L_1: f(w_1)=f(w_2)\Rightarrow w_1=w_2$</text>
+<text layer="gamma" transformations="translations" pos="32 192" stroke="black" type="minipage" width="160" height="28.1829" depth="17.1384" valign="top">Ist die Funktion rechts injektiv?</text>
+<text transformations="translations" pos="224 176" stroke="black" type="minipage" width="80" height="12.9115" depth="1.8204" valign="top">Nein.</text>
+<path layer="gamma_hide0" matrix="1 0 0 1 216 -29.3333" stroke="orange1" pen="heavier">
+576 176 m
+592 192 l
+</path>
+<path matrix="1 0 0 1 216 -29.3333" stroke="orange1" pen="heavier">
+576 192 m
+592 176 l
+</path>
+<group layer="delta" matrix="1 0 0 1 0 -80">
+<path stroke="gray1" fill="gray3">
+200 192 m
+8 0 0 8 192 192 192 200 a
+24 200 l
+24 146.679 l
+8 0 0 8 32 146.679 32 138.679 a
+200 138.679 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 47.7283 -94.6568" transformations="translations" pos="32 192" stroke="black" type="minipage" width="54.162" height="13.229" depth="2.1534" valign="top">Jetzt?</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -80" transformations="translations" pos="224 176" stroke="black" type="minipage" width="80" height="13.0048" depth="1.9092" valign="top">Ja.</text>
+<text layer="zeta" matrix="1 0 0 1 -16 32" transformations="translations" pos="352 144" stroke="black" type="minipage" width="240" height="43.5586" depth="32.5452" valign="top">Eine injektive Übersetzung $f$ zwischen zwei Sprachen nennt man \textbf{Kodierung}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+512 376 l
+8 0 0 -8 512 368 520 368 a
+520 287.548 l
+16 287.548 l
+8 0 0 -8 16 295.548 8 295.548 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="41.7271" depth="30.7248" valign="top">\textbf{Injektivität}: \\
+Eine Funktion ist \textbf{injektiv}, wenn keine zwei verschiedenen Werte auf den gleichen Wert abgebildet werden</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="15.358" depth="4.2846" valign="top">$f:\mathbb R\to \mathbb R$. Ist $f$ injektiv?</text>
+<text matrix="1 0 0 1 0 -26" transformations="translations" pos="16 240" stroke="black" type="minipage" width="112" height="17.3893" depth="6.327" valign="top">$f(x)=x^2$</text>
+<text matrix="1 0 0 1 0 -58" transformations="translations" pos="16 240" stroke="black" type="minipage" width="112" height="17.3893" depth="6.327" valign="top">$f(x)=x^3$</text>
+<text matrix="1 0 0 1 0 -128" transformations="translations" pos="16 272" stroke="black" type="minipage" width="368" height="15.671" depth="4.6176" valign="top">$f:\mathbb R_+\to \mathbb R$. Ist $f$ injektiv?</text>
+<text matrix="1 0 0 1 0 -122.646" transformations="translations" pos="16 240" stroke="black" type="minipage" width="112" height="17.3893" depth="6.327" valign="top">$f(x)=x^2$</text>
+<text matrix="1 0 0 1 0 -154.646" transformations="translations" pos="16 240" stroke="black" type="minipage" width="112" height="17.2339" depth="6.1494" valign="top">$f(x)=\sqrt{x}$</text>
+<text matrix="1 0 0 1 464 0" transformations="translations" pos="16 272" stroke="black" type="minipage" width="424" height="16.5901" depth="5.5278" valign="top">$A=\{\z 0,\z 1\},f:A^*\to A^*$. Ist $f$ eine Kodierung?</text>
+<text matrix="1 0 0 1 464 -142" transformations="translations" pos="16 240" stroke="black" type="minipage" width="304" height="60.9767" depth="50.0388" valign="top">$f(\eps)=\eps$ \\
+$f(wx)=\begin{cases} f(w)\cdot xx\;|\; x=\z 0 \\ f(w)\cdot x\;|\; x=\z 1 \end{cases}$ \\
+für $w\in A^*, x\in A$</text>
+<path stroke="black" pen="heavier">
+448 0 m
+448 272 l
+</path>
+<text matrix="1 0 0 1 464 0" transformations="translations" pos="16 240" stroke="black" type="minipage" width="304" height="60.9767" depth="50.0388" valign="top">$f(\eps)=\eps$ \\
+$f(wx)=\begin{cases} f(w)\cdot \z{1}\;|\; x=\z 0 \\ f(w)\cdot \z{11}\;|\; x=\z 1 \end{cases}$ \\
+für $w\in A^*, x\in A$</text>
+<text layer="beta" matrix="1 0 0 1 0 -28" transformations="translations" pos="144 240" stroke="black" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top">\textcolor{red1}{Nein}: $f(-1)=f(1)=1$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -30" transformations="translations" pos="144 208" stroke="black" type="minipage" width="48" height="13.0048" depth="1.9092" valign="top">\textcolor{maygreen1}{Ja}</text>
+<text layer="delta" matrix="1 0 0 1 0 -126" transformations="translations" pos="144 240" stroke="black" type="minipage" width="48" height="13.0048" depth="1.9092" valign="top">\textcolor{maygreen1}{Ja}</text>
+<text layer="epsilon" matrix="1 0 0 1 0 -128" transformations="translations" pos="144 208" stroke="black" type="minipage" width="48" height="13.0048" depth="1.9092" valign="top">\textcolor{maygreen1}{Ja}</text>
+<text layer="eta" matrix="1 0 0 1 656 -158.914" transformations="translations" pos="144 208" stroke="black" type="minipage" width="48" height="13.0048" depth="1.9092" valign="top">\textcolor{maygreen1}{Ja}</text>
+<text layer="zeta" matrix="1 0 0 1 656 -8" transformations="translations" pos="144 240" stroke="black" type="minipage" width="80" height="52.5385" depth="41.5806" valign="top">\textcolor{red1}{Nein}: \\
+$f(\z{00})$\\
+$=f(\z 1)$\\
+$=\z{11}$</text>
 </page>
 </ipe>

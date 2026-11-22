@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241022212218" title="Algorithmen 1" author="Joshua Blömer" subject="Tutorium Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251030024238" title="Algorithmen 1" author="Joshua Blömer" subject="Tutorium Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 
 \setcounter{tutweek}{1}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config.tex}
+\input{/opt/gti-slides/tut-config.tex}
 
 </preamble>
 <ipestyle name="kit-basic">
@@ -3745,10 +3745,6 @@ h
 <page title="Ende">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 -32 64" transformations="translations" pos="0 384" stroke="black" type="minipage" width="832" height="145.084" depth="134.354" valign="top" style="center">\newgeometry{top=0px,textwidth=370px,textheight=205px}
-
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{xkcd.png}
-
-\restoregeometry</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="197.276" depth="186.68" valign="top">\newgeometry{top=0px,textwidth=370px,textheight=160px}\centering\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{xkcd.png}\restoregeometry</text>
 </page>
 </ipe>

@@ -1,25 +1,24 @@
 % Einstellungen
-\newcommand{\tutid}{15}
-\newcommand{\name}{Joshua Blömer}
-\newcommand{\email}{joshua.bloemer@student.kit.edu}
-\newcommand{\prestitle}{Tutorium Grundbegriffe der Informatik}
+\newcommand{\tutid}{3}
+\newcommand{\name}{Jakob Fitzke}
+\newcommand{\email}{jakob.fitzke@student.kit.edu}
+\newcommand{\prestitle}{Tutorium Grundlagen der theoretischen Informatik}
 \newcommand{\pressubtitle}{\ifnum\value{tutweek}<10 0\fi\arabic{tutweek} $\,\cdot\,$ \tutinfo}
-\newcommand{\examdate}{03.03.2026}
-\newcommand{\room}{50.34(Infobau) Raum -119}
+\newcommand{\examdate}{22.02.2027}
+\newcommand{\room}{50.34 (Infobau) Raum -119}
 \newcommand{\tuttime}{9:45 - 11:15}
-\newcommand{\tutday}{Dienstag}
+\newcommand{\tutday}{Montag}
 % Datum des ersten Tutoriums
-\SetDate[29/10/2024]
+\SetDate[02/11/2026]
 
 
 \newcounter{dayoffset}
 \setcounter{dayoffset}{7*\value{tutweek}-7}
 
 % Die 5. Woche im SS23 ist vorlesungsfrei
-%\ifnum \value{tutweek} > 4
-%\addtocounter{dayoffset}{7}
-%\fi
-%%%%%%%%
+\ifnum \value{tutweek} > 7
+\addtocounter{dayoffset}{21}
+\fi
 
 \AdvanceDate[\value{dayoffset}]
 

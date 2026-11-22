@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250204154455" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251117175753" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -40,15 +40,15 @@ h
 h
 </path>
 </symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
 <symbol name="mark/circle(sx)" transformations="translations">
 <path fill="sym-stroke">
 0.6 0 0 0.6 0 0 e
 0.4 0 0 0.4 0 0 e
-</path>
-</symbol>
-<symbol name="mark/disk(sx)" transformations="translations">
-<path fill="sym-stroke">
-0.6 0 0 0.6 0 0 e
 </path>
 </symbol>
 <symbol name="mark/fdisk(sfx)" transformations="translations">
@@ -3733,965 +3733,835 @@ h
 </ipestyle>
 <page>
 <layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="22.995" depth="12.537" valign="top" size="Huge" style="center">\bfseries Endliche Automaten</text>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+<text layer="alpha" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="27.5982" depth="17.178" valign="top" size="Huge" style="center">Aussagenlogik</text>
 </page>
-<page title="Endliche Automaten">
+<page title="Grundlagen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 216 m
+576 216 l
+8 0 0 -8 576 208 584 208 a
+584 84.4773 l
+16 84.4773 l
+8 0 0 -8 16 92.4773 8 92.4773 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 208" stroke="black" type="minipage" width="416" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
+<text transformations="translations" pos="16 176" stroke="black" type="minipage" width="416" height="15.2758" depth="4.218" valign="top" style="item">\enquote{Der Apfel ist grün} ist \textbf{wahr}</text>
+<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">\enquote{Dieses Tutorium braucht mehr Studenten} ist \textbf{falsch}</text>
+<text transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="15.2758" depth="4.218" valign="top" style="item">\enquote{Dieser Satz ist falsch} ist keine Aussage</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 357.877 m
+9.6 384 l
+447.6 384 l
+452.6 384
+457.6 379
+457.6 374 c
+457.6 357.877 l
+h
+</path>
+<path fill="KITgreen15">
+457.6 357.877 m
+457.6 249.097 l
+19.6 249.097 l
+14.6 249.097
+9.6 254.097
+9.6 259.097 c
+9.6 357.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 378.63" stroke="white" type="minipage" width="437.26" height="15.0028" depth="3.9294" valign="top">\textbf{Aussage}</text>
+<text transformations="translations" pos="14.9702 352.507" stroke="black" type="minipage" width="437.26" height="55.0471" depth="44.067" valign="top">Aussagen sind Sätze, denen ein eindeutiger Wahrheitswert zugeordnet werden kann, d.h. sie sind &apos;&apos;objektiv&apos;&apos; wahr oder falsch.\\
+ (Zweiwertigkeit der Aussagenlogik)</text>
+</group>
+</page>
+<page title="Grundlagen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="15.2758" depth="4.218" valign="top">Vergesst das (erstmal)! Wir sind Informatiker:</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Aussagen in der Informatik brauchen keine Bedeutung oder Sinn</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="672" height="13.1357" depth="2.0646" valign="top" style="item">Es wird ausschließlich der Wahrheitswert betrachtet.</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">\textbf{Also:} Eine Aussage A ist wahr (oder falsch). Um welche Aussage es sich
+handelt ist egal.</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
+<group layer="beta" matrix="1 0 0 1 -224 48">
+<path fill="KITgreen">
+224 165.877 m
+224 192 l
+697.84 192 l
+702.84 192
+707.84 187
+707.84 182 c
+707.84 165.877 l
+h
+</path>
+<path fill="KITgreen15">
+707.84 165.877 m
+707.84 110.177 l
+234 110.177 l
+229 110.177
+224 115.177
+224 120.177 c
+224 165.877 l
+h
+</path>
+<text transformations="translations" pos="229.37 186.63" stroke="white" type="minipage" width="473.1" height="15.2203" depth="4.1514" valign="top">\textbf{Aussagenvariable}</text>
+<text transformations="translations" pos="229.37 160.507" stroke="black" type="minipage" width="473.1" height="28.5403" depth="17.4936" valign="top">Eine Aussagenvariable steht für eine (elementare) Aussage. Sie kann
+entweder wahr oder falsch sein.</text>
+</group>
+</page>
+<page title="Aussagenlogische Konnektive">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
 8 376 m
 592 376 l
 8 0 0 -8 592 368 600 368 a
-600 137.397 l
-16 137.397 l
-8 0 0 -8 16 145.397 8 145.397 a
+600 112.165 l
+16 112.165 l
+8 0 0 -8 16 120.165 8 120.165 a
 h
 </path>
 </group>
-<text transformations="translations" pos="16 368" stroke="0" type="minipage" width="384" height="13.078" depth="2.0202" valign="top">\bfseries Endlicher Automat</text>
-<text transformations="translations" pos="16 336" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Ein \emph{Endlicher Automat} $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$ ist definiert durch:</text>
-<text transformations="translations" pos="16 304" stroke="0" type="minipage" width="544" height="84.7441" depth="73.8594" valign="top" style="itemize">\item endliche Zustandsmenge $Q$
-\item Anfangszustand $q_0 \in Z$
-\item Eingabealphabet $\Sigma$
-\item Zustandsüberführungsfunktion $\delta: Q \times \Sigma \rightarrow Q$
-\item Menge an akzeptierenden Zuständen $F \subseteq Q$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
-</page>
-<page title="Endliche Automaten">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 16 -27">
+<group layer="beta" matrix="1 0 0 1 0 -16">
 <path stroke="black" fill="KITred15">
--8 232 m
-560 232 l
-8 0 0 -8 560 224 568 224 a
-568 196.741 l
-0 196.741 l
-8 0 0 -8 0 204.741 -8 204.741 a
+8 120 m
+448 120 l
+8 0 0 -8 448 112 456 112 a
+456 26.2214 l
+16 26.2214 l
+8 0 0 -8 16 34.2214 8 34.2214 a
 h
 </path>
 </group>
-<text matrix="1 0 0 1 -16 304" transformations="translations" pos="16 80" stroke="0" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">Wir geben Automaten meistens grafisch an</text>
-<text matrix="1 0 0 1 0 6" transformations="translations" pos="0 352" stroke="0" type="minipage" width="848" height="17.0518" depth="5.9718" valign="top" style="item">Zustände sind Knoten und Übergänge sind gerichtete Kanten in einem
-Graphen</text>
-<text matrix="1 0 0 1 0 7" transformations="translations" pos="0 320" stroke="0" type="minipage" width="640" height="15.2758" depth="4.218" valign="top" style="item">Knotenbeschriftung: Zustand</text>
-<text matrix="1 0 0 1 0 12" transformations="translations" pos="0 288" stroke="0" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Kantenbeschriftung: Eingabesymbol</text>
-<text matrix="1 0 0 1 0 -11" transformations="translations" pos="0 256" stroke="0" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top" style="item">\bfseries Der Startzustand wird mit einem Pfeil gekennzeichnet</text>
-<text matrix="1 0 0 1 16 -27" transformations="translations" pos="0 224" stroke="0" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Das wird leider oft vergessen und gibt immer Abzug</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
-<text layer="alpha" matrix="1 0 0 1 0 16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="14.9184" depth="3.8628" valign="top" style="item">Endzustände werden doppelt umkreist</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.2203" depth="4.1514" valign="top">\bfseries Aussagenlogische Konnektive</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="28.5403" depth="17.4936" valign="top">Seien G und H Aussagevariablen oder Formeln. Dann kann man wie folgt größere
+Formeln konstruieren:</text>
+<text matrix="1 0 0 1 0 -23" transformations="translations" pos="16 304" stroke="black" type="minipage" width="576" height="85.8652" depth="74.9694" valign="top" style="itemize">\item$(\neg G)$ heißt \enquote{nicht G}
+\item $(G \wedge H)$ heißt \enquote{G und H}
+\item $(G \vee H)$ heißt \enquote{G oder H}
+\item $(G\Rightarrow H)$ heißt \enquote{G impliziert H}
+\item $(G \Leftrightarrow H) \coloneqq (G \Rightarrow H)\wedge(H \Rightarrow G)$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="16 112" stroke="black" type="minipage" width="304" height="15.0028" depth="3.9294" valign="top">\bfseries Achtung</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="432" height="29.2285" depth="18.1818" valign="top">$(G \Leftrightarrow H)$ ist nur eine Abkürzung und bedeutet \enquote{G impliziert H und H impliziert G}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
 </page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta delta" active="beta"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-888 144 m
-8 0 0 8 880 144 880 152 a
-312 152 l
-312 100.197 l
-8 0 0 8 320 100.197 320 92.1972 a
-888 92.1972 l
-h
-</path>
-</group>
-<path layer="alpha" matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-111.583 209.744 m
-197.118 284.221 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-31.1754 187.622 m
-64.0002 188.416 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-113.438 169.128 m
-196.793 92.3483 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-243.881 92.8944 m
-330.628 166.312 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-246.462 288.658 m
-329.668 209.925 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-376.875 185.393 m
-512.059 186.69 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-207.902 326.102 m
-192 368
-256 368
-234.657 325.299 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-238.202 54.1389 m
-240 16
-192 16
-203.124 53.9217 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-566.636 200.001 m
-608 224
-608 160
-567.628 179.639 c
-</path>
-<text matrix="1 0 0 1 -37.3882 -21.3882" transformations="translations" pos="608 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -4.28939 -18.4737" transformations="translations" pos="192 384" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -27.8525 5.92498" transformations="translations" pos="208 0" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="128 128" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="288 112" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -32.7697 -15.3948" transformations="translations" pos="288 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -24.3026 -21.5527" transformations="translations" pos="128 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -36.6184 -13.6908" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text layer="beta" matrix="1 0 0 1 -16 16" transformations="translations" pos="336 128" stroke="0" type="minipage" width="560" height="27.4192" depth="16.3836" valign="top">In welchen Zuständen endet der Automat bei den Eingaben:\\
-$\epsilon, aab, a, aba$?</text>
-<text layer="delta" matrix="1 0 0 1 -240 -222" transformations="translations" pos="560 304" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_\epsilon$</text>
-<text matrix="1 0 0 1 -160 -190" transformations="translations" pos="560 272" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_f$</text>
-<text matrix="1 0 0 1 -80 -158" transformations="translations" pos="560 240" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_a$
-</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
-<text layer="beta" matrix="1 0 0 1 50.0873 73.7429" transformations="translations" pos="128 224" stroke="0" type="label" width="20.8724" height="9.8457" depth="4.2846" valign="baseline" style="math">q_a</text>
-<path matrix="0.891359 0 0 0.891359 60.1678 100.859" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 177.901 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f</text>
-<path matrix="0.891359 0 0 0.891359 188.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 370.48 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.0866" height="9.8457" depth="4.2846" valign="baseline" style="math">q_r</text>
-<path matrix="0.891359 0 0 0.891359 380.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 49.5913 -150.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.8648" height="9.8457" depth="4.2846" valign="baseline" style="math">q_b</text>
-<path matrix="0.891359 0 0 0.891359 60.168 -123.141" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 -77.6275 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.3019" height="9.8457" depth="4.2846" valign="baseline" style="math">q_\epsilon</text>
-<path matrix="0.891359 0 0 0.891359 -67.8322 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text layer="delta" matrix="1 0 0 1 0 -158" transformations="translations" pos="560 240" stroke="0" type="minipage" width="64" height="13.9105" depth="2.8416" valign="top" style="item">$q_r$
-</text>
-</page>
-<page title="Verallgemeinerte Zustandsüberführungsfunktionen ">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-624 376 l
-8 0 0 -8 624 368 632 368 a
-632 245.205 l
-16 245.205 l
-8 0 0 -8 16 253.205 8 253.205 a
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="0" type="minipage" width="608" height="26.5934" depth="15.54" valign="top">$\delta_*: Q \times \Sigma^* \rightarrow Q$ gibt den Zustand an, der durch die Eingabe eines Wortes erreicht wird und ist definiert durch:
-</text>
-<text matrix="1 0 0 1 0 7" transformations="translations" pos="16 336" stroke="0" type="minipage" width="432" height="50.3896" depth="39.405" valign="top">\begin{align*}
-\delta_*(q,\epsilon) &amp;= q\\
-\forall w \in \Sigma^* : \forall x \in \Sigma : \delta_*(q,wx) &amp;= \delta(\delta_*(q,w),x)
-\end{align*}</text>
-<group layer="beta" matrix="1 0 0 1 0 -176">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-624 376 l
-8 0 0 -8 624 368 632 368 a
-632 245.205 l
-16 245.205 l
-8 0 0 -8 16 253.205 8 253.205 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 0 -176" transformations="translations" pos="16 368" stroke="0" type="minipage" width="608" height="26.5934" depth="15.54" valign="top">$\delta_{**}: Q \times \Sigma^* \rightarrow Q$ gibt \emph{alle} Zustände an, die durch die Eingabe eines Wortes durchlaufen werden und ist definiert durch:
-</text>
-<text matrix="1 0 0 1 0 -169" transformations="translations" pos="16 336" stroke="0" type="minipage" width="528" height="50.3896" depth="39.405" valign="top">\begin{align*}
-\delta_{**}(q,\epsilon) &amp;= q\\
-\forall w \in \Sigma^* : \forall x \in \Sigma : \delta_{**}(q,wx) &amp;= \delta_{**}(q,w)\cdot \delta_*(q,wx)
-\end{align*}</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page gamma" active="alpha"/>
-<path layer="alpha" matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-111.583 209.744 m
-197.118 284.221 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
--0.708929 188.297 m
-32.0002 188.416 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-113.438 169.128 m
-196.793 92.3483 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-243.881 92.8944 m
-330.628 166.312 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-246.462 288.658 m
-329.668 209.925 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-376.875 185.393 m
-512.059 186.69 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-207.902 326.102 m
-192 368
-256 368
-234.657 325.299 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-238.202 54.1389 m
-240 16
-192 16
-203.124 53.9217 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-566.636 200.001 m
-608 224
-608 160
-567.628 179.639 c
-</path>
-<text matrix="1 0 0 1 -37.3882 -21.3882" transformations="translations" pos="608 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -4.28939 -18.4737" transformations="translations" pos="192 384" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -27.8525 5.92498" transformations="translations" pos="208 0" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="128 128" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="288 112" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -32.7697 -15.3948" transformations="translations" pos="288 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -24.3026 -21.5527" transformations="translations" pos="128 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -36.6184 -13.6908" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text layer="beta" transformations="translations" pos="640 384" stroke="0" type="minipage" width="240" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_*(q_\epsilon,aab)=$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="640 384" stroke="0" type="minipage" width="272" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_{**}(q_\epsilon,aab)=$</text>
-<text layer="gamma" transformations="translations" pos="640 384" stroke="0" type="minipage" width="240" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_*(q_\epsilon,aab)=q_f$</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="640 384" stroke="0" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top" style="item">$\delta_{**}(q_\epsilon,aab)=q_\epsilon q_a q_a q_f$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
-<text layer="alpha" matrix="1 0 0 1 50.0873 73.7429" transformations="translations" pos="128 224" stroke="0" type="label" width="20.8724" height="9.8457" depth="4.2846" valign="baseline" style="math">q_a</text>
-<path matrix="0.891359 0 0 0.891359 60.1678 100.859" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 370.48 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.0866" height="9.8457" depth="4.2846" valign="baseline" style="math">q_r</text>
-<path matrix="0.891359 0 0 0.891359 380.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 177.901 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f </text>
-<path matrix="0.891359 0 0 0.891359 188.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 49.5913 -150.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.8648" height="9.8457" depth="4.2846" valign="baseline" style="math">q_b</text>
-<path matrix="0.891359 0 0 0.891359 60.168 -123.141" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 -77.6275 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.3019" height="9.8457" depth="4.2846" valign="baseline" style="math">q_\epsilon</text>
-<path matrix="0.891359 0 0 0.891359 -67.8322 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</page>
-<page title="Akzeptanzverhalten">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<group layer="alpha">
-<path stroke="black" fill="KITgreen15">
-8 376 m
-880 376 l
-8 0 0 -8 880 368 888 368 a
-888 212.75 l
-16 212.75 l
-8 0 0 -8 16 220.75 8 220.75 a
-h
-</path>
-</group>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="16 336" stroke="0" type="minipage" width="864" height="29.2285" depth="18.1818" valign="top">Ein Automat $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$ \emph{akzeptiert} ein Wort w, wenn er nach dem Abarbeiten des Worts in einem akzeptierenden Zustand landet</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top">Formal: $\mathpzc A ~\mathrm{ akzeptiert }~ w \Leftrightarrow \delta_*(q_0, w) \in F$</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 256" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top">Die Sprache eines Automaten $\mathpzc A$ ist definiert als die Menge aller Wörter, die $\mathpzc A$ akzeptiert</text>
-<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top">Analog für $\mathpzc A$ lehnt w ab</text>
-<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Eine Sprache $L$ heißt regulär,  wenn es einen Automaten $\mathpzc A $ gibt, sodass $L(\mathpzc A) = L
-$</text>
-<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="880" height="16.5901" depth="5.5278" valign="top">Es gibt Sprachen die nicht von einem Automaten erkannt werden können (z.B. $\set{a^n b^n  \given n \in \mathbb N_0}$)</text>
-</page>
-<page title="Beispiel">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<group layer="alpha">
-<path stroke="gray1" fill="gray3">
-888 320 m
-8 0 0 8 880 320 880 328 a
-520 328 l
-520 272.965 l
-8 0 0 8 528 272.965 528 264.965 a
-888 264.965 l
-h
-</path>
-</group>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-111.583 209.744 m
-197.118 284.221 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
--0.708929 188.297 m
-32.0002 188.416 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-113.438 169.128 m
-196.793 92.3483 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-243.881 92.8944 m
-330.628 166.312 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-246.462 288.658 m
-329.668 209.925 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-376.875 185.393 m
-512.059 186.69 l
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-207.902 326.102 m
-192 368
-256 368
-234.657 325.299 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-238.202 54.1389 m
-240 16
-192 16
-203.124 53.9217 c
-</path>
-<path matrix="1 0 0 1 -32 0" stroke="0" pen="1" arrow="normal/normal">
-566.636 200.001 m
-608 224
-608 160
-567.628 179.639 c
-</path>
-<text matrix="1 0 0 1 -37.3882 -21.3882" transformations="translations" pos="608 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -4.28939 -18.4737" transformations="translations" pos="192 384" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -27.8525 5.92498" transformations="translations" pos="208 0" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="128 128" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="288 112" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -32.7697 -15.3948" transformations="translations" pos="288 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -24.3026 -21.5527" transformations="translations" pos="128 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -36.6184 -13.6908" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 177.901 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f </text>
-<path matrix="0.891359 0 0 0.891359 188.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 370.48 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.0866" height="9.8457" depth="4.2846" valign="baseline" style="math">q_r</text>
-<path matrix="0.891359 0 0 0.891359 380.168 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 -77.6275 -38.257" transformations="translations" pos="128 224" stroke="0" type="label" width="20.3019" height="9.8457" depth="4.2846" valign="baseline" style="math">q_\epsilon</text>
-<path matrix="0.891359 0 0 0.891359 -67.8322 -11.1409" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 49.5913 -150.257" transformations="translations" pos="128 224" stroke="0" type="label" width="21.8648" height="9.8457" depth="4.2846" valign="baseline" style="math">q_b</text>
-<path matrix="0.891359 0 0 0.891359 60.168 -123.141" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="1 0 0 1 50.0873 73.7429" transformations="translations" pos="128 224" stroke="0" type="label" width="20.8724" height="9.8457" depth="4.2846" valign="baseline" style="math">q_a</text>
-<path matrix="0.891359 0 0 0.891359 60.1678 100.859" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path stroke="0" pen="1">
-24.9851 0 0 24.9851 316.524 188.524 e
-</path>
-<text matrix="1 0 0 1 -80 -32" transformations="translations" pos="608 352" stroke="0" type="minipage" width="352" height="29.0309" depth="18.0042" valign="top">Dieser Automat akzeptiert die Sprache \\
-$(\{a\}^+\cdot\{b\} ) \cup (\{b\}^+\cdot\{a\}) $</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 23}</text>
-</page>
-<page title="Anmerkungen">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<group layer="beta">
-<path stroke="gray1" fill="gray3">
-616 224 m
-8 0 0 8 608 224 608 232 a
-472 232 l
-472 208.902 l
-8 0 0 8 480 208.902 480 200.902 a
-616 200.902 l
-h
-</path>
-</group>
-<text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 368" stroke="black" type="minipage" width="736" height="17.0518" depth="5.9718" valign="top" style="item">Automaten sind immer \textbf{vollständig} d.h. es sind immer alle Übergänge definiert</text>
-<text matrix="1 0 0 1 -16 48" transformations="translations" pos="16 288" stroke="black" type="minipage" width="864" height="30.2941" depth="19.2696" valign="top" style="item">Wenn ein Wort während der Bearbeitung abgelehnt werden soll, muss es einen Übergang in einen \emph{Müllzustand/Fehlerzustand} geben, aus dem man nicht wieder rauskommt</text>
-<path layer="beta" matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-111.583 209.744 m
-197.118 284.221 l
-</path>
-<path matrix="0.711449 0 0 0.711449 15.7954 -3.12296" stroke="0" pen="1" arrow="normal/normal">
--0.708929 188.297 m
-32.0002 188.416 l
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-113.438 169.128 m
-196.793 92.3483 l
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-243.881 92.8944 m
-330.628 166.312 l
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-246.462 288.658 m
-329.668 209.925 l
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-376.875 185.393 m
-512.059 186.69 l
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-207.902 326.102 m
-192 368
-256 368
-234.657 325.299 c
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-238.202 54.1389 m
-240 16
-192 16
-203.124 53.9217 c
-</path>
-<path matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" stroke="0" pen="1" arrow="normal/normal">
-566.636 200.001 m
-608 224
-608 160
-567.628 179.639 c
-</path>
-<text matrix="0.711449 0 0 0.711449 -10.8044 -18.3396" transformations="translations" pos="608 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="0.711449 0 0 0.711449 12.7438 -16.2661" transformations="translations" pos="192 384" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="0.711449 0 0 0.711449 -4.02019 1.09236" transformations="translations" pos="208 0" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" transformations="translations" pos="128 128" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="0.711449 0 0 0.711449 -6.97093 -3.12296" transformations="translations" pos="288 112" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="0.711449 0 0 0.711449 -7.51853 -14.0756" transformations="translations" pos="288 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="0.711449 0 0 0.711449 -1.49462 -18.4566" transformations="translations" pos="128 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="0.711449 0 0 0.711449 -10.2567 -12.8633" transformations="translations" pos="416 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="0.711449 0 0 0.711449 139.298 -31.1432" transformations="translations" pos="128 224" stroke="0" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f </text>
-<path matrix="0.634156 0 0 0.634156 149.667 -11.0491" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="0.711449 0 0 0.711449 276.475 -31.1432" transformations="translations" pos="128 224" stroke="0" type="label" width="20.0866" height="9.8457" depth="4.2846" valign="baseline" style="math">q_r</text>
-<path matrix="0.634156 0 0 0.634156 286.266 -11.0491" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="0.711449 0 0 0.711449 -42.3616 -31.1432" transformations="translations" pos="128 224" stroke="0" type="label" width="20.3019" height="9.8457" depth="4.2846" valign="baseline" style="math">q_\epsilon</text>
-<path matrix="0.634156 0 0 0.634156 -32.4637 -11.0491" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="0.711449 0 0 0.711449 47.9226 -110.826" transformations="translations" pos="128 224" stroke="0" type="label" width="21.8648" height="9.8457" depth="4.2846" valign="baseline" style="math">q_b</text>
-<path matrix="0.634156 0 0 0.634156 58.6019 -90.7315" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<text matrix="0.711449 0 0 0.711449 48.4186 48.539" transformations="translations" pos="128 224" stroke="0" type="label" width="20.8724" height="9.8457" depth="4.2846" valign="baseline" style="math">q_a</text>
-<path matrix="0.634156 0 0 0.634156 58.6018 68.6331" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path matrix="0.711449 0 0 0.711449 15.7954 -3.12296" stroke="0" pen="1">
-24.9851 0 0 24.9851 316.524 188.524 e
-</path>
-<path matrix="1 0 0 1 -9 -9" stroke="black" pen="1" arrow="normal/normal">
-480 224 m
-400 160 l
-</path>
-<text transformations="translations" pos="480 224" stroke="black" type="minipage" width="128" height="13.078" depth="2.0202" valign="top">\emph{Müllzustand}</text>
-</page>
-<page title="Laufzeiten">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="alpha"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="beta"/>
-<group layer="alpha">
-<path stroke="gray1" fill="gray3">
-680 384 m
-8 0 0 8 672 384 672 392 a
-8 392 l
-8 359.786 l
-8 0 0 8 16 359.786 16 351.786 a
-680 351.786 l
-h
-</path>
-</group>
-<group layer="gamma" matrix="1 0 0 1 0 -48">
-<path stroke="gray1" fill="gray3">
-696 240 m
-8 0 0 8 688 240 688 248 a
-8 248 l
-8 193.966 l
-8 0 0 8 16 193.966 16 185.966 a
-696 185.966 l
-h
-</path>
-</group>
-<text layer="alpha" matrix="1 0 0 1 0 288" transformations="translations" pos="16 96" stroke="black" type="minipage" width="656" height="17.6423" depth="6.5712" valign="top">Gebt einen Automaten an, der alle Wörter in $\set{a^i b^j \given i,j \in  \mathbb N_0}$ akzeptiert</text>
-<path layer="beta" matrix="1 0 0 1 16 -48" stroke="black" pen="1">
-22.6274 0 0 22.6274 64 320 e
-</path>
-<path matrix="1 0 0 1 16 -48" stroke="black" pen="1" arrow="normal/normal">
-0 320 m
-41.3788 320.531 l
-</path>
-<text matrix="1 0 0 1 10.3434 -51.29" transformations="translations" pos="64 320" stroke="black" type="label" width="11.3131" height="10.8647" depth="4.2846" valign="baseline">q</text>
-<path matrix="1 0 0 1 16 -48" stroke="black" pen="1">
-19.8116 -0.125944 0.125944 19.8116 64 320 e
-</path>
-<text transformations="translations" pos="128 304" stroke="black" type="minipage" width="416" height="28.4071" depth="17.3826" valign="top">(Es war nicht gefordert, dass nur die Wörter in der Sprache akzeptiert werden)</text>
-<text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 240" stroke="black" type="minipage" width="672" height="28.5403" depth="17.4936" valign="top">Gebt im O Kalkül an, wie lange ein Automat braucht, um für ein Wort $w$ und eine reguläre Sprache $L$ zu entscheiden, ob $w\in L$</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="16 160" stroke="black" type="minipage" width="704" height="42.6062" depth="31.5906" valign="top">$\O{\vert w\vert}$. \\
-Ein Übergang braucht konstante Zeit, für jedes Zeichen wird genau \\
-ein Übergang gemacht und am Ende wird geprüft, ob $q \in F$</text>
-<path layer="beta" matrix="1 0 0 1 16 16" stroke="black" pen="1" arrow="normal/normal">
-80 272 m
-112 336
-16 336
-48 272 c
-</path>
-<text matrix="1 0 0 1 -13 -8" transformations="translations" pos="80 320" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-</page>
-<page title="Baukasten für Automaten">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<path layer="beta" matrix="1 0 0 1 0 -32" stroke="black" pen="1">
-22.6274 0 0 22.6274 64 256 e
-</path>
-<path layer="gamma" matrix="1 0 0 1 -63.6636 -47.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 320 272 e
-</path>
-<path matrix="1 0 0 1 -47.6636 -63.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 -63.6636 -31.7984" stroke="black" pen="1" arrow="normal/normal">
-342.626 255.718 m
-441.373 256.035 l
-</path>
-<path layer="beta" matrix="1 0 0 1 0 -32" stroke="black" pen="1" arrow="normal/normal">
-80 272 m
-96 320
-32 320
-48 272 c
-</path>
-<path layer="gamma" matrix="1 0 0 1 -63.6636 -31.7984" stroke="black" pen="1" arrow="normal/normal">
-480 272 m
-496 320
-432 320
-448 272 c
-</path>
-<path layer="beta" matrix="1 0 0 1 0 -32" stroke="black" pen="1">
-19.9553 -1.2187 1.2187 19.9553 64 256 e
-</path>
-<path layer="gamma" matrix="1 0 0 1 336.336 -31.7984" stroke="black" pen="1">
-19.9553 -1.2187 1.2187 19.9553 64 256 e
-</path>
-<path layer="beta" matrix="1 0 0 1 0 -160" stroke="gray2" pen="1">
-22.6274 0 0 22.6274 64 256 e
-</path>
-<text matrix="1 0 0 1 -10.6227 -34.7805" transformations="translations" pos="64 128" stroke="gray2" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f</text>
-<path matrix="1 0 0 1 0 -32" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-48 112 m
-32 64
-96 64
-80 112 c
-</path>
-<text matrix="1 0 0 1 -14 -42" transformations="translations" pos="64 64" stroke="gray2" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<path layer="delta" matrix="1 0 0 1 256.326 -159.68" stroke="black" pen="1">
-22.6274 0 0 22.6274 320 272 e
-</path>
-<path matrix="1 0 0 1 272.326 -239.68" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 0 -32" stroke="black" pen="1" arrow="normal/normal">
-592 160 m
-704.326 192.32 l
-</path>
-<path matrix="1 0 0 1 256.326 -207.68" stroke="black" pen="1" arrow="normal/normal">
-480 272 m
-496 320
-432 320
-448 272 c
-</path>
-<path matrix="1 0 0 1 656.326 -207.68" stroke="black" pen="1">
-19.9553 -1.2187 1.2187 19.9553 64 256 e
-</path>
-<path matrix="1 0 0 1 272.326 -111.68" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 256.326 -79.6801" stroke="black" pen="1" arrow="normal/normal">
-480 272 m
-496 320
-432 320
-448 272 c
-</path>
-<path matrix="1 0 0 1 656.326 -79.6801" stroke="black" pen="1">
-19.9553 -1.2187 1.2187 19.9553 64 256 e
-</path>
-<path matrix="1 0 0 1 0 -32" stroke="black" pen="1" arrow="normal/normal">
-592 128 m
-704 96 l
-</path>
-<text matrix="1 0 0 1 -2.67359 -140.68" transformations="translations" pos="640 288" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -2.67359 -145.68" transformations="translations" pos="640 208" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -3.67359 -149.68" transformations="translations" pos="720 256" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -3.67359 -149.68" transformations="translations" pos="720 384" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<path layer="gamma" matrix="1 0 0 1 256.336 -175.798" stroke="gray2" pen="1">
-22.6274 0 0 22.6274 64 256 e
-</path>
-<text matrix="1 0 0 1 245.714 -50.579" transformations="translations" pos="64 128" stroke="gray2" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f</text>
-<path matrix="1 0 0 1 256.336 -47.7984" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-48 112 m
-32 64
-96 64
-80 112 c
-</path>
-<text matrix="1 0 0 1 242.336 -57.7984" transformations="translations" pos="64 64" stroke="gray2" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<path layer="delta" matrix="1 0 0 1 768.326 -143.68" stroke="gray2" pen="1">
-22.6274 0 0 22.6274 64 256 e
-</path>
-<text matrix="1 0 0 1 757.703 -18.4611" transformations="translations" pos="64 128" stroke="gray2" type="label" width="21.2454" height="9.8457" depth="4.2846" valign="baseline" style="math">q_f</text>
-<path matrix="1 0 0 1 768.326 -15.6801" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-48 112 m
-32 64
-96 64
-80 112 c
-</path>
-<text matrix="1 0 0 1 754.326 -25.6801" transformations="translations" pos="64 64" stroke="gray2" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<path matrix="1 0 0 1 0.326412 -143.68" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-736 304 m
-816 272 l
-</path>
-<path matrix="1 0 0 1 0.326412 -143.68" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-736 208 m
-816 240 l
-</path>
-<text matrix="1 0 0 1 0.326412 -151.68" transformations="translations" pos="768 304" stroke="gray2" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0.326412 -133.68" transformations="translations" pos="768 192" stroke="gray2" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<path layer="gamma" matrix="1 0 0 1 -63.6636 -31.7984" stroke="black" pen="1" arrow="normal/normal">
-256 256 m
-297.373 256 l
-</path>
-<path layer="delta" matrix="1 0 0 1 256.326 -143.68" stroke="black" pen="1" arrow="normal/normal">
-256 256 m
-297.373 256 l
-</path>
-<path layer="beta" matrix="1 0 0 1 -256 -32" stroke="black" pen="1" arrow="normal/normal">
-256 256 m
-297.373 256 l
-</path>
-<path layer="gamma" matrix="1 0 0 1 0 -32" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-384 240 m
-336 128 l
-</path>
-<path matrix="1 0 0 1 0 -32" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-272 240 m
-304 128 l
-</path>
-<path layer="beta" matrix="1 0 0 1 0 -32" stroke="gray2" dash="dashed" pen="1" arrow="normal/normal">
-63.0774 233.391 m
-63.0654 150.608 l
-</path>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Zeichnet jeweils einen Automaten für die folgenden Sprachen:</text>
-<text matrix="1 0 0 1 32 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="48" height="16.5901" depth="5.5278" valign="top">$\set{a}^*$</text>
-<text matrix="1 0 0 1 304 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="48" height="16.9808" depth="5.9274" valign="top">$\set{a}^+$</text>
-<text matrix="1 0 0 1 656 32" transformations="translations" pos="16 304" stroke="black" type="minipage" width="128" height="16.9808" depth="5.9274" valign="top">$\set{a}^+ \cup \set{b}^+$</text>
-<text layer="beta" matrix="1 0 0 1 -5 -7" transformations="translations" pos="64 288" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -11 0" transformations="translations" pos="80 160" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text layer="gamma" matrix="1 0 0 1 0 -10" transformations="translations" pos="320 240" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -4 -7" transformations="translations" pos="400 288" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -14 0" transformations="translations" pos="384 144" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 10 0" transformations="translations" pos="256 144" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text layer="beta" matrix="1 0 0 1 -10.3785 -2.78055" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_1</text>
-<text layer="gamma" matrix="1 0 0 1 181.958 -2.57895" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_1</text>
-<text matrix="1 0 0 1 325.957 -2.57898" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_2</text>
-<text layer="delta" matrix="1 0 0 1 501.958 -114.579" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_1</text>
-<text matrix="1 0 0 1 645.957 -50.4607" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_2</text>
-<text matrix="1 0 0 1 645.957 -178.461" transformations="translations" pos="64 224" stroke="black" type="label" width="20.757" height="9.8457" depth="4.2846" valign="baseline" style="math">q_3</text>
-</page>
-<page title="Tipps zum Automaten konstruieren">
-<layer name="alpha"/>
-<view layers="alpha" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="800" height="28.2939" depth="17.2716" valign="top" style="item">Macht euch klar, was ihr in jedem Zustand über das bereits eingelesene Wort wisst und wie ihr von dort aus weiter gehen müsst</text>
-<text matrix="1 0 0 1 0 -12" transformations="translations" pos="0 304" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Wenn ihr einen Automaten konstruiert habt, führt ihn auf Beispieleingaben aus </text>
-<text matrix="1 0 0 1 0 20" transformations="translations" pos="0 304" stroke="black" type="minipage" width="704" height="15.2758" depth="4.218" valign="top" style="item">Achtet auf edge cases (leeres Wort etc.)</text>
-<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="720" height="15.1648" depth="4.0848" valign="top" style="subitem">Dafür könnt ihr Bspw. JFLAP benutzen</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="16 368" stroke="0" type="minipage" width="736" height="27.2949" depth="16.2504" valign="top" style="item">Zeichne einen Automaten mit $\Sigma=\{a,b\}$, der alle Wörter akzeptiert, bei denen die Anzahl der a durch 5 teilbar ist.</text>
-<text transformations="translations" pos="16 304" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
-denen nirgends zwei b hintereinander vorkommen</text>
-<text transformations="translations" pos="16 240" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
-denen irgendwo das Teilwort abab vorkommt.</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="16 192" stroke="0" type="minipage" width="736" height="29.3395" depth="18.315" valign="top" style="item">Zeichne einen Automaten mit $\Sigma = \{a, b\}$, der alle Wörter akzeptiert, in
-denen nirgends das Teilwort abab vorkommt.</text>
-<text transformations="translations" pos="16 112" stroke="0" type="minipage" width="736" height="15.2758" depth="4.218" valign="top" style="item">Welche Sprache wird vom folgenden Automaten erkannt?</text>
-<group matrix="1 0 0 1 116.736 4.53148">
-<text matrix="0.731436 0 0 0.731436 365.64 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_3</text>
-<path matrix="0.651972 0 0 0.651972 374.979 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 77.8242 0">
-<text matrix="0.731436 0 0 0.731436 237.64 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_2</text>
-<path matrix="0.651972 0 0 0.651972 246.979 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 16 0">
-<text matrix="0.731436 0 0 0.731436 -34.36 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_0</text>
-<path matrix="0.651972 0 0 0.651972 -25.0209 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path stroke="0" pen="1" arrow="normal/normal">
-105.416 55.7658 m
-231.204 55.6606 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-272.393 55.3736 m
-398.036 55.1526 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-439.279 55.5373 m
-564.767 55.5777 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-567.311 46.6744 m
-505.521 23.249
-437.224 42.6107 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-401.148 40.8856 m
-325.83 24.1611
-269.787 41.6561 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-31.3773 51.2678 m
-64.0138 51.4263 l
-</path>
-<text matrix="1 0 0 1 3.19248 -9.12138" transformations="translations" pos="139.466 69.9667" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 5.9289 -11.4017" transformations="translations" pos="310.035 73.6152" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 18.6988 -10.4896" transformations="translations" pos="478.325 71.3349" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 4.56069 -6.76069" transformations="translations" pos="477.869 45.3389" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -3.19954 -10.8517" transformations="translations" pos="326.454 46.2511" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<group>
-<text matrix="0.731436 0 0 0.731436 148.552 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1</text>
-<path matrix="0.651972 0 0 0.651972 157.891 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path stroke="0" pen="1">
-17.2718 0 0 17.2718 251.775 52.1838 e
-</path>
-<path stroke="0" pen="1">
-17.1744 0 0 17.1744 585.599 56.7153 e
-</path>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 24}</text>
-</page>
-<page title="Lösung">
+<page title="Semantik">
+<notes>Hier besprechen was geanu die Implikation bedeutet</notes>
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="alpha"/>
-<group layer="alpha" matrix="1 0 0 1 12 -16">
-<text matrix="0.731436 0 0 0.731436 135.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1</text>
-<path matrix="0.651972 0 0 0.651972 145.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 264 m
+576 264 l
+8 0 0 -8 576 256 584 256 a
+584 80.6444 l
+16 80.6444 l
+8 0 0 -8 16 88.6444 8 88.6444 a
+h
 </path>
 </group>
-<group matrix="1 0 0 1 -7.99993 -16">
-<text matrix="0.731436 0 0 0.731436 295.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_2</text>
-<path matrix="0.651972 0 0 0.651972 305.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+576 376 l
+8 0 0 -8 576 368 584 368 a
+584 284.537 l
+16 284.537 l
+8 0 0 -8 16 292.537 8 292.537 a
+h
 </path>
 </group>
-<group matrix="1 0 0 1 4.00003 -16">
-<text matrix="0.731436 0 0 0.731436 423.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_3</text>
-<path matrix="0.651972 0 0 0.651972 433.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="544" height="13.078" depth="2.0202" valign="top">\bfseries Boolsche Funktion</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="27.1994" depth="16.1616" valign="top">Für Wahrheitswerte $\mathbb B = \{w,f\}$ ist eine boolsche Funktion eine Funktion $f: \mathbb B^n \Rightarrow \mathbb B$</text>
+<text layer="beta" matrix="1 0 0 1 16 -32" transformations="translations" pos="32 256" stroke="black" type="minipage" width="512" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c|} 
+ \hline
+ A &amp; B &amp; $\neg A$ &amp; $A \wedge  B $ &amp;$ A \vee B$ &amp; $A \Rightarrow  B$ \\
+ \hline
+ f &amp; f &amp; w &amp; f &amp; f &amp; w\\ 
+
+ f &amp; w &amp; w &amp; f &amp; w &amp; w\\
+
+ w &amp; f &amp; f &amp; f &amp; w &amp; f\\
+
+ w &amp; w &amp; f &amp; w &amp; w &amp; w\\
+ \hline
+
+\end{tabular}
+\end{center}
+</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="560" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 14}</text>
+<group layer="alpha">
+<path fill="KITgreen">
+9.6 341.877 m
+9.6 368 l
+582 368 l
+587 368
+592 363
+592 358 c
+592 341.877 l
+h
+</path>
+<path fill="KITgreen15">
+592 341.877 m
+592 288.85 l
+19.6 288.85 l
+14.6 288.85
+9.6 293.85
+9.6 298.85 c
+9.6 341.877 l
+h
+</path>
+<text transformations="translations" pos="14.9702 362.63" stroke="white" type="minipage" width="571.66" height="13.078" depth="2.0202" valign="top">\textbf{Boolsche Funktion}</text>
+<text transformations="translations" pos="14.9702 336.507" stroke="black" type="minipage" width="571.66" height="27.1994" depth="16.1616" valign="top">Für Wahrheitswerte $\mathbb B = \{w,f\}$ ist eine boolsche Funktion eine Funktion $f: \mathbb B^n \rightarrow \mathbb B$</text>
+</group>
+</page>
+<page title="Einschub Implikation">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<group layer="gamma" matrix="1 0 0 1 0 16">
+<path stroke="black" fill="KITred15">
+8 88 m
+416 88 l
+8 0 0 -8 416 80 424 80 a
+424 -11.4938 l
+16 -11.4938 l
+8 0 0 -8 16 -3.49382 8 -3.49382 a
+h
+</path>
+</group>
+<group layer="beta" matrix="1 0 0 1 -16 48">
+<path stroke="black" fill="KITblue15">
+24 264 m
+544 264 l
+8 0 0 -8 544 256 552 256 a
+552 68.7504 l
+32 68.7504 l
+8 0 0 -8 32 76.7504 24 76.7504 a
+h
+</path>
+</group>
+<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Die Implikation trifft keine Aussagen über Kausalitäten</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top">Sie ist wie jede andere aussagenlogische Formel einfach nur wahr oder falsch</text>
+<text layer="beta" matrix="1 0 0 1 -16 48" transformations="translations" pos="32 256" stroke="black" type="minipage" width="432" height="14.9184" depth="3.8628" valign="top">Beispiel:</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 224" stroke="black" type="minipage" width="432" height="12.5985" depth="1.5318" valign="top">$p \Rightarrow q$</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 192" stroke="black" type="minipage" width="432" height="15.1648" depth="4.0848" valign="top">Wenn p falsch ist ist die Implikation wahr</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 160" stroke="black" type="minipage" width="480" height="15.1648" depth="4.0848" valign="top">Erst wenn p wahr ist wird q überprüft</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 128" stroke="black" type="minipage" width="512" height="14.9184" depth="3.8628" valign="top" style="item">Wenn q dann auch wahr ist, ist die Implikation wahr</text>
+<text matrix="1 0 0 1 -16 48" transformations="translations" pos="32 96" stroke="black" type="minipage" width="512" height="15.1648" depth="4.0848" valign="top" style="item">Wenn q dann falsch ist, ist die Implikation falsch</text>
+<text layer="gamma" matrix="1 0 0 1 0 16" transformations="translations" pos="16 80" stroke="black" type="minipage" width="352" height="14.9362" depth="3.8628" valign="top">Wenn ihr wisst, dass $p\Rightarrow q$ wahr ist \dots</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 48" stroke="black" type="minipage" width="384" height="14.9184" depth="3.8628" valign="top">Und dann auch noch p wahr ist \dots
+</text>
+<text matrix="1 0 0 1 0 16" transformations="translations" pos="16 16" stroke="black" type="minipage" width="400" height="15.2758" depth="4.218" valign="top">könnt ihr folgern, das q auch wahr sein muss</text>
+</page>
+<page title="Semantik">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+576 376 l
+8 0 0 -8 576 368 584 368 a
+584 255.977 l
+16 255.977 l
+8 0 0 -8 16 263.977 8 263.977 a
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 232 m
+576 232 l
+8 0 0 -8 576 224 584 224 a
+584 161.156 l
+16 161.156 l
+8 0 0 -8 16 169.156 8 169.156 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="416" height="15.0605" depth="3.996" valign="top">\bfseries Interpretation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="41.8648" depth="30.858" valign="top">Für eine Menge $V$ von Aussagevariablen ist eine Interpretation eine Abbildung $I:V \rightarrow \mathbb B$,\\
+Sie ordnet also jeder Variable einen Wahrheitswert zu.</text>
+<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="12.9115" depth="1.8204" valign="top">Für Wahrheitstabellen:</text>
+<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="576" height="17.1784" depth="6.1272" valign="top">Es gibt $2^k$ Interpretationen für $k$ Variablen, also auch $2^k$ Zeilen</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 15}</text>
+</page>
+<page title="Semantik - Auswertung">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<layer name="eta"/>
+<layer name="theta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta theta" active="theta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+608 376 l
+8 0 0 -8 608 368 616 368 a
+616 81.8821 l
+16 81.8821 l
+8 0 0 -8 16 89.8821 8 89.8821 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="15.2203" depth="4.1514" valign="top">\bfseries Auswertung Aussagenlogische Formeln</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="592" height="29.2241" depth="18.204" valign="top">Sei $I: V \rightarrow \mathbb B$ eine Interpretation\\
+Für jede Aussagenlogische Formel $F$ definiere $val_I (F )$ wie folgt:
+
+</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="560" height="15.469" depth="4.4178" valign="top">Für jedes $X \in V \quad \text{und } G,H$ Aussagenlogische Formeln sei:</text>
+<text layer="beta" transformations="translations" pos="16 240" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(X) \coloneqq I(X)$ \quad \quad  \quad (Also der Wahrheitswert von X)</text>
+<text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(\neg G)\coloneqq \neg(val_I(G))$</text>
+<text layer="delta" transformations="translations" pos="16 176" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G \wedge H) \coloneqq val_I(G) \wedge val_I(H)$
+</text>
+<text layer="epsilon" transformations="translations" pos="16 144" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\vee H) \coloneqq val_I(G) \vee val_I(H)$</text>
+<text layer="zeta" transformations="translations" pos="16 112" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$val_I(G\Rightarrow H ) \coloneqq val_I(G) \Rightarrow val_I(H)$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 16}</text>
+<text layer="theta" transformations="translations" pos="16 64" stroke="black" type="minipage" width="752" height="15.2758" depth="4.218" valign="top">Anschaulich: erst kleine Teilformeln ausrechnen, dann zusammengesetzte</text>
+<text matrix="1 0 0 1 -32 16" transformations="translations" pos="704 320" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top" style="center">$(A\vee B) \Rightarrow  \neg C$</text>
+<path stroke="black" pen="1">
+736 304 m
+704 256 l
+</path>
+<path matrix="1 0 0 1 32 0" stroke="black" pen="1">
+768 304 m
+800 256 l
+</path>
+<text matrix="1 0 0 1 -16 -4" transformations="translations" pos="688 256" stroke="black" type="minipage" width="64" height="13.2268" depth="2.1312" valign="top" style="center">$A\vee B$</text>
+<text matrix="1 0 0 1 112 -5" transformations="translations" pos="688 256" stroke="black" type="minipage" width="64" height="13.2268" depth="2.1312" valign="top" style="center">$\neg C$</text>
+<text matrix="1 0 0 1 112 -80" transformations="translations" pos="688 256" stroke="black" type="minipage" width="64" height="13.2268" depth="2.1312" valign="top" style="center">$C$</text>
+<path matrix="1 0 0 1 16 -8" stroke="black" pen="1">
+816 240 m
+816 192 l
+</path>
+<path matrix="1 0 0 1 -48 -73" stroke="black" pen="1">
+736 304 m
+704 256 l
+</path>
+<path matrix="1 0 0 1 -48 -73" stroke="black" pen="1">
+768 304 m
+800 256 l
+</path>
+<text matrix="1 0 0 1 -64 -80" transformations="translations" pos="688 256" stroke="black" type="minipage" width="64" height="13.2268" depth="2.1312" valign="top" style="center">$A$</text>
+<text matrix="1 0 0 1 32 -80" transformations="translations" pos="688 256" stroke="black" type="minipage" width="64" height="13.2268" depth="2.1312" valign="top" style="center">$B$</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="beta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+920 368 m
+8 0 0 8 912 368 912 376 a
+568 376 l
+568 222.068 l
+8 0 0 8 576 222.068 576 214.068 a
+920 214.068 l
+h
 </path>
 </group>
 <group matrix="1 0 0 1 0 -16">
-<text matrix="0.731436 0 0 0.731436 567.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_4</text>
-<path matrix="0.651972 0 0 0.651972 577.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
+<path stroke="gray1" fill="gray3">
+520 320 m
+8 0 0 8 512 320 512 328 a
+8 328 l
+8 297.882 l
+8 0 0 8 16 297.882 16 289.882 a
+520 289.882 l
+h
 </path>
 </group>
-<path stroke="0" pen="1" arrow="normal/normal">
-131.441 313.213 m
-230.453 313.254 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-271.151 314.513 m
-370.704 314.389 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-411.194 314.343 m
-510.64 314.127 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-551.04 314.927 m
-650.977 315.377 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-659.55 291.848 m
-383.207 242.881
-127.692 296.886 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-100.904 327.615 m
-89.9366 356.032
-125.345 362.19
-121.446 327.352 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-240.226 327.226 m
-226.95 355.262
-270.055 355.262
-259.717 328.254 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-380.191 327.205 m
-364.733 360.651
-411.687 362.19
-402.582 326.641 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-520.536 327.408 m
-507.135 357.572
-546.392 358.341
-542.78 326.506 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-660.468 327.369 m
-647.228 361.42
-691.103 356.802
-683.533 325.962 c
-</path>
-<text matrix="1 0 0 1 2.96249 -13.6275" transformations="translations" pos="102.043 368.151" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 7.70248 -21.9224" transformations="translations" pos="238.318 372.891" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 4.14749 -17.1824" transformations="translations" pos="382.295 374.076" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 6.51748 -29.0324" transformations="translations" pos="517.977 384" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0.592498 -27.2549" transformations="translations" pos="663.139 384" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 17.7749 -6.51748" transformations="translations" pos="377.555 254.391" stroke="0" type="label" width="16.9697" height="10.878" depth="0.222" valign="baseline">a
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $I$ eine Interpretation mit $I(P) = \textbf w, I(Q) = \textbf  f, I(S) =  \textbf  w$</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$G = (Q \Rightarrow S) \vee P$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 304" stroke="black" type="minipage" width="528" height="116.648" depth="105.85" valign="top">
+\begin{align*}
+val_I( (Q \Rightarrow S) \vee P) &amp;= (val_I(Q \Rightarrow S) \vee val_I(P))\\
+&amp;= ((val_I(Q) \Rightarrow val_I(S)) \vee  val_I(P))\\
+&amp;= ((I(Q) \Rightarrow I(S)) \vee  I(P))\\
+&amp;= ( (\textbf f \Rightarrow  \textbf w) \vee \textbf w)\\
+&amp;= ( \textbf w \vee  \textbf w)\\
+&amp;= \textbf w
+\end{align*}
 </text>
-<text matrix="1 0 0 1 5.92498 -9.47997" transformations="translations" pos="304.677 327.269" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 7.70248 -7.70248" transformations="translations" pos="162.478 326.676" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0.592498 -6.51748" transformations="translations" pos="442.73 330.824" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -3.55499 -9.22047" transformations="translations" pos="592.632 332.601" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="0.731436 0 0 0.731436 7.7201 141.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_0</text>
-<path matrix="0.651972 0 0 0.651972 17.0592 163.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path stroke="black" pen="1">
-18.0856 0 0 18.0856 110.943 309.326 e
-</path>
-<group layer="beta" matrix="1 0 0 1 76.7496 -41.3988">
-<text matrix="0.731436 0 0 0.731436 -40.2799 -2.249" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_0</text>
-<path matrix="0.651972 0 0 0.651972 -30.9408 19.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path matrix="1 0 0 1 -48 -144" stroke="black" pen="1">
-18.0856 0 0 18.0856 110.943 309.326 e
-</path>
-</group>
-<group matrix="1 0 0 1 124.75 -41.3988">
-<text matrix="0.731436 0 0 0.731436 55.7201 -2.249" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1
+<text layer="alpha" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">Berechnet $val_I(G)$ durch anwenden der Definitionen</text>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 240" stroke="black" type="minipage" width="192" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(X) \coloneqq I(X)$</text>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 208" stroke="black" type="minipage" width="304" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(\neg G)\coloneqq \neg(val_I(G))$</text>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 176" stroke="black" type="minipage" width="320" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G \wedge H) \coloneqq val_I(G) \wedge val_I(H)$
 </text>
-<path matrix="0.651972 0 0 0.651972 65.0592 19.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path matrix="1 0 0 1 48 -144" stroke="black" pen="1">
-18.0856 0 0 18.0856 110.943 309.326 e
-</path>
-</group>
-<group matrix="1 0 0 1 172.75 -41.3988">
-<text matrix="0.731436 0 0 0.731436 151.72 -2.249" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_2</text>
-<path matrix="0.651972 0 0 0.651972 161.059 19.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-19.3821 167.117 m
-42.2173 167.715 l
-</path>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-51.6455 182.865 m
-42.8912 218.188
-90.45 219.54
-75.225 182.191 c
-</path>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-80.1329 177.149 m
-129.362 189.275
-190.474 178.133 c
-</path>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-191.433 151.372 m
-144.224 136.852
-80.5393 154.117 c
-</path>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-227.806 165.236 m
-330.081 165.496 l
-</path>
-<path matrix="1 0 0 1 76.7496 -41.3988" stroke="black" pen="1" arrow="normal/normal">
-340.052 183.12 m
-328.784 214.676
-370.938 215.757
-363.303 182.134 c
-</path>
-<text matrix="1 0 0 1 85.1749 -55.09" transformations="translations" pos="262.307 182.813" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 84.1218 -50.8773" transformations="translations" pos="128.555 203.526" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 67.2322 -48.771" transformations="translations" pos="348.315 220.025" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 78.856 -48.4199" transformations="translations" pos="130.31 133.666" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 84.8239 -45.9625" transformations="translations" pos="52.0253 216.866" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text layer="alpha" transformations="translations" pos="16 336" stroke="black" type="minipage" width="32" height="15.1648" depth="4.0848" valign="top">a)</text>
-<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="32" height="15.1648" depth="4.0848" valign="top">b)</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 25}</text>
-<path layer="alpha" matrix="1 0 0 1 47.4639 141.282" stroke="black" pen="1" arrow="normal/normal">
-19.3821 167.117 m
-42.2173 167.715 l
-</path>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 144" stroke="black" type="minipage" width="320" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G\vee H) \coloneqq val_I(G) \vee val_I(H)$</text>
+<text matrix="1 0 0 1 560 128" transformations="translations" pos="16 112" stroke="black" type="minipage" width="336" height="13.952" depth="3.98" valign="top" size="small" style="item">$val_I(G\Rightarrow H ) \coloneqq val_I(G) \Rightarrow val_I(H)$</text>
 </page>
-<page title="Lösung">
+<page title="Bindungstärken">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<group layer="beta" matrix="1 0 0 1 0 48">
+<path stroke="black" fill="KITred15">
+8 136 m
+464 136 l
+8 0 0 -8 464 128 472 128 a
+472 74.4345 l
+16 74.4345 l
+8 0 0 -8 16 82.4345 8 82.4345 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 48" transformations="translations" pos="16 128" stroke="black" type="minipage" width="448" height="28.2939" depth="17.2716" valign="top">Wenn ihr darüber nachdenken müsst, ob ihr eine Klammer weglassen könnt, lasst sie lieber da</text>
+<text layer="alpha" matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\neg$ Bindet am stärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="560" height="12.9115" depth="1.8204" valign="top" style="item">$\wedge$ bindet am zweitstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 304" stroke="black" type="minipage" width="592" height="12.9115" depth="1.8204" valign="top" style="item">$\vee$ bindet am drittstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">$\Rightarrow$ bindet am viertstärksten</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="16 240" stroke="black" type="minipage" width="624" height="12.9115" depth="1.8204" valign="top" style="item">$
+\Leftrightarrow$ bindet am schwächsten</text>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.0516" depth="3.9738" valign="top">Wenn sich dadurch die Bedeutung der Formel nicht ändert könnt ihr Klammern auch weglassen</text>
+</page>
+<page title="Wahrheitstabellen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 248 m
+464 248 l
+8 0 0 -8 464 240 472 240 a
+472 111.251 l
+16 111.251 l
+8 0 0 -8 16 119.251 8 119.251 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+8 376 m
+464 376 l
+8 0 0 -8 464 368 472 368 a
+472 286.129 l
+16 286.129 l
+8 0 0 -8 16 294.129 8 294.129 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="15.2203" depth="4.1514" valign="top">\bfseries Aufgabe</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="448" height="26.4002" depth="15.3402" valign="top">Stelle für eine Aussagenlogische Formel eine Wahrheitstabelle auf.</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 272" stroke="black" type="minipage" width="448" height="15.0028" depth="3.9294" valign="top">\bfseries Vorgehen</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 240" stroke="black" type="minipage" width="448" height="49.9123" depth="38.9388" valign="top" style="itemize">\item Wahrheitswerte für Variablen
+\item Wahrheitswerte für Teilformeln
+\item Wahrheitswerte für ganze Formel</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 17}</text>
+</page>
+<page title="Wahrheitstabellen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="pagenumbers_page beta gamma" active="gamma"/>
+<view layers="pagenumbers_page beta delta" active="delta"/>
+<view layers="pagenumbers_page beta delta epsilon" active="epsilon"/>
+<group layer="gamma">
+<path stroke="gray1" fill="gray3">
+392 208 m
+8 0 0 8 384 208 384 216 a
+8 216 l
+8 188.773 l
+8 0 0 8 16 188.773 16 180.773 a
+392 180.773 l
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+440 368 m
+8 0 0 8 432 368 432 376 a
+8 376 l
+8 326.413 l
+8 0 0 8 16 326.413 16 318.413 a
+440 318.413 l
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="416" height="26.2471" depth="15.207" valign="top">Wie viele Zeilen hätte eine Wahrheitstabelle mit 500 Variablen?</text>
+<text layer="beta" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">$2^{500} = 3273390607896141870013189696827599152216642046043064789483291368096133
+\\796404674554883270092325904157150886684127560071009217256545885393053328527589376$</text>
+<text layer="gamma" transformations="translations" pos="16 208" stroke="black" type="minipage" width="368" height="15.2758" depth="4.218" valign="top">Wie viele Atome gibt es im Universum?</text>
+<text layer="delta" matrix="1 0 0 1 0 112" transformations="translations" pos="0 208" stroke="black" type="minipage" width="896" height="27.8765" depth="16.8498" valign="top" style="item">ca. $10^{88}= 10000000000000000000000000000000000000000000000000000000000000000000\\
+000000000000000000000$</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 96" transformations="translations" pos="32 128" stroke="black" type="minipage" width="208" height="13.1357" depth="2.0646" valign="top">Ihr seht das Problem?</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 5}</text>
+</page>
+<page title="Wahrheitstabellen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITblue15">
+8 376 m
+512 376 l
+8 0 0 -8 512 368 520 368 a
+520 96.6444 l
+16 96.6444 l
+8 0 0 -8 16 104.644 8 104.644 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="15.2758" depth="4.218" valign="top" style="item">Seien A und B Aussagenvariablen</text>
+<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Weiter sei $val_I(A) = w$ und $val_I(B) = f$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">Was ist $val_I((A \wedge B)  \Rightarrow (A \vee B)) $?</text>
+<text matrix="1 0 0 1 -16 -16" transformations="translations" pos="32 256" stroke="black" type="minipage" width="496" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c|} 
+ \hline
+ A &amp; B &amp; $A\wedge B$&amp; $A\vee B$ &amp; $(A \wedge B)  \Rightarrow (A \vee B) $ \\
+ \hline
+ f &amp; f &amp; f &amp; f &amp; f \\ 
+
+ f &amp; w &amp; f&amp; w &amp; w \\
+
+ w &amp; f &amp; f &amp; w &amp; w \\
+
+ w &amp; w &amp; w &amp; w &amp; w \\
+ \hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+312 368 m
+8 0 0 8 304 368 304 376 a
+8 376 l
+8 322.221 l
+8 0 0 8 16 322.221 16 314.221 a
+312 314.221 l
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="288" height="29.0309" depth="18.0042" valign="top">Gebt alle Auswertungen der Formel $F=(A \wedge B) \vee A$ an</text>
+<text layer="beta" matrix="1 0 0 1 -32 48" transformations="translations" pos="32 256" stroke="black" type="minipage" width="288" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c|} 
+ \hline
+ A &amp; B &amp; $A\wedge B$&amp;$F$ \\
+ \hline
+ f &amp; f &amp; f&amp; f  \\ 
+
+ f &amp; w &amp; f&amp; f \\
+
+ w &amp; f &amp; f &amp; w \\
+
+ w &amp; w &amp; w &amp; w \\
+ \hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Äquivalenz">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 168 m
+512 168 l
+8 0 0 -8 512 160 520 160 a
+520 73.2992 l
+16 73.2992 l
+8 0 0 -8 16 81.2992 8 81.2992 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+512 376 l
+8 0 0 -8 512 368 520 368 a
+520 200.964 l
+16 200.964 l
+8 0 0 -8 16 208.964 8 208.964 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="400" height="17.0496" depth="5.994" valign="top">\bfseries Äquivalente Formeln</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="496" height="28.7335" depth="17.6934" valign="top">Zwei Formeln $A$ und $B$ heißen äquivalent, wenn für jede Interpretation $I$
+gilt:</text>
+<text matrix="1 0 0 1 69 -2" transformations="translations" pos="64 272" stroke="black" type="minipage" width="224" height="16.5901" depth="5.5278" valign="top">$val_I(A) = val_I(B)$</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 256" stroke="black" type="minipage" width="288" height="13.3289" depth="2.2644" valign="top">Man schreibt auch $A \equiv B$</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="496" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \Rightarrow B) \wedge (\neg (A\Leftrightarrow B) \vee A)) \equiv (A\wedge B)$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="496" height="15.469" depth="4.4178" valign="top" style="item">$A\Rightarrow B \equiv \neg A \vee B\quad$    \textbf{Wichtig}</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Anmerkungen zur Schreibweise">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<group layer="alpha">
+<path stroke="black" fill="KITred15">
+184 248 m
+656 248 l
+8 0 0 -8 656 240 664 240 a
+664 159.894 l
+192 159.894 l
+8 0 0 -8 192 167.894 184 167.894 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 192 -144" transformations="translations" pos="0 384" stroke="black" type="minipage" width="464" height="41.5584" depth="30.5472" valign="top">$=$ bedeutet zwei Formeln sind syntaktisch gleich. \\ $\equiv$ bedeutet diese haben für die gleiche Variablenbelegung den gleichen Wahrheitswert</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 11}</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page delta" active="delta"/>
+<view layers="alpha pagenumbers_page epsilon" active="epsilon"/>
+<view layers="alpha pagenumbers_page zeta" active="zeta"/>
+<group layer="alpha" matrix="1 0 0 1 16 -16">
+<path stroke="gray1" fill="gray3">
+648 384 m
+8 0 0 8 640 384 640 392 a
+-8 392 l
+-8 300.895 l
+8 0 0 8 0 300.895 0 292.895 a
+648 292.895 l
+h
+</path>
+</group>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Zeigt mit einer Wahrheitstabelle das folgende Formeln äquivalent sind:</text>
+<text matrix="1 0 0 1 0 208" transformations="translations" pos="16 128" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top" style="item">$((\neg A \Rightarrow B) \wedge (\neg (A\Leftrightarrow B) \vee A))$</text>
+<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top" style="item">$(A\vee B)$</text>
+<text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c c c c c | c |} 
+ \hline
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ \hline
+ f &amp; f &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+
+ f &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+
+ w &amp; f &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+
+ w &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+\hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c c c c c | c |} 
+ \hline
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ \hline
+ f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
+
+ f &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+ w &amp; f &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+ w &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+\hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c c c c c | c |} 
+ \hline
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ \hline
+ f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
+
+ f &amp; w &amp; w &amp; w &amp; w &amp; \color{green}{w} &amp; w &amp; f &amp; w &amp; f &amp; \color{green}{w}\\
+ 
+ w &amp; f &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+ w &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+\hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="epsilon" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c c c c c | c |} 
+ \hline
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ \hline
+ f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
+
+ f &amp; w &amp; w &amp; w &amp; w &amp; \color{green}{w} &amp; w &amp; f &amp; w &amp; f &amp; \color{green}{w}\\
+ 
+ w &amp; f &amp; f &amp; w &amp; f &amp; \color{green}{w} &amp; w &amp; f &amp; w &amp; w &amp; \color{green}{w} \\
+ 
+ w &amp; w &amp; ? &amp; ? &amp; ? &amp; \color{green}{?} &amp; ? &amp; ? &amp; ? &amp; ? &amp; \color{green}{?}\\ 
+ 
+\hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="zeta" matrix="1 0 0 1 -16 0" transformations="translations" pos="32 256" stroke="black" type="minipage" width="656" height="73.1512" depth="62.2044" valign="top">
+\begin{center}
+\begin{tabular}{|c c | c c c c c c c c | c |} 
+ \hline
+ $A$&amp; $B$&amp;$((\neg A$ &amp; $\Rightarrow$ &amp; $B)$  &amp; $\wedge$ &amp; $(\neg$ &amp;$ (A\Leftrightarrow B)$ &amp;  $\vee$ &amp; $A))$  &amp; $A\vee B$\\
+ \hline
+ f &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f} &amp; f &amp; w &amp; f &amp; f &amp; \color{green}{f}\\ 
+
+ f &amp; w &amp; w &amp; w &amp; w &amp; \color{green}{w} &amp; w &amp; f &amp; w &amp; f &amp; \color{green}{w}\\
+ 
+ w &amp; f &amp; f &amp; w &amp; f &amp; \color{green}{w} &amp; w &amp; f &amp; w &amp; w &amp; \color{green}{w} \\
+ 
+ w &amp; w &amp; f &amp; w &amp; w &amp; \color{green}{w} &amp; f &amp; w &amp; w &amp; w &amp; \color{green}{w}\\
+ 
+\hline
+
+\end{tabular}
+\end{center}
+</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
+</page>
+<page title="Von natürlicher Sprache zu aussagenlogischen Formeln">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top">Aussagen Variablen zuordnen</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="14.9184" depth="3.8628" valign="top" style="item">p: Es ist bewölkt.</text>
+<text matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="15.0516" depth="3.9738" valign="top" style="item">q: Es regnet.</text>
+<text matrix="1 0 0 1 -16 -64" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="13.229" depth="2.1534" valign="top" style="item">r : Die Sonne scheint.</text>
+<text matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">s: Es ist kalt.</text>
+<text matrix="1 0 0 1 -16 -128" transformations="translations" pos="16 352" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">t: Der Wind bläst.</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 7}</text>
+</page>
+<page title="Formalisierungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="640" height="15.2758" depth="4.218" valign="top">Danach können dann aus Sätzen Formeln abgeleitet werden</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="672" height="14.2901" depth="3.219" valign="top" style="item">Es ist nicht der Fall, dass es bewölkt ist.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">Es ist nicht bewölkt.</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="672" height="12.9115" depth="1.8204" valign="top" style="item">Es ist unbewölkt.
+</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top" style="item">Es ist wolkenlos.</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="64" height="12.5985" depth="1.5318" valign="top">$\Rightarrow \neg p$</text>
+<text layer="beta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="400" height="13.229" depth="2.1534" valign="top" style="item">Die Sonne scheint und es ist kalt.</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="448" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, aber es ist kalt.
+</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint, obwohl es kalt ist.
+</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="576" height="14.5144" depth="3.4632" valign="top" style="item">Die Sonne scheint; trotzdem ist es kalt.</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="608" height="13.229" depth="2.1534" valign="top" style="item">
+Trotz Sonnenscheins ist es kalt.</text>
+<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="64" height="11.6883" depth="0.5994" valign="top">$\Rightarrow r \wedge s $</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 8}</text>
+</page>
+<page title="Formalisierungen">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="352" height="14.2901" depth="3.219" valign="top" style="item">Der Wind bläst, oder es ist kalt.
+</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="560" height="14.5144" depth="3.4632" valign="top" style="item">Der Wind bläst, und/oder es ist kalt.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="704" height="12.9115" depth="1.8204" valign="top" style="item">Mindestens eines von beiden ist der Fall:
+</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Der Wind bläst.
+</text>
+<text transformations="translations" pos="0 256" stroke="black" type="minipage" width="656" height="12.9115" depth="1.8204" valign="top" style="subitem">Es ist kalt.</text>
+<text transformations="translations" pos="16 224" stroke="black" type="minipage" width="80" height="11.8615" depth="0.777" valign="top">$t \vee s$</text>
+<text layer="beta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, dann regnet es.
+</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top" style="item">Wenn es bewölkt ist, so regnet es.
+</text>
+<text transformations="translations" pos="0 128" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Falls es bewölkt ist, regnet es.
+</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet, wenn es bewölkt ist.
+</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="544" height="15.2758" depth="4.218" valign="top" style="item">Es regnet, falls es bewölkt ist.</text>
+<text matrix="1 0 0 1 0 -192" transformations="translations" pos="16 224" stroke="black" type="minipage" width="144" height="12.5985" depth="1.5318" valign="top">$p\Rightarrow q$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 9}</text>
+</page>
+<page title="Formalisierungen">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
@@ -4699,736 +4569,37 @@ denen nirgends das Teilwort abab vorkommt.</text>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="alpha" matrix="1 0 0 1 12 -16">
-<text matrix="0.731436 0 0 0.731436 135.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1</text>
-<path matrix="0.651972 0 0 0.651972 145.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
+<group layer="gamma">
+<path stroke="gray1" fill="gray3">
+520 64 m
+8 0 0 8 512 64 512 72 a
+8 72 l
+8 44.7726 l
+8 0 0 8 16 44.7726 16 36.7726 a
+520 36.7726 l
+h
 </path>
 </group>
-<group matrix="1 0 0 1 -7.99993 -16">
-<text matrix="0.731436 0 0 0.731436 295.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_2</text>
-<path matrix="0.651972 0 0 0.651972 305.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 4.00003 -16">
-<text matrix="0.731436 0 0 0.731436 423.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_3</text>
-<path matrix="0.651972 0 0 0.651972 433.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 0 -16">
-<text matrix="0.731436 0 0 0.731436 567.72 157.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_4</text>
-<path matrix="0.651972 0 0 0.651972 577.059 179.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<text matrix="0.731436 0 0 0.731436 7.7201 141.751" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_0</text>
-<path matrix="0.651972 0 0 0.651972 17.0592 163.284" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-<path stroke="black" pen="1">
-17.9242 0 0 17.9242 670.943 309.326 e
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-61.8772 312.947 m
-90.2802 312.208 l
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-131.773 308.149 m
-230.094 308.554 l
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-271.731 311.095 m
-370.09 309.984 l
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-411.795 310.009 m
-510.086 309.814 l
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-551.777 308.226 m
-650.1 308.408 l
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-657.736 325.476 m
-645.68 358.584
-687.807 361.041
-679.546 328.332 c
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-515.34 323.176 m
-387.655 365.605
-263.45 326.024 c
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-385.373 289.22 m
-250.042 248.002
-125.475 294.356 c
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-238.619 326.16 m
-223.713 364.552
-270.754 363.499
-257.929 328.984 c
-</path>
-<path stroke="black" pen="1" arrow="normal/normal">
-99.2408 326.598 m
-91.3657 362.445
-138.407 357.18
-120.601 327.819 c
-</path>
-<text matrix="1 0 0 1 -4.91476 -9.82952" transformations="translations" pos="112.078 364.201" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -5.26581 -12.2869" transformations="translations" pos="248.287 369.115" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="387.655 355.775" stroke="black" type="label" width="16.9697" height="10.878" depth="0.222" valign="baseline">a
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="512" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, dann regnet es.
 </text>
-<text matrix="1 0 0 1 -4.5637 -6.67003" transformations="translations" pos="592.671 318.915" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -9.32588 0.868475" transformations="translations" pos="663.584 357.531" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -8.77635 -8.4253" transformations="translations" pos="260.574 258.533" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0.351054 -8.07425" transformations="translations" pos="164.034 319.617" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0.702108 -9.12741" transformations="translations" pos="311.828 323.127" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -2.10632 -4.21265" transformations="translations" pos="450.143 319.968" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="16 352" stroke="black" type="minipage" width="48" height="15.1648" depth="4.0848" valign="top">c)</text>
-<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">d) Wie c), nur dass alle vorher nicht akzeptierten Zustände nun akzeptiert werden und umgekehrt</text>
-<group layer="gamma" matrix="1 0 0 1 148.736 52.5315">
-<text matrix="0.731436 0 0 0.731436 365.64 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_3</text>
-<path matrix="0.651972 0 0 0.651972 374.979 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 109.824 48">
-<text matrix="0.731436 0 0 0.731436 237.64 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_2</text>
-<path matrix="0.651972 0 0 0.651972 246.979 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 48 48">
-<text matrix="0.731436 0 0 0.731436 -34.36 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_0</text>
-<path matrix="0.651972 0 0 0.651972 -25.0209 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-105.416 55.7658 m
-231.204 55.6606 l
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-272.393 55.3736 m
-398.036 55.1526 l
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-439.279 55.5373 m
-564.767 55.5777 l
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-567.311 46.6744 m
-505.521 23.249
-437.224 42.6107 c
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-401.148 40.8856 m
-325.83 24.1611
-269.787 41.6561 c
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1" arrow="normal/normal">
-31.3773 51.2678 m
-64.0138 51.4263 l
-</path>
-<text matrix="1 0 0 1 35.1925 38.8786" transformations="translations" pos="139.466 69.9667" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 37.9289 36.5983" transformations="translations" pos="310.035 73.6152" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 50.6988 37.5104" transformations="translations" pos="478.325 71.3349" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 36.5607 41.2393" transformations="translations" pos="477.869 45.3389" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 28.8005 37.1483" transformations="translations" pos="326.454 46.2511" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<group matrix="1 0 0 1 32 48">
-<text matrix="0.731436 0 0 0.731436 148.552 -115.391" transformations="translations" pos="128 224" stroke="0" type="label" width="17.8088" height="9.83904" depth="3.3078" valign="baseline" style="math">s_1</text>
-<path matrix="0.651972 0 0 0.651972 157.891 -93.8579" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1">
-17.2718 0 0 17.2718 251.775 52.1838 e
-</path>
-<path matrix="1 0 0 1 32 48" stroke="0" pen="1">
-17.1744 0 0 17.1744 585.599 56.7153 e
-</path>
-<text transformations="translations" pos="16 144" stroke="black" type="minipage" width="48" height="15.1648" depth="4.0848" valign="top">e)</text>
-<text matrix="1 0 0 1 -32 0" transformations="translations" pos="48 64" stroke="black" type="minipage" width="896" height="29.0309" depth="18.0042" valign="top">Der Automat erkennt die Sprache \\
-$L(\mathpzc A) = \{w \in \{a, b\}^* \vert \text{ } \vert w\vert mod 2 = 1\}
-= \{w \in \{a, b\}^* \vert \text{ w hat ungerade Länge} \}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 26}</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="15.0516" depth="3.9738" valign="top" style="item">Nur wenn es bewölkt ist, regnet es.
+</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="592" height="15.0516" depth="3.9738" valign="top" style="item">Es regnet nur, wenn es bewölkt ist.</text>
+<text matrix="1 0 0 1 0 64" transformations="translations" pos="16 224" stroke="black" type="minipage" width="336" height="16.5901" depth="5.5278" valign="top">$(\neg p \Rightarrow \neg q)$ oder $q\Rightarrow p$</text>
+<text layer="beta" transformations="translations" pos="0 240" stroke="black" type="minipage" width="544" height="15.0516" depth="3.9738" valign="top" style="item">Es ist kalt genau dann, wenn der Wind bläst.
+</text>
+<text transformations="translations" pos="0 208" stroke="black" type="minipage" width="624" height="14.2901" depth="3.219" valign="top" style="item">Es ist dann und nur dann kalt, wenn der Wind bläst.
+</text>
+<text transformations="translations" pos="0 176" stroke="black" type="minipage" width="624" height="26.1538" depth="15.1182" valign="top" style="item">Wenn es kalt ist, dann bläst der Wind, und wenn der Wind
+bläst, dann ist es kalt.</text>
+<text matrix="1 0 0 1 0 -112" transformations="translations" pos="16 224" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$(s \Leftrightarrow t)$ oder $(s\Rightarrow t)  \wedge  (t \Rightarrow s)$</text>
+<text layer="gamma" matrix="1 0 0 1 16 0" transformations="translations" pos="0 64" stroke="black" type="minipage" width="496" height="15.0516" depth="3.9738" valign="top">Das ganze geht natürlich auch in die andere Richtung</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 10}</text>
 </page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="alpha"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<group layer="alpha">
-<path stroke="gray1" fill="gray3">
-488 368 m
-8 0 0 8 480 368 480 376 a
-8 376 l
-8 262.078 l
-8 0 0 8 16 262.078 16 254.078 a
-488 254.078 l
-h
-</path>
-</group>
-<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">Sei $G = (\{a, b\}, \{X , Y , Z \} , X, R)$ mit\\
-$R = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert bZ \vert \epsilon, Z \rightarrow aZ \vert bZ \}$</text>
-<text transformations="translations" pos="16 304" stroke="black" type="minipage" width="464" height="26.4713" depth="15.4512" valign="top">Zeichne den Automat, der L(G) akzeptiert.\\
-Wie kann man die Grammatik vereinfachen?</text>
-<group layer="beta" matrix="1 0 0 1 0 32">
-<text matrix="1 0 0 1 -77.3848 -59.3326" transformations="translations" pos="128 224" stroke="0" type="label" width="17.7023" height="15.358" depth="0" valign="baseline" style="math">X</text>
-<path matrix="0.891359 0 0 0.891359 -69.7029 -27.6466" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 0 32">
-<text matrix="1 0 0 1 98.6152 -59.3326" transformations="translations" pos="128 224" stroke="0" type="label" width="15.913" height="15.358" depth="0" valign="baseline" style="math">Y</text>
-<path matrix="0.891359 0 0 0.891359 106.297 -27.6466" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<group matrix="1 0 0 1 -32 32">
-<text matrix="1 0 0 1 290.615 -59.3326" transformations="translations" pos="128 224" stroke="0" type="label" width="16.166" height="15.358" depth="0" valign="baseline" style="math">Z</text>
-<path matrix="0.891359 0 0 0.891359 298.297 -27.6466" stroke="0" pen="1">
-32 0 0 32 144 224 e
-</path>
-</group>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-84.6522 183.749 m
-147.249 207.06
-210.077 186.496 c
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-211.913 154.799 m
-146.793 122.688
-81.3292 154.716 c
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-68.5095 145.251 m
-77.9263 89.8506
-32.7755 90.3067
-46.7097 146.115 c
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-0 175.592 m
-30.2644 174.791 l
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-263.107 174.002 m
-366.166 173.463 l
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1" arrow="normal/normal">
-411.107 148.719 m
-417.124 98.5674
-372.891 102.078
-383.448 145.787 c
-</path>
-<text matrix="1 0 0 1 -9.82952 16.5536" transformations="translations" pos="308.999 193.001" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -5.11323 17.7731" transformations="translations" pos="386.231 105.237" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 4.82952 -55.4785" transformations="translations" pos="136.281 209.501" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 2.2185 104.748" transformations="translations" pos="139.44 127.354" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -5.83586 21.6645" transformations="translations" pos="56.2402 96.4611" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1">
-24.4414 0 0 24.4414 58.6528 172.018 e
-</path>
-<path matrix="1 0 0 1 0 32" stroke="black" pen="1">
-23.8801 0 0 23.8801 234.653 172.018 e
-</path>
-<text layer="gamma" matrix="1 0 0 1 -496 -112" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Vereinfachte Grammatik: $G = (\{a, b\} , \{X , Y \} , X, R)$ mit\\
-$R = \{X \rightarrow aX \vert bY \vert\epsilon, Y \rightarrow aX \vert \epsilon\}$</text>
-<text layer="delta" matrix="1 0 0 1 -496 -176" transformations="translations" pos="496 208" stroke="black" type="minipage" width="768" height="29.8546" depth="18.8034" valign="top" style="item">Noch einfacher: $G = (\{a, b\}, \{X \} , X, R)$ mit\\
-$R = \{X \rightarrow aX \vert baX \vert b\vert\epsilon\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 29}</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="beta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<group layer="alpha" matrix="1 0 0 1 16 0">
-<path stroke="gray1" fill="gray3">
-232 336 m
-8 0 0 8 224 336 224 344 a
--8 344 l
--8 314.886 l
-8 0 0 8 0 314.886 0 306.886 a
-232 306.886 l
-h
-</path>
-</group>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
-<text matrix="1 0 0 1 16 0" transformations="translations" pos="0 336" stroke="black" type="minipage" width="224" height="16.0972" depth="5.0172" valign="top">Zeigt, dass $\emptyset$ regulär ist</text>
-<text layer="beta" matrix="1 0 0 1 -5.32016 -19.0884" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="10.8647" depth="4.2846" valign="baseline">q</text>
-<path matrix="1 0 0 1 -367.664 -79.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 -383.664 -47.7984" stroke="black" pen="1" arrow="normal/normal">
-480 272 m
-496 320
-432 320
-448 272 c
-</path>
-<path matrix="1 0 0 1 -239.664 -47.7984" stroke="black" pen="1" arrow="normal/normal">
-256 256 m
-297.373 256 l
-</path>
-<text matrix="1 0 0 1 -336 64" transformations="translations" pos="400 208" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text transformations="translations" pos="16 160" stroke="0" type="minipage" width="576" height="41.5584" depth="30.5472" valign="top">Dieser Automat hat keinen akzeptierenden Zustand. \\
-\impl Akzeptiert kein Wort \\\impl Akzeptiert genau $\emptyset$</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
-<group layer="alpha" matrix="1 0 0 1 16 48">
-<path stroke="gray1" fill="gray3">
-520 288 m
-8 0 0 8 512 288 512 296 a
--8 296 l
--8 213.803 l
-8 0 0 8 0 213.803 0 205.803 a
-520 205.803 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 16 48" transformations="translations" pos="0 288" stroke="black" type="minipage" width="512" height="42.6062" depth="31.5906" valign="top">Zeigt, dass alle $L \subset \set{a,b}^*$ mit $\vert L \vert = 1$ regulär sind.\\
-Zeichnet dafür keinen Automaten, sondern gebt die \\ Mengen $Q$ , $F$ und die Funktion $\delta$ direkt an</text>
-<text matrix="1 0 0 1 64 48" transformations="translations" pos="512 288" stroke="KITblack70" type="minipage" width="320" height="23.842" depth="13.88" valign="top" size="small">(Tipp benutzt $w_i$, also das i-te Zeichen des Wortes um eure Übergänge zu definieren)</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
-<text layer="beta" transformations="translations" pos="16 224" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top">Sei $L \subset \set{a,b}^* $ mit $\vert L \vert = 1 $ beliebig und $w$ das Wort in $L$</text>
-<text layer="gamma" matrix="1 0 0 1 0 32" transformations="translations" pos="16 160" stroke="0" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Wir konstruieren einen Automaten $\mathpzc A = (Q,q_0,\Sigma,\delta,F)$, der genau $w$ akzeptiert</text>
-<text layer="delta" transformations="translations" pos="16 160" stroke="0" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top" style="item">$Q = [\vert w \vert + 1] \cup \set{-1}$ \quad wobei $-1$ unser Müllzustand ist</text>
-<text transformations="translations" pos="16 128" stroke="0" type="minipage" width="384" height="14.9362" depth="3.8628" valign="top" style="item">$q_0 = 1$</text>
-<text layer="epsilon" transformations="translations" pos="16 96" stroke="0" type="minipage" width="544" height="32.059" depth="21.0234" valign="top" style="item">$\delta(i,x) = \left \{ 
-\begin{array}{lcl}
-i+1 &amp; \vert &amp; (i \neq -1) \wedge ( i \neq \vert w \vert) \wedge (x = w_i)\\
--1 &amp;\vert &amp; \mathrm{sonst}
-\end{array}
- \right .$</text>
-<text layer="zeta" transformations="translations" pos="16 32" stroke="0" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$F = \set{\vert w \vert + 1}$</text>
-</page>
-<page title="Aufgabe">
+<page title="Weise Worte">
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<text layer="alpha" matrix="1 0 0 1 42.6794 24.9533" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">1</text>
-<path matrix="1 0 0 1 -319.664 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 -191.664 0.2016" stroke="black" pen="1" arrow="normal/normal">
-256 256 m
-297.373 256 l
-</path>
-<text matrix="1 0 0 1 170.679 24.9533" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">2</text>
-<path matrix="1 0 0 1 -191.664 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-150.963 256 m
-233.709 256 l
-</path>
-<text matrix="1 0 0 1 298.679 25.1442" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
-<path matrix="1 0 0 1 -63.664 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 128 0" stroke="0" pen="1" arrow="normal/normal">
-150.963 256 m
-233.709 256 l
-</path>
-<text matrix="1 0 0 1 426.679 24.9533" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="14.4966" depth="0" valign="baseline">4</text>
-<path matrix="1 0 0 1 64.336 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 256 0" stroke="0" pen="1" arrow="normal/normal">
-150.963 256 m
-233.709 256 l
-</path>
-<text matrix="1 0 0 1 554.679 25.4894" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="13.8239" depth="0.3996" valign="baseline">5</text>
-<path matrix="1 0 0 1 192.336 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 384 0" stroke="0" pen="1" arrow="normal/normal">
-150.963 256 m
-233.709 256 l
-</path>
-<text matrix="1 0 0 1 682.679 25.1442" transformations="translations" pos="80 224" stroke="0" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">6</text>
-<path matrix="1 0 0 1 320.336 -31.7984" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path matrix="1 0 0 1 512 0" stroke="0" pen="1" arrow="normal/normal">
-150.963 256 m
-233.709 256 l
-</path>
-<text transformations="translations" pos="176 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="320 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text transformations="translations" pos="432 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="560 272" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="688 272" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 359.292 -167.047" transformations="translations" pos="80 224" stroke="0" type="label" width="18.0886" height="14.4966" depth="0" valign="baseline">-1</text>
-<path matrix="1 0 0 1 0.336 -223.798" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-400 240 m
-432 192
-448.267 86.8289 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-496 240 m
-464 192
-448.996 86.8194 c
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-625.323 239.272 m
-464.649 79.8823 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-271.495 239.402 m
-432.747 80.6021 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-752.017 240.527 m
-469.727 71.58 l
-</path>
-<path stroke="0" pen="1" arrow="normal/normal">
-143.945 239.82 m
-427.007 71.7562 l
-</path>
-<path matrix="-0.999796 0.0202104 -0.0202104 -0.999796 917.138 311.094" stroke="black" pen="1" arrow="normal/normal">
-480 272 m
-496 320
-432 320
-448 272 c
-</path>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="256 160" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="320 176" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="416 176" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="464 192" stroke="0" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text transformations="translations" pos="544 176" stroke="0" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text transformations="translations" pos="640 160" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text matrix="1 0 0 1 -15 -3" transformations="translations" pos="448 0" stroke="0" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">a,b</text>
-<text transformations="translations" pos="16 368" stroke="0" type="minipage" width="352" height="15.358" depth="4.2846" valign="top">Beispiel $w = abaab$</text>
-<path matrix="0.892315 0 0 0.892315 368.579 -0.78512" stroke="black" pen="1">
-22.6274 0 0 22.6274 448 288 e
-</path>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<group layer="alpha" matrix="1 0 0 1 16 176">
-<path stroke="gray1" fill="gray3">
-488 160 m
-8 0 0 8 480 160 480 168 a
--8 168 l
--8 140.506 l
-8 0 0 8 0 140.506 0 132.506 a
-488 132.506 l
-h
-</path>
-</group>
-<text matrix="1 0 0 1 16 112" transformations="translations" pos="0 224" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top">Zeigt, dass alle endlich großen Sprachen regulär sind</text>
-<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Sei $\Sigma = \set{a,b}$</text>
-<text layer="beta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 288" stroke="0" type="minipage" width="576" height="15.469" depth="4.4178" valign="top">Sei $L$ eine beliebige endliche Sprache</text>
-<text layer="gamma" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 256" stroke="0" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">Da $L$ endlich ist, enthält $L$ genau $i= \vert L \vert$ Wörter</text>
-<text layer="delta" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 224" stroke="0" type="minipage" width="768" height="28.5559" depth="17.538" valign="top" style="item">Die Vereinigung der $i$, paarweise verschiedenen Sprachen, die jeweils ein Wort aus $L$ enthalten ist genau $L$</text>
-<text layer="epsilon" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 192" stroke="0" type="minipage" width="544" height="30.2941" depth="19.2696" valign="top" style="item">In der Übung wurde schon gezeigt, dass die regulären Sprachen unter Vereinigung abgeschlossen sind</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<view layers="alpha" active="alpha"/>
-<view layers="alpha beta" active="beta"/>
-<view layers="alpha beta gamma" active="gamma"/>
-<view layers="alpha beta gamma delta" active="delta"/>
-<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
-<group layer="epsilon">
-<path stroke="black" fill="KITred15">
-520 328 m
-884 328 l
-8 0 0 -8 884 320 892 320 a
-892 266.21 l
-528 266.21 l
-8 0 0 -8 528 274.21 520 274.21 a
-h
-</path>
-</group>
-<path layer="alpha" matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-448 320 m
-238.724 262.398 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-448 320 m
-658.656 263.835 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-224 256 m
-126.223 199.451 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-112 192 m
-58.5849 140.049 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-112 192 m
-152.594 141.82 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-224 256 m
-323.578 201.293 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-336 192 m
-281.994 140.536 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-336 192 m
-376.841 141.958 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-560 192 m
-521.624 140.817 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-672 256 m
-572.792 201.701 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-672 256 m
-773.536 203.549 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-784 192 m
-839.637 141.23 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-784 192 m
-742.985 142.386 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-560 192 m
-614.887 140.697 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 0 -64" stroke="black" fill="white" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 112 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 112 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 224 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 224 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 336 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 336 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 464 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 464 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 576 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 576 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 688 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 688 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<path matrix="1 0 0 1 800 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-21.9688 62.8196 l
-</path>
-<path matrix="1 0 0 1 800 -64" stroke="black" fill="1" pen="1" arrow="normal/normal">
-48 128 m
-73.8983 62.4834 l
-</path>
-<text matrix="1 0 0 1 0 16" transformations="translations" pos="0 384" stroke="0" type="minipage" width="560" height="15.2203" depth="4.1514" valign="top">\bfseries Alternative Lösung:</text>
-<path matrix="1 0 0 1 -96 -64" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 128 0" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 352 -64" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -208 -128" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 16 -128" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 240 -128" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 464 -128" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -48 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 64 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 192 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 304 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 416 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 528 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -272 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -160 -192" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -80 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -16 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -192 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -128 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -304 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 -240 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 32 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 96 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 160 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 224 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 272 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 336 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 384 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 448 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 496 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<path matrix="1 0 0 1 560 -272" stroke="black" fill="1" pen="1">
-15.664 -0.2016 0.2016 15.664 320.336 256.202 e
-</path>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="336 304" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="176 240" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="80 176" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 3 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="144 176" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 112 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 115 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 224 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 227 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 336 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 339 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 464 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 467 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 576 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 579 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 688 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 691 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 800 -64" transformations="translations" pos="16 96" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 803 -64" transformations="translations" pos="64 96" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="288 176" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="368 176" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="512 176" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="592 176" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="736 176" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="816 176" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="288 240" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="608 240" stroke="black" type="label" width="11.3131" height="10.878" depth="0.222" valign="baseline">a</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="720 240" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text matrix="1 0 0 1 0 -64" transformations="translations" pos="544 304" stroke="black" type="label" width="11.3131" height="14.5099" depth="0.222" valign="baseline">b</text>
-<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 336" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Der vollständige Binärbaum der Höhe $h$ enthält alle Wörter der Länge $\leq h-1$ als  Pfade</text>
-<text layer="gamma" transformations="translations" pos="0 336" stroke="black" type="minipage" width="416" height="22.8149" depth="11.7438" valign="top" style="item">Erstelle Binärbaum der Höhe $\underset{w\in L}{max} \vert w \vert$</text>
-<text layer="delta" matrix="1 0 0 1 0 9" transformations="translations" pos="0 288" stroke="black" type="minipage" width="416" height="28.1829" depth="17.1384" valign="top" style="item">Markiere alle Zustände, die zu Wörtern in L korrespondieren als Endzustand</text>
-<text layer="epsilon" matrix="1 0 0 1 -64 16" transformations="translations" pos="592 304" stroke="black" type="minipage" width="356" height="28.4071" depth="17.3826" valign="top">Dass das alles funktioniert, muss noch bewiesen werden (zB. via Induktion)</text>
-<path layer="delta" stroke="black" pen="1" arrow="normal/normal">
-448 304 m
-448 272 l
-</path>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="848" height="28.4071" depth="17.3826" valign="top">Geht mit $\impl, \vee \wedge \neg$ in Beweisen sparsam um.\\
+ Die meisten Beweise lesen sich deutlich einfacher, wenn man in Natürlicher sprache bleibt</text>
 </page>
 </ipe>

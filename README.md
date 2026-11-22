@@ -1,16 +1,16 @@
 ## Installation
 
-1. Setze einen (symbolischen) Link von dem Repo (das Verzeichnis wo die preamble.tex liegt) auf /opt/gbi-slides.
+1. Setze einen (symbolischen) Link von dem Repo (das Verzeichnis wo die preamble.tex liegt) auf /opt/gti-slides.
    
    - Linux: ln -s:
      
-     - ln -s {pfad zum repo} /opt/gbi-slides
+     - ln -s {pfad zum repo} /opt/gti-slides
    
    - Windows: 
      
      - mkdir \opt
      
-     - mklink /d \opt\gbi-slides {pfad zum repo}
+     - mklink /d \opt\gti-slides {pfad zum repo}
 
 2. Installiere ggf. [Ipe](https://ipe.otfried.org/), python >= 3.11 und latex.
 
@@ -18,14 +18,15 @@
 
 4. Kopiere die ipelets in den ipelets folder deiner IPE installation
 
-5. `python ./make.py --all` sollte jetzt ohne Fehler laufen und in jedem tutXX Verzeichnis eine PDF-Datei generieren.
+5. Kopiere template/qr_less_pre.ipe und nenne es in pre.ipe um
+
+6. `python ./make.py --all` sollte jetzt ohne Fehler laufen und in jedem tutXX Verzeichnis eine PDF-Datei generieren.
 
 ## Beispiel Installlation unter Windows
 - Installiere IPE und [MikTeX](https://miktex.org/) unter Windows
 - In CMD
   - `mkdir \opt`
-  - `mklink /d \opt\gbi-slides {pfad zum repo}`
-y
+  - `mklink /d \opt\gti-slides {pfad zum repo}`
 Jetzt müssten die Folien schon in IPE Editierbar und Exportierbar sein
 
 
@@ -47,7 +48,8 @@ Exportiert alle PDFs
 
 Löscht alle PDFs und generierten IPE Dateien
 
---all und -- files können mit --print kombiniert werden um PDFs ohne clicks zu exportieren, dafür wird für jede Seite nur die letzte View genommen.
+--all und -- files können mit --print kombiniert werden um PDFs ohne Klicks zu exportieren, dafür wird für jede Seite nur die letzte View genommen.
+
 ## Bearbeiten
 
 - Die .ipe-Dateien können einfach mit Ipe bearbeitet werden (z.B. ipe content/orga.ipe)

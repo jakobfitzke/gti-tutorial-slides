@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20241210112053" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20260113111555" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <bitmap id="1" width="1475" height="859" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="75560" encoding="base64">
 eNrs3V1oXOe9+HvdrYshCF0M+2IwwphgNsKYYl0Im5BjERSCYbAh/IVAoocIBbk7hkjspGy3
 W2rgeHdPW1x2I1HREKnF+zTY0p8t/pa9Y9eiNiZySSL1CPswrrFjbJn+hQ7M3pS5mDuf9f76
@@ -5957,7 +5957,7 @@ zeichnen.
 \item 2. Jeweils zwei Knoten/Bäume (nicht unbeding Blätter!) mit den
 geringsten Häufigkeiten verbinden, indem man ihnen eine
 gemeinsame Wurzel gibt, die die Summe der Häufigkeiten erhält.
-\item 3. 2.Schritt wiederholen, bis nur noch ein Baum übrig ist.
+\item 3. 2. Schritt wiederholen, bis nur noch ein Baum übrig ist.
 \item  4. Die linken Äste jeweils mit 0 beschriften, die rechten Äste mit 1.
 \item 5. Die Codierung einzelner Zeichen kann man entlang der Pfade von
 der Wurzel zum jeweiligen Zeichen ablesen</text>
@@ -6000,7 +6000,7 @@ der Wurzel zum jeweiligen Zeichen ablesen</text>
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="336" height="15.1648" depth="4.0848" valign="top">w = abadcadaac (10 Zeichen)</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="336" height="15.1648" depth="4.0848" valign="top">$w =$ abadcadaac (10 Zeichen)</text>
 <text layer="beta" matrix="1 0 0 1 -32 16" transformations="translations" pos="32 48" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">1,b</text>
 <text matrix="1 0 0 1 -32 0" transformations="translations" pos="144 64" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">2,d</text>
 <text layer="gamma" matrix="1 0 0 1 -32 16" transformations="translations" pos="96 144" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">3</text>
@@ -6046,8 +6046,8 @@ h
 <text layer="eta" matrix="1 0 0 1 -176 48" transformations="translations" pos="480 80" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist also $ h^{**}(w)$?</text>
 <text layer="theta" matrix="1 0 0 1 -208 80" transformations="translations" pos="480 64" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$h^{**}(abadcadaac) = 100010010110011101$</text>
 <text layer="kappa" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 80" stroke="black" type="minipage" width="480" height="15.2758" depth="4.218" valign="top" style="item">Das codierte Wort ist länger als das Original</text>
-<text layer="lambda" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 48" stroke="black" type="minipage" width="544" height="26.1538" depth="15.1182" valign="top" style="item">Um ein Zeichen aus \{a,b,c,d\} zu codieren braucht man mindestens 2 bit</text>
-<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">$\Rightarrow$Unsere Codierung ist in Binär trotzdem kürzer</text>
+<text layer="lambda" matrix="1 0 0 1 -144 32" transformations="translations" pos="416 48" stroke="black" type="minipage" width="544" height="27.1994" depth="16.1616" valign="top" style="item">Um ein Zeichen aus $\{a,b,c,d\}$ zu codieren braucht man mindestens 2 bit</text>
+<text layer="mu" transformations="translations" pos="272 16" stroke="black" type="minipage" width="624" height="15.2758" depth="4.218" valign="top" style="item">$\Rightarrow$Unsere Codierung ist in binär trotzdem kürzer</text>
 <text layer="zeta" matrix="1 0 0 1 7.98121 -11.9718" transformations="translations" pos="192 320" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
 <text matrix="1 0 0 1 5.58685 -7.18309" transformations="translations" pos="80 224" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
 <text matrix="1 0 0 1 8.77933 -6.38497" transformations="translations" pos="16 128" stroke="black" type="label" width="11.3131" height="14.5144" depth="0.3996" valign="baseline">0</text>
@@ -6076,7 +6076,7 @@ h
 h
 </path>
 </group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="13.4221" depth="2.3532" valign="top">Sei $w =acab$</text>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="448" height="13.4221" depth="2.3532" valign="top">Sei $w =abac$</text>
 <text layer="beta" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="528" height="15.2758" depth="4.218" valign="top">Bestimmt eine mögliche Huffman Codierung des
 Wortes w</text>
 <text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="32 160" stroke="black" type="label" width="28.2828" height="14.5121" depth="2.997" valign="baseline">1,b</text>
@@ -6115,14 +6115,14 @@ Wortes w</text>
 
 \end{tabular}
 </text>
-<text transformations="translations" pos="304 96" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top">$h^{**}(w) = 101100$</text>
+<text transformations="translations" pos="304 96" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top">$h^{**}(w) = 100101$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 12}</text>
 </page>
 <page title="Klausuraufgabe WS 18/19">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<image layer="alpha" matrix="0.479831 0 0 0.479831 66.5366 -19.5569" rect="0 0 1475 859" bitmap="1"/>
+<image layer="alpha" matrix="0.479831 0 0 0.479831 98.5366 -19.5569" rect="0 0 1475 859" bitmap="1"/>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 13}</text>
 </page>
 <page title="Lösung">

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20250210165047" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251106150711" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -3731,13 +3731,290 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Thema">
+<page title="Abbildungen und Funktionen I">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top">Typische Klausuraufgaben:</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="848" height="15.0516" depth="3.9738" valign="top" style="item">Für gegebene Interpretation und Universum eine PL Formel angeben</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="864" height="15.2758" depth="4.218" valign="top" style="item">Interpretationen angeben sodass die Formel erfüllt/nicht erfüllt ist</text>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
+<group layer="epsilon">
+<path stroke="black" fill="KITred15">
+536 344 m
+816 344 l
+8 0 0 -8 816 336 824 336 a
+824 282.088 l
+544 282.088 l
+8 0 0 -8 544 290.088 536 290.088 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+320 376 l
+8 0 0 -8 320 368 328 368 a
+328 282.23 l
+16 282.23 l
+8 0 0 -8 16 290.23 8 290.23 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="176" height="13.078" depth="2.0202" valign="top">\bfseries Funktion</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="304" height="28.2939" depth="17.2716" valign="top">Eine Funktion ist eine Linkstotale und Rechtseindeutige Relation</text>
+<text transformations="translations" pos="16 256" stroke="black" type="minipage" width="480" height="14.854" depth="3.774" valign="top" style="item">Statt $f \subseteq A \times B$ schreibt man meistens
+</text>
+<text matrix="1 0 0 1 -112 0" transformations="translations" pos="16 224" stroke="black" type="minipage" width="480" height="36.4635" depth="25.4634" valign="top">$$
+\begin{aligned}
+f : A &amp;\rightarrow B \\
+a &amp;\mapsto b \mbox{ oder } f(a) = b
+\end{aligned}
+$$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 144" stroke="black" type="minipage" width="608" height="15.2758" depth="4.218" valign="top" style="item">Eine linkseindeutige Funktion/Abbildung heißt auch Injektiv</text>
+<text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 112" stroke="black" type="minipage" width="416" height="15.1648" depth="4.0848" valign="top" style="item">Eine rechtstotale Surjektiv</text>
+<text layer="beta" transformations="translations" pos="16 144" stroke="black" type="minipage" width="880" height="15.2758" depth="4.218" valign="top" style="item">f wird auch Abbildung mit Definitionsbereich A und Wertebereich B genannt</text>
+<text layer="delta" transformations="translations" pos="16 48" stroke="black" type="minipage" width="464" height="15.2758" depth="4.218" valign="top" style="item">Wenn beides gilt heißt die Abbildung Bijektiv</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+<text layer="epsilon" matrix="1 0 0 1 -32 16" transformations="translations" pos="576 320" stroke="black" type="minipage" width="272" height="28.4848" depth="17.427" valign="top">\bfseries Definitions und Zielbereich immer mit angeben</text>
+</page>
+<page title="Abbildungen und Funktionen II">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page gamma" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="gamma"/>
+<group layer="alpha" matrix="1 0 0 1 -400 0">
+<path stroke="black" fill="KITgreen15">
+408 376 m
+800 376 l
+8 0 0 -8 800 368 808 368 a
+808 209.882 l
+416 209.882 l
+8 0 0 -8 416 217.882 408 217.882 a
+h
+</path>
+</group>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+<text layer="alpha" matrix="1 0 0 1 -400 0" transformations="translations" pos="416 368" stroke="black" type="minipage" width="368" height="15.2203" depth="4.1514" valign="top">\bfseries Fallunterscheidungen</text>
+<text layer="gamma" matrix="1 0 0 1 -400 0" transformations="translations" pos="416 336" stroke="black" type="minipage" width="384" height="44.198" depth="33.2112" valign="top">$$f: \mathbb R\rightarrow \mathbb R, \quad
+x \mapsto \left\{\begin{array}{rcl}
+-1 &amp;\vert &amp;  x &lt; 0\\
+1 &amp;\vert &amp; x \geq 0
+\end{array}\right.$$</text>
+<text layer="alpha" matrix="1 0 0 1 -400 0" transformations="translations" pos="416 240" stroke="black" type="minipage" width="384" height="16.5901" depth="5.5278" valign="top">$f(x)$ ist $-1$ falls $x &lt; 0$, sonst 1</text>
+<text layer="beta" matrix="1 0 0 1 -400 0" transformations="translations" pos="416 336" stroke="black" type="minipage" width="384" height="44.198" depth="33.2112" valign="top">$$f: \mathbb R\rightarrow \mathbb R, \quad
+x \mapsto \left\{\begin{array}{rcl}
+-1 &amp;\vert &amp;  x &lt; 0\\
+1 &amp;\vert &amp; \mbox{sonst}
+\end{array}\right.$$</text>
+</page>
+<page title="Zusammenfassung">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="304" height="12.9115" depth="1.8204" valign="top" style="item">Linkstotalität</text>
+<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="816" height="15.1648" depth="4.0848" valign="top" style="subitem">Jedes x hat min. einen Funktionswert f(x) (keine Definitionslücken)</text>
+<text layer="beta" transformations="translations" pos="0 320" stroke="black" type="minipage" width="368" height="15.0516" depth="3.9738" valign="top" style="item">Rechtseindeutigkeit</text>
+<text transformations="translations" pos="0 288" stroke="black" type="minipage" width="368" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein x-Wert hat mehrere y-Werte</text>
+<text layer="gamma" transformations="translations" pos="0 256" stroke="black" type="minipage" width="384" height="15.2758" depth="4.218" valign="top" style="item">Linkseindeutigkeit (Injektivität)</text>
+<text transformations="translations" pos="0 224" stroke="black" type="minipage" width="416" height="14.9184" depth="3.8628" valign="top" style="subitem">Kein y-Wert hat mehrere x-Werte</text>
+<text transformations="translations" pos="0 192" stroke="black" type="minipage" width="432" height="15.2758" depth="4.218" valign="top" style="subitem">Also: Aus f(a) = f(b) folgt a = b</text>
+<text transformations="translations" pos="0 160" stroke="black" type="minipage" width="784" height="15.469" depth="4.4178" valign="top" style="subitem">Oder: Es gibt keine zwei Relationen (a, y), (b, y) und $a \neq b$
+</text>
+<text layer="delta" transformations="translations" pos="0 128" stroke="black" type="minipage" width="592" height="15.1648" depth="4.0848" valign="top" style="item">Rechtstotalität (Surjektivität)</text>
+<text transformations="translations" pos="0 96" stroke="black" type="minipage" width="640" height="14.9184" depth="3.8628" valign="top" style="subitem">Jeder y-Wert hat mindestens einen x-Wert</text>
+<text transformations="translations" pos="0 64" stroke="black" type="minipage" width="656" height="15.1582" depth="4.107" valign="top" style="subitem">Also: Für jedes $y\in$ Zielbereich existiert ein x mit f(x) = y</text>
+<text transformations="translations" pos="0 32" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="subitem">Oder: Es gibt kein y, zu dem kein x in Relation steht</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
+</page>
+<page title="Beispiel">
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<layer name="epsilon"/>
+<layer name="zeta"/>
+<view layers="alpha" active="alpha"/>
+<view layers="alpha beta" active="beta"/>
+<view layers="alpha beta gamma" active="gamma"/>
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
+<group layer="alpha">
+<path stroke="gray1" fill="gray3">
+840 352 m
+8 0 0 8 832 352 832 360 a
+568 360 l
+568 329.882 l
+8 0 0 8 576 329.882 576 321.882 a
+840 321.882 l
+h
+</path>
+</group>
+<text transformations="translations" pos="0 384" stroke="black" type="minipage" width="400" height="18.0308" depth="6.9708" valign="top">Zeige das $f : \mathbb N \rightarrow \mathbb R, x \mapsto \frac{x}{x+1}$ injektiv ist</text>
+<text transformations="translations" pos="576 352" stroke="black" type="minipage" width="256" height="16.5901" depth="5.5278" valign="top">$f(a) = f(b) \Rightarrow a = b$</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">Seien $x_1, x_2 \in \mathbb N$ mit $f(x_1) = f(x_2)$</text>
+<text layer="gamma" matrix="1 0 0 1 16 0" transformations="translations" pos="0 304" stroke="black" type="minipage" width="448" height="18.4993" depth="7.4592" valign="top">\impl $ \frac{x_1}{x_1+1} =  \frac{x_2}{x_2+1}$</text>
+<text layer="delta" matrix="1 0 0 1 16 -43" transformations="translations" pos="0 304" stroke="black" type="minipage" width="448" height="16.5901" depth="5.5278" valign="top">\impl$ x_1(x_2+1) =  x_2(x_1+1)$</text>
+<text layer="epsilon" matrix="1 0 0 1 16 2" transformations="translations" pos="0 224" stroke="black" type="minipage" width="448" height="14.4411" depth="3.3744" valign="top">\impl$x_1 x_2 + x_1 = x_1 x_2+ x2$</text>
+<text layer="zeta" matrix="1 0 0 1 16 0" transformations="translations" pos="0 192" stroke="black" type="minipage" width="464" height="12.1034" depth="1.0434" valign="top">\impl$x_1 = x_2$</text>
+</page>
+<page title="Aufgabe">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page gamma" active="gamma"/>
+<group layer="beta">
+<path stroke="gray1" fill="gray3">
+296 272 m
+8 0 0 8 288 272 288 280 a
+8 280 l
+8 230.26 l
+8 0 0 8 16 230.26 16 222.26 a
+296 222.26 l
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="592" height="41.9758" depth="30.9912" valign="top">Sei $S$ die Menge von Studenten, die eine Präsenz-Vorlesung GBI
+besuchen wollen und sei $A$ die Menge aller Sitzplätze im Audimax.
+Die Abbildung $f: S \rightarrow A$ ordnet Studenten ihren Sitzplätzen zu</text>
+<text layer="beta" transformations="translations" pos="16 272" stroke="black" type="minipage" width="272" height="26.4002" depth="15.3402" valign="top">Welche Eigenschaften würdet ihr euch von $f$ wünschen?</text>
+<text layer="gamma" transformations="translations" pos="16 272" stroke="black" type="minipage" width="672" height="15.2758" depth="4.218" valign="top" style="item">Injektiv, sonst hätten mehrere Studenten den gleichen Platz</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
+</page>
+<page title="Binäre Operation">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 200 m
+576 200 l
+8 0 0 -8 576 192 584 192 a
+584 0.41028 l
+16 0.41028 l
+8 0 0 -8 16 8.41028 8 8.41028 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+592 376 l
+8 0 0 -8 592 368 600 368 a
+600 212.781 l
+16 212.781 l
+8 0 0 -8 16 220.781 8 220.781 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="352" height="15.0605" depth="3.996" valign="top">\bfseries Binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="576" height="41.7271" depth="30.7248" valign="top">Eine \textbf{binäre Operation auf einer Menge} M ist eine Abbildung $f: M\times M \rightarrow M$. Meist wird sie mit Symbol in Infix Schreibweise dargestellt. Also z.B.:</text>
+<text matrix="1 0 0 1 95 25" transformations="translations" pos="144 224" stroke="black" type="minipage" width="176" height="16.5901" depth="5.5278" valign="top">$f(x,y) \eqqcolon x\star y$</text>
+<text layer="beta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 192" stroke="black" type="minipage" width="560" height="15.1648" depth="4.0848" valign="top">Aus der Mathematik kennt ihr schon viele binäre Operationen:</text>
+<text transformations="translations" pos="16 192" stroke="black" type="minipage" width="512" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="464" height="17.4647" depth="6.3936" valign="top" style="item">$f_{add}: \mathbb N_0^2 \rightarrow \mathbb N_0, \quad(x,y) \mapsto x+y$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="528" height="17.3893" depth="6.327" valign="top" style="item">$f_{sub}: \mathbb Z^2 \rightarrow \mathbb Z, \quad(x,y) \mapsto x-y$</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="544" height="17.4647" depth="6.3936" valign="top" style="item">$f_{mult}: \mathbb N_0^2 \rightarrow \mathbb N_0, \quad(x,y) \mapsto x\cdot y$</text>
+<text transformations="translations" pos="16 32" stroke="black" type="minipage" width="544" height="17.3893" depth="6.327" valign="top" style="item">$f_{div}: \mathbb Q^2 \rightarrow \mathbb Q, \quad(x,y) \mapsto x/y$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
+</page>
+<page title="Kommutativität">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+752 376 l
+8 0 0 -8 752 368 760 368 a
+760 222.129 l
+16 222.129 l
+8 0 0 -8 16 230.129 8 230.129 a
+h
+</path>
+</group>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 200 m
+512 200 l
+8 0 0 -8 512 192 520 192 a
+520 32.4103 l
+16 32.4103 l
+8 0 0 -8 16 40.4103 8 40.4103 a
+h
+</path>
+</group>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Kommutative binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Eine binäre Operation $\diamond$ heißt \textbf{Kommutativ} wenn für alle Elemente $x,y \in M $ gilt:</text>
+<text transformations="translations" pos="192 304" stroke="black" type="minipage" width="400" height="16.5901" depth="5.5278" valign="top">$f(x,y) = f(y,x)$ bzw. $x\diamond y = y \diamond x$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="720" height="26.4002" depth="15.3402" valign="top">Anschaulich: Die Operanden dürfen vertauscht werden, ohne das
+Ergebnis zu beeinflussen</text>
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="432" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="336" height="12.9115" depth="1.8204" valign="top" style="item">Addition ist kommutativ</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="336" height="14.9184" depth="3.8628" valign="top" style="item">Multiplikation ist kommutativ</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="336" height="13.229" depth="2.1534" valign="top" style="item">Subtraktion ist nicht kommutativ</text>
+<text transformations="translations" pos="16 64" stroke="black" type="minipage" width="496" height="17.3893" depth="6.327" valign="top" style="item">$f_{abstand}: \mathbb Z^2 \rightarrow \mathbb Z, \quad (x,y) \mapsto \vert x -y \vert$ ist kommutativ</text>
+<text transformations="translations" pos="384 96" stroke="black" type="minipage" width="128" height="15.3757" depth="4.2846" valign="top">$x - y \neq y - x$</text>
+<text transformations="translations" pos="384 128" stroke="black" type="minipage" width="128" height="12.5985" depth="1.5318" valign="top">$x \cdot y = y \cdot x$</text>
+<text transformations="translations" pos="384 160" stroke="black" type="minipage" width="128" height="14.1392" depth="3.0636" valign="top">$x + y = y + x$</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
+</page>
+<page title="Assoziativität">
+<layer name="alpha"/>
+<layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<group layer="beta">
+<path stroke="black" fill="KITblue15">
+8 200 m
+560 200 l
+8 0 0 -8 560 192 568 192 a
+568 64.4103 l
+16 64.4103 l
+8 0 0 -8 16 72.4103 8 72.4103 a
+h
+</path>
+</group>
+<group layer="alpha">
+<path stroke="black" fill="KITgreen15">
+8 376 m
+752 376 l
+8 0 0 -8 752 368 760 368 a
+760 218.068 l
+16 218.068 l
+8 0 0 -8 16 226.068 8 226.068 a
+h
+</path>
+</group>
+<text transformations="translations" pos="16 368" stroke="black" type="minipage" width="304" height="15.0605" depth="3.996" valign="top">\bfseries Assoziative binäre Operation</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="736" height="15.469" depth="4.4178" valign="top">Eine binäre Operation $\diamond$ heißt \textbf{Assoziativ} wenn für alle Elemente $x,y,z \in M $ gilt:</text>
+<text matrix="1 0 0 1 -64 0" transformations="translations" pos="192 304" stroke="black" type="minipage" width="496" height="16.5901" depth="5.5278" valign="top">$f (x, f (y, z)) = f (f (x, y), z)$ bzw. $x \diamond (y \diamond z) = (x \diamond y) \diamond z$</text>
+<text transformations="translations" pos="16 272" stroke="black" type="minipage" width="720" height="28.5403" depth="17.4936" valign="top">Anschaulich: Klammern dürfen hinzugefügt oder weggelassen werden, ohne das
+Ergebnis zu beeinflussen</text>
+<text layer="beta" transformations="translations" pos="16 192" stroke="black" type="minipage" width="464" height="15.0605" depth="3.996" valign="top">\bfseries Beispiele:</text>
+<text transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">Addition ist assoziativ $x + (y + z) = (x + y) + z = x + y + z$</text>
+<text transformations="translations" pos="16 128" stroke="black" type="minipage" width="544" height="16.5901" depth="5.5278" valign="top" style="item">Subtraktion ist nicht assoziativ $x - (y - z) \neq (x - y) - z$</text>
+<text transformations="translations" pos="16 96" stroke="black" type="minipage" width="544" height="17.3893" depth="6.327" valign="top" style="item">$f_{abstand}: \mathbb Z^2 \rightarrow \mathbb Z, \quad (x,y) \mapsto \vert x -y \vert$ ist nicht assoziativ</text>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 21}</text>
 </page>
 </ipe>
