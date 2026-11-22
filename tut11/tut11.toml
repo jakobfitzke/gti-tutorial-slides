@@ -1,4 +1,4 @@
 title = "11 O-Notation und endliche Automaten"   # the file name of the output pdf
 description = "O-Notation und endliche Automaten" # 
-content = ["onotationbeweise", "algorithms", "automaten"]
+content = [] # "onotationbeweise", "algorithms", "automaten"]
 xkcd = 2939

@@ -1,4 +1,4 @@
 title = "13 Schwere Probleme und Klausurvorbereitung"   # the file name of the output pdf
 description = "Schwere Probleme und Klausurvorbereitung" # 
-content = ["schwereprobleme", "klausurinfos"]
+content = [] # "schwereprobleme", "klausurinfos"]
 xkcd = 1266

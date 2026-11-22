@@ -1,4 +1,4 @@
 title = "06 Induktion und Wiederholung"                  # the file name of the output pdf
 description = "Induktion und Wiederholung"            # 
-content = ["besondereinduktion"]#, "praedikatenlogik"]
+content = [] # "besondereinduktion", "praedikatenlogik"]
 xkcd = 1516

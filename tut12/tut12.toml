@@ -1,4 +1,4 @@
 title = "12 Endliche Automaten und Wiederholung"   # the file name of the output pdf
 description = "Endliche Automaten und Wiederholung" # 
-content = ["automaten", "wiederholung/regex", "wiederholung/praedikatenlogik", "wiederholung/graphen"]
+content = [] # "automaten", "wiederholung/regex", "wiederholung/praedikatenlogik", "wiederholung/graphen"]
 xkcd = 1090

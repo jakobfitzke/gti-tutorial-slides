@@ -1,4 +1,4 @@
 title = "08 Codierungen und Homomorphismen"    # the file name of the output pdf
 description = "Codierungen und Homomorphismen" # 
-content = ["codierungen", "homomorphismen", "huffman", "grammatiken"]
+content = [] # "codierungen", "homomorphismen", "huffman", "grammatiken"]
 xkcd = 1090
