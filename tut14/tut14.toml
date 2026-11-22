@@ -1,4 +1,0 @@
-title = "14 Schwere Probleme, Wiederholung"       # the file name of the output pdf
-description = "Schwere Probleme und Wiederholung" # 
-content = ["schwereprobleme", "induktiongraphen"]
-xkcd = 754
