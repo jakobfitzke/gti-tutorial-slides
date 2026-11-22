@@ -1,5 +1,8 @@
-
-title = "05 Reguläre Ausdrücke, Induktion"        # the file name of the output pdf
-description = " Reguläre Ausdrücke und Induktion" # 
-content = ["regex", "induktion"]
-xkcd = 1033
+title = "05 Aussagenkalkül und Induktion" # the file name of the output pdf
+description = "05 Aussagenkalkül und Induktion" # 
+content = [
+    "regex",
+    "beweisbarkeit",
+    "induktion",
+]
+xkcd = 722

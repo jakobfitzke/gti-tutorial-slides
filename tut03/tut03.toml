@@ -1,5 +1,7 @@
-
-title = "03 Aussagenlogik, Alphabete, Woerter"          # the file name of the output pdf
-description = "03 Aussagenlogik, Alphabete und Woerter" # 
-content = ["aussagenlogik", "beweisbarkeit", "woerter"]
-xkcd = 704
+title = "03 Induktion und Zahlendarstellung" # the file name of the output pdf
+description = "03 Induktion und Zahlendarstellung" # 
+content = [
+    "induktion",
+    "codierungen"
+]
+xkcd = 953

@@ -1,5 +1,4 @@
-
-title = "02 Mengenbeweise, Relationen, Abbildungen"                      # the file name of the output pdf
-description = "Mengenbeweise, Relationen und Abbildungen"                #
-content = ["mengenbeweise","relationen", "abbildungen"]
-xkcd = 1445
+title = "02 Quantoren, Sprachen und Regex"                   # the file name of the output pdf
+description = "Quantoren, Sprachen und Regex"                # 
+content = ["quantoren", "formalesprachen", "regex"]
+xkcd = 2343

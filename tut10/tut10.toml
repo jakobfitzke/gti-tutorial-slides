@@ -1,4 +1,4 @@
-title = "10 Grammatiken, Graphen"       # the file name of the output pdf
-description = "Grammatiken und Graphen" # 
-content = ["grammatiken", "graphen"]
-xkcd = 173
+title = "10 Graphen, Algorithmen und O-Notation"   # the file name of the output pdf
+description = "Graphen, Algorithmen und O-Notation" # 
+content = ["graphen", "induktiongraphen", "pseudocode", "onotation"]
+xkcd = 3026

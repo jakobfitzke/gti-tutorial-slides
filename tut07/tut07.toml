@@ -1,5 +1,4 @@
-
-title = "07 Prädikatenlogik"         # the file name of the output pdf
-description = "Prädikatenlogik"      # 
-content = ["plsyntax", "plsemantik"]
-xkcd = 1738
+title = "07 Prädikatenlogik"    # the file name of the output pdf
+description = "Prädikatenlogik"  # 
+content = ["plsyntax", "plsemantik", "weihnachten"]
+xkcd = 1322
