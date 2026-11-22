@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20251215183306" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.2.29">
+<info created="D:20220409132243" modified="D:20251216105915" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <bitmap id="1" width="926" height="126" BitsPerComponent="8" ColorSpace="DeviceRGB" Filter="FlateDecode" length="6035" encoding="base64">
 eNrt3U9oXEeewHHd+tAHoUOzh8YYYYJZjDCLdRAKJlgEL4NBxDBECCT2IGyUwYZxs8mAWaQx
 jMj2sBjWkYjZMNKAdxlka1mxlrOJicDBWFniWIywQV6TxMgyi9ChWYY+9E37/v+tqvdfarW+
@@ -10249,7 +10249,7 @@ h
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
 <text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="896" height="28.5403" depth="17.4936" valign="top">Auch hier können wir wieder eine Auswertungsfunktion bauen, die einer prädikatenlogischen Formel, abhängig von einer Interpretation und einer Variablenbelegung einen Wahrheitswert zuordnet</text>
-<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="912" height="15.0516" depth="3.9738" valign="top" style="item">Wir haben jetzt nicht nur Wahrheitswerte, sondern auch beliebige Elemente aus D</text>
+<text transformations="translations" pos="0 320" stroke="black" type="minipage" width="912" height="15.469" depth="4.4178" valign="top" style="item">Wir haben jetzt nicht nur Wahrheitswerte, sondern auch beliebige Elemente aus $D$</text>
 <text transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.2758" depth="4.218" valign="top" style="item">Diese sind aber auf Terme begrenzt</text>
 <text layer="beta" matrix="1 0 0 1 16 32" transformations="translations" pos="0 224" stroke="black" type="minipage" width="688" height="43.9915" depth="32.9892" valign="top">$
 tval_{D,I,\beta}: Ter_S \rightarrow D,
@@ -10258,7 +10258,7 @@ tval_{D,I,\beta} (t) = \left\{ \begin{array}{ll}
 \beta (x) &amp;\vert t= x \in Var_{PL}\\
 I(f)(tval_{D,I,\beta}(t_1) , \dots , tval_{D,I,\beta}(t_k)) &amp;\vert t = f(t_1,\dots,t_k), ar(f) = k\\
 \end{array}\right.$</text>
-<text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="832" height="15.1648" depth="4.0848" valign="top">$\Rightarrow$ tval wertet jeden Term (also Variablen und Funktionen) zu \emph {einem} Wert aus D aus</text>
+<text layer="gamma" transformations="translations" pos="16 160" stroke="black" type="minipage" width="832" height="15.358" depth="4.2846" valign="top">$\Rightarrow$ $tval$ wertet jeden Term (also Variablen und Funktionen) zu \emph {einem} Wert aus $D$ aus</text>
 <text layer="delta" matrix="1 0 0 1 0 -27" transformations="translations" pos="16 144" stroke="black" type="minipage" width="768" height="43.9915" depth="32.9892" valign="top">$
 val_{D,I,\beta}: For_S \rightarrow \mathbb B,
 \\
@@ -10304,29 +10304,33 @@ d &amp;\vert v = x
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
 <view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top"> Quantoren &apos;&apos;überschreiben&apos;&apos; Variablen in ihrem Wirkungsbereich</text>
-<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="item">Bei $\forall x (R(x,y))$ ist egal, was $\beta (x)$ ist. Es gelte ja für alle x in D</text>
-<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Quantoren beziehen sich immer auf D. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
-<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="item">muss durch Relationen eine Einschränkung simuliert werden</text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
-<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ </text>
+<text layer="alpha" matrix="1 0 0 1 -16 16" transformations="translations" pos="16 368" stroke="black" type="minipage" width="784" height="15.2758" depth="4.218" valign="top" style="item"> Quantoren &apos;&apos;überschreiben&apos;&apos; Variablen in ihrem Wirkungsbereich</text>
+<text matrix="1 0 0 1 -16 16" transformations="translations" pos="16 336" stroke="black" type="minipage" width="656" height="16.5901" depth="5.5278" valign="top" style="subitem">Bei $\forall x (R(x,y))$ ist egal, was $\beta (x)$ ist. Es gelte ja für alle x in D</text>
+<text matrix="1 0 0 1 -16 0" transformations="translations" pos="16 304" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="item">Quantoren beziehen sich immer auf $D$. Sowas wie $\forall x \in \mathbb N_0$ gibt es in der Prädikatenlogik nicht</text>
+<text matrix="1 0 0 1 0 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top" style="subitem">Entweder muss $D = \mathbb N_0$ gewählt werden, oder wenn das nicht geht:</text>
+<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="896" height="15.0516" depth="3.9738" valign="top" style="subitem">muss durch Relationen eine Einschränkung simuliert werden</text>
+<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \forall x (R(x) \rightarrow \dots) \quad $ R sei hier die \enquote{ist eine natürliche Zahl} Relation</text>
+<text layer="delta" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 224" stroke="black" type="minipage" width="896" height="16.5901" depth="5.5278" valign="top" style="subsubitem">$D = \mathbb R, \quad  \exists x (R(x) \wedge \dots) \quad $ R ist hier die \enquote{ist eine natürliche Zahl} Relation</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 18}</text>
 </page>
 <page title="Beispiel">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$D = N_0,  I(c) = 0,  I(f) = $Addition,  $I(R) =$ $\leq$</text>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top">$D = \mathbb N_0,  I(c) = 0,  I(f) = $Addition,  $I(R) =$ $\leq$</text>
 <text transformations="translations" pos="0 352" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">$\beta (x) = 3$ und $\beta(y) = 42$</text>
-<text matrix="1 0 0 1 0 32" transformations="translations" pos="0 304" stroke="black" type="minipage" width="720" height="107.108" depth="96.2814" valign="top">\begin{align*}
+<text layer="beta" matrix="1 0 0 1 0 32" transformations="translations" pos="0 304" stroke="black" type="minipage" width="720" height="107.108" depth="96.2814" valign="top">\begin{align*}
 val_{D,I,\beta} (\forall x R(c,x)) &amp;\Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } val_{D,I,\beta&apos;}(R(c,x))\\
-&amp;\Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (tval_{D,I,\beta&apos;}(c), tval_{D,I,\beta&apos;}(x)) \in R\\
-&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (I(c), \beta&apos;(x)) \in R\\
-&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (0, d) \in R\\
+&amp;\Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (tval_{D,I,\beta&apos;}(c), tval_{D,I,\beta&apos;}(x)) \in I(R)\\
+&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (I(c), \beta&apos;(x)) \in I(R)\\
+&amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } (0, d) \in I(R)\\
 &amp; \Leftrightarrow \text{für alle } d \in D ,\beta&apos; = \beta_x^d \text{ gilt: } 0 \leq d
 \end{align*}</text>
-<text matrix="1 0 0 1 0 -32" transformations="translations" pos="0 144" stroke="black" type="minipage" width="352" height="16.9874" depth="5.9274" valign="top">$\Rightarrow$ also ist $val_{D,I,\beta} (\forall x R(c,x)) = w$</text>
+<text layer="gamma" matrix="1 0 0 1 0 -32" transformations="translations" pos="0 144" stroke="black" type="minipage" width="352" height="16.9874" depth="5.9274" valign="top">$\Rightarrow$ also ist $val_{D,I,\beta} (\forall x R(c,x)) = w$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 19}</text>
 </page>
 <page title="Beispiel">
@@ -10337,23 +10341,23 @@ val_{D,I,\beta} (\forall x R(c,x)) &amp;\Leftrightarrow \text{für alle } d \in 
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<group layer="alpha" matrix="1 0 0 1 0 -48">
+<group layer="alpha">
 <path stroke="gray1" fill="gray3">
-872 336 m
-8 0 0 8 864 336 864 344 a
-8 344 l
-8 282.462 l
-8 0 0 8 16 282.462 16 274.462 a
-872 274.462 l
+888 288 m
+8 0 0 8 880 288 880 296 a
+8 296 l
+8 176.345 l
+8 0 0 8 16 176.345 16 168.345 a
+888 168.345 l
 h
 </path>
 </group>
 <text transformations="translations" pos="0 384" stroke="black" type="minipage" width="720" height="16.6189" depth="5.5722" valign="top">Seien $Var_{PL} = \{x,y,z\}, Fun_{PL} = \{f\}$ mit $ar(f) = 2$ und $Rel_{PL} = \{\doteq\}$</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 336" stroke="black" type="minipage" width="848" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = w gilt.</text>
-<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="16.3814" depth="5.3058" valign="top" style="item">Gebt eine Interpretation (D, I) und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}$(F) = f gilt.</text>
-<text layer="beta" matrix="1 0 0 1 -16 -48" transformations="translations" pos="16 256" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top">Mögliche Lösungen sind Bspw:</text>
-<text matrix="1 0 0 1 -16 -48" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">$D = \mathbb N_0, I(f) \text{ Addition}, \beta(x) = 3\text{ und }\beta(y) = 2 = \beta(z)$</text>
-<text layer="gamma" matrix="1 0 0 1 -16 -32" transformations="translations" pos="16 176" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">$D = \{a, b\}^*, I(f) \text{ Konkatenation}, \beta(x) = a \text{ und } \beta(y) = ab= \beta(z)$</text>
+<text matrix="1 0 0 1 0 -48" transformations="translations" pos="16 336" stroke="black" type="minipage" width="848" height="29.3395" depth="18.315" valign="top" style="item">Gebt eine Interpretation $(D, I)$ und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}(F) = w$ gilt.</text>
+<text matrix="1 0 0 1 0 -80" transformations="translations" pos="16 304" stroke="black" type="minipage" width="864" height="29.3395" depth="18.315" valign="top" style="item">Gebt eine Interpretation $(D, I)$ und eine Variablenbelegung $\beta$ an, sodass $val_{D,I,\beta}(F) = f$ gilt.</text>
+<text layer="beta" matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 256" stroke="black" type="minipage" width="528" height="15.0516" depth="3.9738" valign="top">Mögliche Lösungen sind Bspw:</text>
+<text matrix="1 0 0 1 -16 -96" transformations="translations" pos="16 224" stroke="black" type="minipage" width="528" height="16.5901" depth="5.5278" valign="top">$D = \mathbb N_0, I(f) \text{ Addition}, \beta(x) = 3\text{ und }\beta(y) = 2 = \beta(z)$</text>
+<text layer="gamma" matrix="1 0 0 1 -16 -80" transformations="translations" pos="16 176" stroke="black" type="minipage" width="640" height="16.5901" depth="5.5278" valign="top">$D = \{a, b\}^*, I(f) \text{ Konkatenation}, \beta(x) = a \text{ und } \beta(y) = ab= \beta(z)$</text>
 <text layer="alpha" matrix="1 0 0 1 -16 0" transformations="translations" pos="16 352" stroke="black" type="minipage" width="384" height="16.6189" depth="5.5722" valign="top">$F = \forall x(f(x,y) \doteq f(y,x))$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 20}</text>
 </page>
@@ -10389,9 +10393,11 @@ h
 <layer name="pagenumbers_page" edit="no"/>
 <layer name="beta"/>
 <layer name="gamma"/>
+<layer name="delta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
 <view layers="alpha pagenumbers_page beta" active="beta"/>
 <view layers="alpha pagenumbers_page beta gamma" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
 <group layer="beta">
 <path stroke="black" fill="KITgreen15">
 8 296 m
@@ -10432,6 +10438,17 @@ h
 <text transformations="translations" pos="16 128" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">$\Gamma \models G$ Falls jedes Modell von $\Gamma$ auch ein Model von $G$ ist</text>
 <text transformations="translations" pos="16 96" stroke="black" type="minipage" width="704" height="16.5901" depth="5.5278" valign="top" style="item">$\models G$ wenn $G$ für alle Interpretationen wahr ist.</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 22}</text>
+</page>
+<page title="Modelle - Beispiel">
+<layer name="alpha"/>
+<view layers="alpha" active="alpha"/>
+<text layer="alpha" matrix="1 0 0 1 0 320" transformations="translations" pos="16 48" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top">Sei $F=R(f(x), c)\quad ar(R)=2, ar(f)=1, ar(c)=0$</text>
+<text transformations="translations" pos="16 336" stroke="black" type="minipage" width="864" height="80.2153" depth="69.3084" valign="top">Dann ist $(D, I)$ mit\\
+$D=\mathbb R$\\
+$I(R)=\text{ }\ge\text{ }=\{(x, y)\in\mathbb R^2 | x \ge y\}\subseteq \mathbb R^2$\\
+$I(f): \mathbb R \rightarrow \mathbb R; I(f)(x)=x^2$\\
+$I(c)=0$\\
+Ein Modell von $F$</text>
 </page>
 <page title="Allgemeingültige Formeln">
 <layer name="alpha"/>
@@ -10531,7 +10548,9 @@ h
 <page title="Äquivalenz">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
 <view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
 <group layer="alpha">
 <path stroke="black" fill="KITgreen15">
 8 376 m
@@ -10547,6 +10566,7 @@ h
 <text transformations="translations" pos="16 336" stroke="black" type="minipage" width="720" height="28.5403" depth="17.4936" valign="top">Seien F , G prädikatenlogische Formeln. F , G heißen \emph{äquivalent}, genau dann, wenn für alle Universen D, Interpretationen I und Variablenbelegungen $\beta$ gilt:</text>
 <text matrix="1 0 0 1 64 16" transformations="translations" pos="160 256" stroke="black" type="minipage" width="384" height="16.9874" depth="5.9274" valign="top">$val_{D,I,\beta}(F) = val_{D,I,\beta}(G)$</text>
 <text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 30}</text>
+<text layer="beta" transformations="translations" pos="16 224" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top">Zum Beispiel sind $F=\neg\forall x\text{ }R(x)$ und $G=\exists x\text{ }\neg R(x)$ äquivalent</text>
 </page>
 <page title="Klausuraufgabe WS 22/23">
 <layer name="alpha"/>

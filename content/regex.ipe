@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
-<ipe version="70218" creator="Ipe 7.2.28">
-<info created="D:20220409132243" modified="D:20251202132000" title="GBI" author="Joshua Blömer" subject="Content Template"/>
-<preamble>\input{/opt/gbi-slides/preamble.tex}
+<ipe version="70218" creator="Ipe 7.3.1">
+<info created="D:20220409132243" modified="D:20261109122546" title="GBI" author="Joshua Blömer" subject="Content Template"/>
+<preamble>\input{/opt/gti-slides/preamble.tex}
 \newcommand{\tutinfo}{Pseudocode und O-Kalkül}
-\input{/opt/gbi-slides/tut-config}</preamble>
+\input{/opt/gti-slides/tut-config}</preamble>
 <ipestyle name="kit-basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -3731,111 +3731,136 @@ h
 <layout paper="960 540" origin="32 60" frame="896 384" crop="no"/>
 <titlestyle pos="0 432.3" size="title" color="black"  valign="baseline"/>
 </ipestyle>
-<page title="Reguläre Ausdrücke">
+<page title="Reguläre Ausdrücke - Regex">
 <layer name="alpha"/>
 <layer name="pagenumbers_page" edit="no"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha pagenumbers_page" active="alpha"/>
+<view layers="alpha pagenumbers_page beta" active="beta"/>
+<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
+<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
+<group layer="gamma" matrix="1 0 0 1 0 14">
+<path stroke="black" fill="KITred15">
+272 92 m
+476 92 l
+8 0 0 -8 476 84 484 84 a
+484 30.0882 l
+280 30.0882 l
+8 0 0 -8 280 38.0882 272 38.0882 a
+h
+</path>
+</group>
+<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="5.8604" height="7.4635" depth="0" valign="top" size="veryTiny">{\bf 1}</text>
+<text layer="alpha" transformations="translations" pos="16 368" stroke="black" type="minipage" width="512" height="29.0309" depth="18.0042" valign="top" style="item">Stellt Sprachen mit diesen Zeichen dar: \\
+$\emptyset, \cup, *, (, )$ und alle $a\in A$</text>
+<text layer="beta" transformations="translations" pos="14 308" stroke="black" type="minipage" width="518" height="29.2241" depth="18.204" valign="top" style="item">Der reguläre Ausdruck $\alpha=ab$ erzeugt die Sprache \\
+$L(\alpha)=\{ab\}$</text>
+<text matrix="1 0 0 1 0 -56" transformations="translations" pos="14 308" stroke="black" type="minipage" width="434" height="29.2241" depth="18.204" valign="top" style="item">$\alpha=a\cup ab$ erzeugt  \\
+$L(\alpha)=\{ab\}$</text>
+<text matrix="1 0 0 1 0 -112" transformations="translations" pos="14 308" stroke="black" type="minipage" width="434" height="29.8546" depth="18.8034" valign="top" style="item">$\alpha=(ab)^*$ erzeugt  \\
+$L(\alpha)=\{\eps, ab, abab, ababab, \dots\}$</text>
+<text matrix="1 0 0 1 0 -168" transformations="translations" pos="14 308" stroke="black" type="minipage" width="434" height="29.8546" depth="18.8034" valign="top" style="item">$\alpha=\emptyset$ erzeugt  \\
+$L(\alpha)=\{\}$</text>
+<text layer="gamma" matrix="1 0 0 1 28 -224" transformations="translations" pos="14 308" stroke="black" type="minipage" width="406" height="29.8546" depth="18.8034" valign="top" style="item">$\alpha=\emptyset^*$ erzeugt  \\
+$L(\alpha)=\{\eps\}$</text>
+<text matrix="1 0 0 1 0 28" transformations="translations" pos="280 70" stroke="black" type="minipage" width="196" height="28.4848" depth="17.427" valign="top">Das ist der \emph{einzige} Weg $\eps$ zu erzeugen</text>
+<text layer="delta" transformations="translations" pos="14 28" stroke="black" type="minipage" width="434" height="16.5901" depth="5.5278" valign="top" style="item">Die Zeichen $\{, \},+,\eps,\cdot,|$ gibt es nicht</text>
+</page>
+<page title="Disclaimer">
+<layer name="alpha"/>
 <layer name="beta"/>
 <layer name="gamma"/>
 <layer name="delta"/>
 <layer name="epsilon"/>
 <layer name="zeta"/>
 <layer name="eta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta" active="zeta"/>
-<view layers="alpha pagenumbers_page gamma delta epsilon zeta eta" active="eta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta eta" active="beta"/>
-<group layer="beta" matrix="1 0 0 1 -64 0">
-<path stroke="black" fill="KITblue15">
-72 120 m
-544 120 l
-8 0 0 -8 544 112 552 112 a
-552 23.342 l
-80 23.342 l
-8 0 0 -8 80 31.342 72 31.342 a
-h
-</path>
-</group>
-<text layer="alpha" transformations="translations" pos="0 384" stroke="black" type="minipage" width="752" height="16.5901" depth="5.5278" valign="top">Sei A ein Alphabet, das keines der fünf zeichem $Z =\{\cup, (,),*,\emptyset \}$ enthält.</text>
-<text transformations="translations" pos="0 352" stroke="black" type="minipage" width="576" height="28.7335" depth="17.6934" valign="top">Ein \emph{regulärer Ausdruck} über A ist eine Zeichenfolge über $A\cup Z$, die die folgende Definition erfüllt:</text>
-<text layer="gamma" transformations="translations" pos="0 288" stroke="black" type="minipage" width="592" height="16.0972" depth="5.0172" valign="top" style="item">$\emptyset$ ist ein regulärer Ausdruck</text>
-<text layer="delta" transformations="translations" pos="0 256" stroke="black" type="minipage" width="592" height="15.469" depth="4.4178" valign="top" style="item">für jedes $x \in A$ ist x ein regulärer Ausdruck</text>
-<text layer="epsilon" transformations="translations" pos="0 224" stroke="black" type="minipage" width="864" height="16.5901" depth="5.5278" valign="top" style="item">Sind $R_1$ und $R_2$ reguläre Ausdrücke dann sind auch $(R_1 \cup R_2)$ und $(R_1 R_2)$ reguläre Ausdrücke</text>
-<text layer="zeta" transformations="translations" pos="0 192" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">Wenn R ein regulärer Ausdruck ist dann auch $(R^*)$</text>
-<text layer="eta" transformations="translations" pos="0 160" stroke="black" type="minipage" width="832" height="15.2758" depth="4.218" valign="top" style="item">Vergesst in GBI bitte die Schreibweise aus Programmieren für RegEx</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 30}</text>
-<text layer="beta" matrix="1 0 0 1 0 48" transformations="translations" pos="16 32" stroke="black" type="minipage" width="464" height="29.8546" depth="18.8034" valign="top">$a^*(ab)^*$\\ (bisher hätten wir das als $\set{a}^* \cdot \set{ab}^*$ geschrieben)</text>
-<text matrix="1 0 0 1 -64 0" transformations="translations" pos="80 112" stroke="black" type="minipage" width="464" height="15.0605" depth="3.996" valign="top">\bfseries Beispiel</text>
-</page>
-<page title="Auswertung von regulären Ausdrücken">
-<layer name="alpha"/>
-<layer name="beta"/>
-<layer name="gamma"/>
+<layer name="theta"/>
+<layer name="iota"/>
+<layer name="kappa"/>
+<layer name="lambda"/>
 <view layers="alpha" active="alpha"/>
 <view layers="alpha beta" active="beta"/>
 <view layers="alpha beta gamma" active="gamma"/>
-<group layer="alpha" matrix="1 0 0 1 16 -16">
-<path stroke="black" fill="KITred15">
--8 392 m
-480 392 l
-8 0 0 -8 480 384 488 384 a
-488 329.966 l
-0 329.966 l
-8 0 0 -8 0 337.966 -8 337.966 a
-h
-</path>
-</group>
-<text layer="gamma" matrix="1 0 0 1 0 128" transformations="translations" pos="0 96" stroke="black" type="minipage" width="288" height="69.6037" depth="58.6746" valign="top">$L(\emptyset) = \{\}\\
-L(x)  = \{x\} (x \in A)\\
-L(R_1R_2) = L(R_1) \cdot L(R_2)\\
-L(R_1 \cup R_2) = L(R_1) \cup L(R_2)\\
-L(R^*) = L(R)^*$</text>
-<text layer="beta" matrix="1 0 0 1 0 176" transformations="translations" pos="0 128" stroke="black" type="minipage" width="848" height="15.2758" depth="4.218" valign="top">Die Sprache die von einem regulären Ausdruck beschrieben wird ist L(R)</text>
-<text matrix="1 0 0 1 0 -80" transformations="translations" pos="0 352" stroke="black" type="minipage" width="896" height="15.469" depth="4.4178" valign="top">Auswertung ähnlich wie die $val_I$ Funktion aus der Aussagenlogik</text>
-<text layer="alpha" matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="480" height="28.5403" depth="17.4936" valign="top">Reguläre Ausdrücke sind keine Sprachen\\
-(Aber ein Wort der Sprache der regulären Ausdrücke)</text>
-</page>
-<page title="Aufgabe">
-<layer name="alpha"/>
-<layer name="pagenumbers_page" edit="no"/>
-<layer name="beta"/>
-<layer name="gamma"/>
-<layer name="delta"/>
-<layer name="epsilon"/>
-<layer name="zeta"/>
-<view layers="alpha pagenumbers_page" active="alpha"/>
-<view layers="alpha pagenumbers_page beta" active="beta"/>
-<view layers="alpha pagenumbers_page beta gamma" active="gamma"/>
-<view layers="alpha pagenumbers_page beta gamma delta" active="delta"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon" active="epsilon"/>
-<view layers="alpha pagenumbers_page beta gamma delta epsilon zeta" active="zeta"/>
-<group layer="alpha" matrix="1 0 0 1 16 -16">
+<view layers="alpha beta gamma delta" active="delta"/>
+<view layers="alpha beta gamma delta epsilon" active="epsilon"/>
+<view layers="alpha beta gamma delta zeta" active="zeta"/>
+<view layers="alpha beta gamma delta zeta eta" active="eta"/>
+<view layers="alpha beta gamma delta zeta theta" active="theta"/>
+<view layers="alpha beta gamma delta zeta theta lambda" active="lambda"/>
+<group layer="epsilon">
 <path stroke="gray1" fill="gray3">
-808 384 m
-8 0 0 8 800 384 800 392 a
--8 392 l
--8 201.882 l
-8 0 0 8 0 201.882 0 193.882 a
-808 193.882 l
+772 364 m
+8 0 0 8 764 364 764 372 a
+566 372 l
+566 341.882 l
+8 0 0 8 574 341.882 574 333.882 a
+772 333.882 l
 h
 </path>
 </group>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 384" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top">Gebt einen regulären Ausdruck $R_i$ über dem Alphabet $\set{a,b}$ an, für den gilt:</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 352" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_1)$ enthält genau die Wörter, in denen das Teilwort baa vorkommt,</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 320" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_2)$ enthält genau die Wörter, in denen das Teilwort baa nicht
-vorkommt,</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 288" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_3)$ enthält genau die Wörter, in denen das Teilwort baa genau
-zweimal vorkommt,</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 256" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_4)$ enthält genau die Wörter, in denen mindestens drei bs
-vorkommen,</text>
-<text matrix="1 0 0 1 16 -16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="800" height="16.5901" depth="5.5278" valign="top" style="item">$L(R_5) = \{\epsilon\}$</text>
-<text layer="beta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 176" stroke="black" type="minipage" width="608" height="16.5901" depth="5.5278" valign="top" style="item">$R_1 = (a\cup b)^* baa (a\cup b)^*$ </text>
-<text layer="gamma" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 144" stroke="black" type="minipage" width="720" height="16.5901" depth="5.5278" valign="top" style="item">$R_2 = a^*(b\cup ba)^*$</text>
-<text layer="delta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 112" stroke="black" type="minipage" width="784" height="14.8807" depth="3.7962" valign="top" style="item">$R_3 = R_2 baa R_2 baa R_2$</text>
-<text layer="epsilon" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 80" stroke="black" type="minipage" width="592" height="16.5901" depth="5.5278" valign="top" style="item">$R_4 = (a\cup b)^* b(a\cup b)^* b(a\cup b)^* b(a\cup b)^* $</text>
-<text layer="zeta" matrix="1 0 0 1 0 -16" transformations="translations" pos="0 48" stroke="black" type="minipage" width="576" height="16.5901" depth="5.5278" valign="top" style="item">$R_5 = \emptyset^*$ denn $L(\emptyset^*) = L(\emptyset)^* = \{\}^* = \{\epsilon\}$</text>
-<text layer="pagenumbers_page" matrix="1 0 0 1 13 6.058" transformations="translations" pos="-13 -35" stroke="black" type="label" width="11.7208" height="7.4796" depth="0.115" valign="top" size="veryTiny">{\bf 31}</text>
+<group layer="lambda">
+<path stroke="black" fill="KITred15">
+566 246 m
+812 246 l
+8 0 0 -8 812 238 820 238 a
+820 156.425 l
+574 156.425 l
+8 0 0 -8 574 164.425 566 164.425 a
+h
+</path>
+</group>
+<group layer="iota">
+<path stroke="gray1" fill="gray3">
+904 252 m
+8 0 0 8 896 252 896 260 a
+538 260 l
+538 204.965 l
+8 0 0 8 546 204.965 546 196.965 a
+904 196.965 l
+h
+</path>
+</group>
+<group layer="eta">
+<path stroke="gray1" fill="gray3">
+890 294 m
+8 0 0 8 882 294 882 302 a
+566 302 l
+566 225.719 l
+8 0 0 8 574 225.719 574 217.719 a
+890 217.719 l
+h
+</path>
+</group>
+<group layer="beta" matrix="1 0 0 1 0 70">
+<path stroke="black" fill="KITred15">
+8 216 m
+400 216 l
+8 0 0 -8 400 208 408 208 a
+408 180.628 l
+16 180.628 l
+8 0 0 -8 16 188.628 8 188.628 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 0 70" transformations="translations" pos="16 208" stroke="black" type="minipage" width="384" height="15.2203" depth="4.1514" valign="top">\textbf{Nicht das gleiche wie Mengendefinition!}</text>
+<text layer="gamma" matrix="1 0 0 1 0 70" transformations="translations" pos="16 160" stroke="black" type="minipage" width="512" height="28.9754" depth="17.9376" valign="top">Wenn $\alpha$ ein regulärer Ausdruck ist, \textbf{ist $\alpha$ keine Sprache} \\
+$L(\alpha )$ ist eine Sprache</text>
+<text layer="delta" matrix="1 0 0 1 0 70" transformations="translations" pos="16 96" stroke="black" type="minipage" width="512" height="42.049" depth="31.0578" valign="top">Also: \\
+Entweder $L_1 = \{a,b\}\cdot \{a\}$ \\
+Oder $L_1 = L((a\cup b)a)$</text>
+<text layer="alpha" matrix="1 0 0 1 0 70" transformations="translations" pos="16 304" stroke="black" type="minipage" width="512" height="44.0492" depth="33.0558" valign="top">Ähnlich zur Mengendefinition von Sprachen, z.B.: \\
+$\{a, b\}^*\cdot \{a\}\cup \{\varepsilon\} = L(\alpha )$ \\
+mit $\alpha = (a\cup b)^*a\cup\emptyset^*$</text>
+<text layer="epsilon" transformations="translations" pos="574 364" stroke="black" type="minipage" width="190" height="16.5901" depth="5.5278" valign="top">Was ist $L(ab^*a\cup a)$?</text>
+<text layer="zeta" matrix="1 0 0 1 0 16" transformations="translations" pos="574 364" stroke="black" type="minipage" width="308" height="39.6425" depth="28.638" valign="top">Die Sprache der Wörter, die mit $a$ beginnen und enden und dazwischen nur $b$s haben</text>
+<text layer="eta" transformations="translations" pos="574 294" stroke="black" type="minipage" width="308" height="39.6425" depth="28.638" valign="top">Was ist der reguläre Audruck für die Sprache der Wörter, bei denen sich $a$ und $b$ abwechseln?</text>
+<text layer="theta" transformations="translations" pos="574 294" stroke="black" type="minipage" width="308" height="16.5901" depth="5.5278" valign="top">$(\emptyset^*\cup b)(ab)^*(\emptyset^*\cup a)$</text>
+<text layer="iota" matrix="1 0 0 1 -28 0" transformations="translations" pos="574 252" stroke="black" type="minipage" width="350" height="29.0309" depth="18.0042" valign="top">Welcher Ausdruck erzeugt die Sprache \\
+$\{b, aba, aabaa, aaabaaa, \dots\}$</text>
+<text layer="kappa" transformations="translations" pos="574 252" stroke="black" type="minipage" width="308" height="13.229" depth="2.1534" valign="top">Geht nicht</text>
+<text layer="lambda" matrix="1 0 0 1 0 14" transformations="translations" pos="574 224" stroke="black" type="minipage" width="238" height="42.2954" depth="31.2798" valign="top">Manche Sprachen lassen sich nicht darstellen, z.B. \\
+$\{a^nb^n\;|\;n\in \mathbb N_0\}$</text>
 </page>
 </ipe>
