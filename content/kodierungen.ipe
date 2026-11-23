@@ -3943,7 +3943,7 @@ Num_2(\z{11}) &amp;= 2 \cdot  Num_2(\z{1}) + Num_2(\z{1})\\
 &amp;= 2\cdot 1 +1\\
 &amp;= 3
 \end{align*}</text>
-<text layer="beta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_4(321)$?</text>
+<text layer="beta" transformations="translations" pos="16 208" stroke="black" type="minipage" width="192" height="16.5901" depth="5.5278" valign="top">Was ist $Num_4(\z {321})$?</text>
 <text layer="gamma" matrix="1 0 0 1 0 80" transformations="translations" pos="16 176" stroke="black" type="minipage" width="528" height="84.9905" depth="74.0814" valign="top">\begin{align*}
 Num_4(\z{321}) &amp;= 4 \cdot Num_4(\z{32}) + Num_4(\z 1)\\
 &amp;= 4 \cdot  ( 4 \cdot (Num_4(\z 3) + Num_4(\z 2)) + Num_4(\z 1)\\
@@ -4316,7 +4316,7 @@ h
 <view layers="alpha beta gamma delta epsilon" active="epsilon"/>
 <view layers="alpha beta gamma delta epsilon zeta" active="zeta"/>
 <view layers="alpha beta gamma delta epsilon zeta eta" active="eta"/>
-<group layer="alpha">
+<group layer="alpha" matrix="1 0 0 0.99489 0 1.9214">
 <path stroke="black" fill="KITgreen15">
 8 376 m
 512 376 l
@@ -4355,5 +4355,17 @@ für $w\in A^*, x\in A$</text>
 $f(\z{00})$\\
 $=f(\z 1)$\\
 $=\z{11}$</text>
+<group layer="alpha" matrix="1 0 0 0.955444 208 200.198">
+<path stroke="black" fill="KITgreen15">
+328 184 m
+576 184 l
+8 0 0 -8 576 176 584 176 a
+584 91.8962 l
+336 91.8962 l
+8 0 0 -8 336 99.8962 328 99.8962 a
+h
+</path>
+</group>
+<text matrix="1 0 0 1 192 224" transformations="translations" pos="352 144" stroke="black" type="minipage" width="240" height="43.5586" depth="32.5452" valign="top">Eine injektive Übersetzung $f$ zwischen zwei Sprachen nennt man \textbf{Kodierung}</text>
 </page>
 </ipe>

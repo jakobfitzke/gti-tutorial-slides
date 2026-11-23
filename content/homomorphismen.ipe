@@ -3783,7 +3783,7 @@ f^{**}(\epsilon) &amp;=  \epsilon\\
 \forall w \in A^*, x \in A: f^{**}(wx) &amp;= f^{**}(w)\cdot f(x)
 \end{align*}</text>
 <text transformations="translations" pos="16 192" stroke="black" type="minipage" width="560" height="15.358" depth="4.2846" valign="top">$f^{**}$ ist der durch $f$ \emph{induzierte} Homomorphismus.</text>
-<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top">Zum Beispiel für $A=\{\z a,\z b\}, f: A\rightarrow A,f(\z a)=\z b,f(\z b)=\z a$</text>
+<text layer="beta" transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="16.5901" depth="5.5278" valign="top">Zum Beispiel für $A=\{\z a,\z b\}, f: A\rightarrow A^*,f(\z a)=\z b,f(\z b)=\z a$</text>
 <text matrix="1 0 0 1 0 -32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="560" height="13.3289" depth="2.2644" valign="top">tauscht $f^{**}: A^*\rightarrow A^*$ einfach alle $\z a$s und $\z b$s</text>
 </page>
 <page title="Aufgabe">
@@ -3829,11 +3829,11 @@ h
 h
 </path>
 </group>
-<text layer="alpha" matrix="1 0 0 1 16 0" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="56.3614" depth="45.3768" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet $A= \{\z a,\z b,\z c,\dots,\z z\}\\
-\\
-R(\epsilon) = \epsilon\\
-R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*, x \in A
-)$ :</text>
+<text layer="alpha" matrix="1 0 0 1 16 0" transformations="translations" pos="0 384" stroke="black" type="minipage" width="768" height="56.3614" depth="45.3768" valign="top">Gegeben sei die folgende Abbildung über dem Alphabet $A= \{\z a,\z b,\z c,\dots,\z z\}$\\
+$R: A^* \rightarrow A^*$ \\
+$ R(\eps) = \eps\\
+  R(wx) = x \cdot R(w) \quad \text{(Für alle } w \in A^*, x \in A
+  )$ :</text>
 <text layer="beta" matrix="1 0 0 1 16 16" transformations="translations" pos="0 224" stroke="black" type="minipage" width="256" height="15.358" depth="4.2846" valign="top">Ist $R$ ein Homomorphismus?</text>
 <text layer="gamma" matrix="1 0 0 1 0 -48" transformations="translations" pos="0 240" stroke="black" type="minipage" width="736" height="16.5901" depth="5.5278" valign="top" style="item">$R$ ist kein Homomorphismus, denn $R(\z a \cdot \z b) = \z{ba} \neq \z{ab} = R(\z a) \cdot R(\z b)$.</text>
 <text layer="delta" matrix="1 0 0 1 0 -32" transformations="translations" pos="16 160" stroke="black" type="minipage" width="544" height="15.9818" depth="4.9284" valign="top">Gebt ein Alphabet $A&apos;$ an, sodass $R$ ein Homomorphismus ist.</text>

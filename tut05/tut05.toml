@@ -1,4 +1,4 @@
 title = "05 Aussagenkalkül und Induktion" # the file name of the output pdf
 description = "05 Aussagenkalkül und Induktion" # 
-content = [] # "regex", "beweisbarkeit", "induktion",]
+content = [""] # "regex", "beweisbarkeit", "induktion",]
 xkcd = 722
